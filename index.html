@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Generador de horario letal</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="watermark">s8phnx</div>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">ING Civil Industrial</p>
+      <h1>Generador de horarios letal</h1>
+    <div class="meta-card">
+      <span id="courseCount">— ramos</span>
+      <span id="optionCount">— secciones</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel controls">
+      <h2>1. Agrega ramos</h2>
+      <div class="add-row">
+        <input id="courseSearch" list="courseList" placeholder="Ej: CBE2000 o Probabilidades" autocomplete="off" />
+        <datalist id="courseList"></datalist>
+        <button id="addCourseBtn">Agregar</button>
+      </div>
+      
+      <div id="selectedCourses" class="selected-list empty">
+        <p>Aún no agregas ramos.</p>
+      </div>
+    </section>
+
+    <section class="panel preferences">
+      <h2>2. Preferencias</h2>
+      <div class="grid two">
+        <label>
+          Ordenar por
+          <select id="preference">
+            <option value="windows">Menos ventanas</option>
+            <option value="early">Salir más temprano</option>
+            <option value="late">Entrar más tarde</option>
+            <option value="compact">Horario más compacto</option>
+          </select>
+        </label>
+        <label>
+          Día libre ideal
+          <select id="freeDay">
+            <option value="">Sin preferencia</option>
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miércoles">Miércoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sábado">Sábado</option>
+          </select>
+        </label>
+      </div>
+      <div class="button-row">
+        <button id="generateBtn" class="primary">Generar horarios</button>
+        <button id="clearBtn" class="ghost">Limpiar</button>
+      </div>
+      <p id="status" class="status">Selecciona al menos un ramo.</p>
+    </section>
+
+    <section class="panel results">
+      <div class="results-head">
+        <div>
+          <h2>3. Resultados</h2>
+          <p id="summary" class="hint">Aquí aparecerán las combinaciones posibles.</p>
+        </div>
+        <div class="pager">
+          <button id="prevBtn" class="ghost">←</button>
+          <span id="pageLabel">0 / 0</span>
+          <button id="nextBtn" class="ghost">→</button>
+        </div>
+      </div>
+      <div id="scoreCards" class="score-cards"></div>
+      <div id="comboList" class="combo-list"></div>
+      <div class="table-wrap">
+        <table id="scheduleTable"></table>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./data/data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
