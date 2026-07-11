@@ -411,6 +411,8 @@ function scoreCombo(combo, meetings, rules = getProfessorRules()) {
     windowMinutes += Math.max(0, daySpan - classMinutes);
   });
 
+  const freeDays = DATA.days.filter(day => !(byDay[day] || []).length);
+
   return {
     combo,
     meetings,
@@ -419,6 +421,7 @@ function scoreCombo(combo, meetings, rules = getProfessorRules()) {
     earliestStart: earliestStart === Infinity ? 0 : earliestStart,
     latestEnd,
     daysWithClass,
+    freeDays,
     professorStats: professorStats(combo, rules),
   };
 }
@@ -462,7 +465,14 @@ function compareResults(a, b, pref, freeDay) {
     }
   }
 
-  if (freeDay) {
+  if (freeDay === "__any__") {
+    const aHasFreeDay = a.freeDays.length > 0 ? 0 : 1;
+    const bHasFreeDay = b.freeDays.length > 0 ? 0 : 1;
+    if (aHasFreeDay !== bHasFreeDay) return aHasFreeDay - bHasFreeDay;
+
+    // Si ambos tienen día libre, prioriza el que tenga menos días con clases.
+    if (a.daysWithClass !== b.daysWithClass) return a.daysWithClass - b.daysWithClass;
+  } else if (freeDay) {
     const aPenalty = a.meetings.some(m => m.day === freeDay) ? 1 : 0;
     const bPenalty = b.meetings.some(m => m.day === freeDay) ? 1 : 0;
     if (aPenalty !== bPenalty) return aPenalty - bPenalty;
@@ -517,6 +527,7 @@ function renderCurrentResult() {
     <div class="score"><b>${fmtMin(result.earliestStart)}</b><span>primera clase</span></div>
     <div class="score"><b>${fmtMin(result.latestEnd)}</b><span>última salida</span></div>
     <div class="score"><b>${result.daysWithClass}</b><span>días con clases</span></div>
+    <div class="score"><b>${result.freeDays.length ? result.freeDays.join(", ") : "—"}</b><span>días libres</span></div>
     ${professorCard}
   `;
 
@@ -567,9 +578,40 @@ function renderSchedule(meetings) {
   els.scheduleTable.innerHTML = html;
 }
 
+function eventTypeLabel(eventName) {
+  const text = normalize(eventName);
+  if (text.includes("AYUDANTIA")) return "AYUDANTÍA";
+  if (text.includes("LABORATORIO")) return "LAB";
+  if (text.includes("TALLER")) return "TALLER";
+  if (text.includes("PRACTICA")) return "PRÁCTICA";
+  if (text.includes("CATEDRA")) return "CÁTEDRA";
+  return eventName || "CLASE";
+}
+
+function eventTypeClass(eventName) {
+  const label = normalize(eventTypeLabel(eventName));
+  if (label.includes("AYUDANTIA")) return "tag-ayudantia";
+  if (label.includes("LAB")) return "tag-lab";
+  if (label.includes("TALLER")) return "tag-taller";
+  if (label.includes("PRACTICA")) return "tag-practica";
+  if (label.includes("CATEDRA")) return "tag-catedra";
+  return "";
+}
+
 function renderMeetingCard(m) {
-  const prof = m.professor ? `<span>${m.professor}</span>` : "";
-  return `<div class="class-card"><b>${m.course.code} · ${m.option.section}</b><span>${m.course.name}</span><br><span>${m.eventName}</span><br>${prof}</div>`;
+  const prof = m.professor ? `<span class="class-prof">${m.professor}</span>` : "";
+  const label = eventTypeLabel(m.eventName);
+  const tagClass = eventTypeClass(m.eventName);
+  return `
+    <div class="class-card">
+      <div class="class-card-top">
+        <b>${m.course.code} · ${m.option.section}</b>
+        <span class="event-tag ${tagClass}">${label}</span>
+      </div>
+      <span>${m.course.name}</span>
+      ${prof}
+    </div>
+  `;
 }
 
 function loadFavorites() {
@@ -626,6 +668,7 @@ function saveCurrentFavorite() {
       earliestStart: result.earliestStart,
       latestEnd: result.latestEnd,
       daysWithClass: result.daysWithClass,
+      freeDays: result.freeDays || [],
       preferredMatches: result.professorStats.preferredMatches,
       avoidedMatches: result.professorStats.avoidedMatches,
     },
@@ -701,7 +744,7 @@ function renderFavorites() {
     item.innerHTML = `
       <div class="favorite-head">
         <h3>Favorito ${index + 1}</h3>
-        <small>${fav.metrics.daysWithClass} días · salida ${fmtMin(fav.metrics.latestEnd)} · ${Math.round(fav.metrics.windowMinutes / 10) * 10} min ventanas</small>
+        <small>${fav.metrics.daysWithClass} días · libre: ${(fav.metrics.freeDays || []).join(", ") || "—"} · salida ${fmtMin(fav.metrics.latestEnd)}</small>
       </div>
       <div class="favorite-chips">${chips}</div>
       <div class="favorite-actions">
