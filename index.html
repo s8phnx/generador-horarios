@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Generador de horario letal</title>
+  <title>Generador de Toma de Ramos</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
   <div class="watermark">s8phnx</div>
+
   <header class="hero">
     <div>
       <p class="eyebrow">ING Civil Industrial</p>
-      <h1>Generador de horarios letal</h1>
+      <h1>Generador de horarios</h1>
+      <p class="subtitle">Elige tus ramos, filtra secciones, prioriza profes y guarda tus horarios favoritos.</p>
+    </div>
+
     <div class="meta-card">
       <span id="courseCount">— ramos</span>
       <span id="optionCount">— secciones</span>
@@ -21,12 +26,20 @@
   <main class="layout">
     <section class="panel controls">
       <h2>1. Agrega ramos</h2>
+
       <div class="add-row">
-        <input id="courseSearch" list="courseList" placeholder="Ej: CBE2000 o Probabilidades" autocomplete="off" />
+        <input
+          id="courseSearch"
+          list="courseList"
+          placeholder="Ej: CBE2000 o Probabilidades"
+          autocomplete="off"
+        />
         <datalist id="courseList"></datalist>
         <button id="addCourseBtn">Agregar</button>
       </div>
-      
+
+      <p class="hint">Tip: escribe código o nombre. Al agregar un ramo quedan activadas todas sus secciones.</p>
+
       <div id="selectedCourses" class="selected-list empty">
         <p>Aún no agregas ramos.</p>
       </div>
@@ -34,6 +47,7 @@
 
     <section class="panel preferences">
       <h2>2. Preferencias</h2>
+
       <div class="grid two">
         <label>
           Ordenar por
@@ -44,6 +58,7 @@
             <option value="compact">Horario más compacto</option>
           </select>
         </label>
+
         <label>
           Día libre ideal
           <select id="freeDay">
@@ -57,11 +72,41 @@
           </select>
         </label>
       </div>
+
+      <div class="professor-tools">
+        <label>
+          Profesores preferidos
+          <input id="preferredProfessors" placeholder="Ej: Guerrero, Pérez" autocomplete="off" />
+          <small>Separar con coma. El generador mostrará primero los horarios con esos profes.</small>
+        </label>
+
+        <label>
+          Profesores a evitar
+          <input id="blockedProfessors" placeholder="Ej: Soto, Rodríguez" autocomplete="off" />
+          <small>Separar con coma. No bloquea la sección, pero la deja más abajo en el ranking.</small>
+        </label>
+      </div>
+
       <div class="button-row">
         <button id="generateBtn" class="primary">Generar horarios</button>
         <button id="clearBtn" class="ghost">Limpiar</button>
       </div>
+
       <p id="status" class="status">Selecciona al menos un ramo.</p>
+    </section>
+
+    <section class="panel favorites-panel">
+      <div class="section-head">
+        <div>
+          <h2>Favoritos</h2>
+          <p class="hint">Los horarios guardados quedan en este navegador.</p>
+        </div>
+        <button id="clearFavoritesBtn" class="ghost small-btn">Vaciar</button>
+      </div>
+
+      <div id="favoritesList" class="favorites-list empty">
+        <p>Aún no guardas horarios.</p>
+      </div>
     </section>
 
     <section class="panel results">
@@ -70,22 +115,34 @@
           <h2>3. Resultados</h2>
           <p id="summary" class="hint">Aquí aparecerán las combinaciones posibles.</p>
         </div>
-        <div class="pager">
-          <button id="prevBtn" class="ghost">←</button>
-          <span id="pageLabel">0 / 0</span>
-          <button id="nextBtn" class="ghost">→</button>
+
+        <div class="results-actions">
+          <button id="saveFavoriteBtn" class="primary small-btn" disabled>Guardar favorito</button>
+          <div class="pager">
+            <button id="prevBtn" class="ghost">←</button>
+            <span id="pageLabel">0 / 0</span>
+            <button id="nextBtn" class="ghost">→</button>
+          </div>
         </div>
       </div>
+
       <div id="scoreCards" class="score-cards"></div>
       <div id="comboList" class="combo-list"></div>
+
       <div class="table-wrap">
         <table id="scheduleTable"></table>
       </div>
     </section>
   </main>
 
+  <footer>
+    <p>
+      Datos cargados desde <code>data.js</code> y <code>ramos.json</code>.
+      Si usas carpeta <code>data/</code>, cambia el script de datos a <code>./data/data.js</code>.
+    </p>
+  </footer>
 
   <script src="./data.js"></script>
-<script src="./app.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>

@@ -79,6 +79,111 @@ code { background: #e8eef8; padding: 2px 5px; border-radius: 6px; }
   .add-row, .button-row, .results-head { flex-direction: column; align-items: stretch; }
   .grid.two, .score-cards { grid-template-columns: 1fr; }
 }
+
+/* Favoritos + profesores */
+.section-head,
+.favorite-head,
+.results-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.results-actions {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.professor-tools {
+  display: grid;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.professor-tools small {
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.favorites-panel {
+  grid-column: 1;
+  align-self: start;
+}
+
+.favorites-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.favorites-list.empty {
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.favorite-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 12px;
+  background: #fbfdff;
+}
+
+.favorite-card h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.favorite-card small {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.favorite-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.favorite-chips span {
+  border: 1px solid var(--line);
+  background: var(--chip);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.favorite-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.small-btn {
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.score-ok {
+  background: #ecfdf5;
+}
+
+.score-danger {
+  background: #fef2f2;
+}
+
 .watermark {
   position: fixed;
   right: 24px;
@@ -91,4 +196,19 @@ code { background: #e8eef8; padding: 2px 5px; border-radius: 6px; }
   z-index: 9999;
   pointer-events: none;
   user-select: none;
+}
+
+@media (min-width: 981px) {
+  .results {
+    grid-row: 1 / span 3;
+  }
+}
+
+@media (max-width: 620px) {
+  .section-head,
+  .favorite-head,
+  .results-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
