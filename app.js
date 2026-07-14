@@ -58,10 +58,16 @@ function init() {
   els.courseCount.textContent = `${DATA.meta.courseCount} ramos`;
   els.optionCount.textContent = `${DATA.meta.optionCount} secciones/paquetes`;
 
+  const datalistValues = new Set();
   DATA.courses.forEach(course => {
-    const opt = document.createElement("option");
-    opt.value = `${course.code} — ${course.name}`;
-    els.courseList.appendChild(opt);
+    addCourseListOption(`${course.code} — ${course.name}`, datalistValues);
+
+    // Alias sin tildes para que el navegador también sugiera ramos al escribir
+    // "calculo", "algebra", "fisica", etc.
+    const nameWithoutAccents = removeAccents(course.name);
+    if (nameWithoutAccents !== course.name) {
+      addCourseListOption(`${course.code} — ${nameWithoutAccents}`, datalistValues);
+    }
   });
 
   populateBlockInputs();
@@ -138,19 +144,43 @@ function resetResultsAfterConstraintChange(message = "Vuelve a generar horarios 
   setStatus(message);
 }
 
-function normalize(str) {
+function addCourseListOption(value, seen) {
+  if (seen.has(value)) return;
+  seen.add(value);
+  const opt = document.createElement("option");
+  opt.value = value;
+  els.courseList.appendChild(opt);
+}
+
+function removeAccents(str) {
   return String(str || "")
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function normalize(str) {
+  return removeAccents(str)
     .toUpperCase()
     .trim();
 }
 
 function extractCode(input) {
   const text = normalize(input);
+  if (!text) return null;
+
   const direct = text.split(" ")[0];
   if (coursesByCode.has(direct)) return direct;
-  const found = DATA.courses.find(c => normalize(`${c.code} ${c.name}`).includes(text));
+
+  const words = text.split(/\s+/).filter(Boolean);
+
+  const found = DATA.courses.find(c => {
+    const haystack = normalize(`${c.code} ${c.name}`);
+    // Coincidencia normal: "calculo diferencial" encuentra "Cálculo Diferencial".
+    if (haystack.includes(text)) return true;
+    // Coincidencia por palabras: "diferencial calculo" también sirve.
+    return words.every(word => haystack.includes(word));
+  });
+
   return found ? found.code : null;
 }
 
