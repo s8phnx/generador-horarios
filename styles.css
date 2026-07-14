@@ -220,3 +220,96 @@ button:disabled {
     align-items: stretch;
   }
 }
+
+/* Bloqueo de horarios */
+.grid.three {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  gap: 12px;
+}
+
+.schedule-blocker {
+  margin: 16px 0;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  background: #fbfdff;
+}
+
+.compact-head h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.compact-head .hint {
+  margin: 0;
+}
+
+.block-inputs {
+  margin-top: 12px;
+}
+
+.block-buttons {
+  margin-top: 12px;
+}
+
+.blocked-slots-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.blocked-slots-list.empty {
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.blocked-slots-list.empty p {
+  margin: 0;
+}
+
+.blocked-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid var(--line);
+  background: #fff7ed;
+  color: var(--text);
+  border-radius: 14px;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+.blocked-chip strong {
+  color: #9a3412;
+}
+
+.blocked-card {
+  background: #fff7ed;
+  border-left-color: #f97316;
+}
+
+.tag-blocked {
+  background: #fed7aa;
+  color: #9a3412;
+}
+
+@media (max-width: 980px) {
+  .grid.three {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .grid.three {
+    grid-template-columns: 1fr;
+  }
+
+  .blocked-chip {
+    align-items: flex-start;
+  }
+}

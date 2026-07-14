@@ -88,6 +88,43 @@
         </label>
       </div>
 
+
+
+      <div class="schedule-blocker">
+        <div class="section-head compact-head">
+          <div>
+            <h3>Bloquear horarios</h3>
+            <p class="hint">Útil si haces ayudantías, trabajas o tienes un bloque fijo ocupado.</p>
+          </div>
+        </div>
+
+        <div class="grid three block-inputs">
+          <label>
+            Día
+            <select id="blockDay"></select>
+          </label>
+
+          <label>
+            Horario
+            <select id="blockTime"></select>
+          </label>
+
+          <label>
+            Motivo opcional
+            <input id="blockReason" placeholder="Ej: ayudantía" autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="button-row block-buttons">
+          <button id="addBlockBtn" class="ghost">Agregar bloqueo</button>
+          <button id="clearBlocksBtn" class="ghost">Limpiar bloqueos</button>
+        </div>
+
+        <div id="blockedSlotsList" class="blocked-slots-list empty">
+          <p>No tienes horarios bloqueados.</p>
+        </div>
+      </div>
+
       <div class="button-row">
         <button id="generateBtn" class="primary">Generar horarios</button>
         <button id="clearBtn" class="ghost">Limpiar</button>

@@ -1,11 +1,13 @@
 const DATA = window.COURSE_DATA;
 const FAVORITES_KEY = "generador-ramos:favoritos:v1";
+const BLOCKED_SLOTS_KEY = "generador-ramos:bloqueos:v1";
 
 const state = {
   selected: new Map(), // code -> Set(option ids)
   results: [],
   current: 0,
   favorites: loadFavorites(),
+  blockedSlots: loadBlockedSlots(),
 };
 
 const els = {
@@ -19,6 +21,12 @@ const els = {
   freeDay: document.getElementById("freeDay"),
   preferredProfessors: document.getElementById("preferredProfessors"),
   blockedProfessors: document.getElementById("blockedProfessors"),
+  blockDay: document.getElementById("blockDay"),
+  blockTime: document.getElementById("blockTime"),
+  blockReason: document.getElementById("blockReason"),
+  addBlockBtn: document.getElementById("addBlockBtn"),
+  clearBlocksBtn: document.getElementById("clearBlocksBtn"),
+  blockedSlotsList: document.getElementById("blockedSlotsList"),
   generateBtn: document.getElementById("generateBtn"),
   clearBtn: document.getElementById("clearBtn"),
   status: document.getElementById("status"),
@@ -56,8 +64,10 @@ function init() {
     els.courseList.appendChild(opt);
   });
 
+  populateBlockInputs();
   bindEvents();
   renderSelected();
+  renderBlockedSlots();
   renderFavorites();
   renderEmptySchedule();
 }
@@ -105,6 +115,27 @@ function bindEvents() {
     updateFavoriteButton();
     setStatus("Favoritos borrados.");
   });
+
+  els.addBlockBtn.addEventListener("click", addBlockedSlot);
+
+  els.blockReason.addEventListener("keydown", e => {
+    if (e.key === "Enter") addBlockedSlot();
+  });
+
+  els.clearBlocksBtn.addEventListener("click", () => {
+    if (!state.blockedSlots.length) return;
+    state.blockedSlots = [];
+    persistBlockedSlots();
+    renderBlockedSlots();
+    resetResultsAfterConstraintChange("Bloqueos eliminados. Vuelve a generar horarios.");
+  });
+}
+
+function resetResultsAfterConstraintChange(message = "Vuelve a generar horarios para aplicar el cambio.") {
+  state.results = [];
+  state.current = 0;
+  renderEmptySchedule(message);
+  setStatus(message);
 }
 
 function normalize(str) {
@@ -208,6 +239,129 @@ function renderSelected() {
 function setStatus(text, isError = false) {
   els.status.textContent = text;
   els.status.style.color = isError ? "var(--danger)" : "var(--muted)";
+}
+
+function populateBlockInputs() {
+  els.blockDay.innerHTML = "";
+  DATA.days.forEach(day => {
+    const opt = document.createElement("option");
+    opt.value = day;
+    opt.textContent = day;
+    els.blockDay.appendChild(opt);
+  });
+
+  els.blockTime.innerHTML = "";
+  const uniqueSlots = [...new Map((DATA.slots || [])
+    .map(slot => [`${slot.startMin}-${slot.endMin}`, slot]))
+    .values()]
+    .sort((a, b) => a.startMin - b.startMin || a.endMin - b.endMin);
+
+  uniqueSlots.forEach(slot => {
+    const opt = document.createElement("option");
+    opt.value = `${slot.startMin}-${slot.endMin}`;
+    opt.textContent = slot.time;
+    opt.dataset.startMin = slot.startMin;
+    opt.dataset.endMin = slot.endMin;
+    opt.dataset.time = slot.time;
+    els.blockTime.appendChild(opt);
+  });
+}
+
+function selectedBlockSlot() {
+  const opt = els.blockTime.selectedOptions[0];
+  if (!opt) return null;
+
+  return {
+    startMin: Number(opt.dataset.startMin),
+    endMin: Number(opt.dataset.endMin),
+    time: opt.dataset.time,
+  };
+}
+
+function addBlockedSlot() {
+  const day = els.blockDay.value;
+  const slot = selectedBlockSlot();
+  const label = els.blockReason.value.trim();
+
+  if (!day || !slot) {
+    setStatus("Elige día y horario para bloquear.", true);
+    return;
+  }
+
+  const exists = state.blockedSlots.some(block =>
+    block.day === day && block.startMin === slot.startMin && block.endMin === slot.endMin
+  );
+
+  if (exists) {
+    setStatus("Ese horario ya está bloqueado.", true);
+    return;
+  }
+
+  state.blockedSlots.push({
+    id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+    day,
+    label,
+    ...slot,
+  });
+
+  state.blockedSlots.sort((a, b) => DATA.days.indexOf(a.day) - DATA.days.indexOf(b.day) || a.startMin - b.startMin);
+  els.blockReason.value = "";
+  persistBlockedSlots();
+  renderBlockedSlots();
+  resetResultsAfterConstraintChange("Horario bloqueado. Vuelve a generar para descartar topes con ese bloque.");
+}
+
+function removeBlockedSlot(id) {
+  state.blockedSlots = state.blockedSlots.filter(block => block.id !== id);
+  persistBlockedSlots();
+  renderBlockedSlots();
+  resetResultsAfterConstraintChange("Bloqueo eliminado. Vuelve a generar horarios.");
+}
+
+function renderBlockedSlots() {
+  els.blockedSlotsList.innerHTML = "";
+
+  if (!state.blockedSlots.length) {
+    els.blockedSlotsList.className = "blocked-slots-list empty";
+    els.blockedSlotsList.innerHTML = "<p>No tienes horarios bloqueados.</p>";
+    return;
+  }
+
+  els.blockedSlotsList.className = "blocked-slots-list";
+
+  state.blockedSlots.forEach(block => {
+    const chip = document.createElement("div");
+    chip.className = "blocked-chip";
+    chip.innerHTML = `
+      <span><strong>${block.day}</strong> ${block.time}${block.label ? ` · ${block.label}` : ""}</span>
+      <button class="ghost small-btn" data-remove-block="${block.id}" aria-label="Quitar bloqueo">×</button>
+    `;
+    chip.querySelector("button").addEventListener("click", () => removeBlockedSlot(block.id));
+    els.blockedSlotsList.appendChild(chip);
+  });
+}
+
+function getBlockedMeetings() {
+  return state.blockedSlots.map(block => ({
+    ...block,
+    isBlocked: true,
+    eventName: "Horario bloqueado",
+    professor: block.label || "Bloqueado",
+  }));
+}
+
+function loadBlockedSlots() {
+  try {
+    const raw = localStorage.getItem(BLOCKED_SLOTS_KEY);
+    const parsed = JSON.parse(raw || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function persistBlockedSlots() {
+  localStorage.setItem(BLOCKED_SLOTS_KEY, JSON.stringify(state.blockedSlots));
 }
 
 function getMeetings(item) {
@@ -336,6 +490,7 @@ function generateSchedules() {
   let explored = 0;
   const results = [];
   const rules = getProfessorRules();
+  const blockedMeetings = getBlockedMeetings();
 
   function backtrack(idx, combo, meetings) {
     if (explored > maxExplored || results.length >= maxResults) return;
@@ -348,7 +503,7 @@ function generateSchedules() {
     for (const item of groups[idx].options) {
       explored += 1;
 
-      if (!hasConflict(meetings, item.meetings)) {
+      if (!hasConflict(meetings, item.meetings) && !hasConflict(blockedMeetings, item.meetings)) {
         backtrack(idx + 1, combo.concat(item), meetings.concat(item.meetings));
       }
     }
@@ -557,10 +712,12 @@ function renderEmptySchedule(message = "Genera un horario para verlo aquí.") {
 }
 
 function renderSchedule(meetings) {
+  const blockedMeetings = getBlockedMeetings();
+  const displayMeetings = meetings.concat(blockedMeetings);
   const usedSlotsMap = new Map();
-  meetings.forEach(m => usedSlotsMap.set(`${m.startMin}-${m.endMin}`, { startMin: m.startMin, endMin: m.endMin, time: m.time }));
+  displayMeetings.forEach(m => usedSlotsMap.set(`${m.startMin}-${m.endMin}`, { startMin: m.startMin, endMin: m.endMin, time: m.time }));
   const usedSlots = [...usedSlotsMap.values()].sort((a, b) => a.startMin - b.startMin || a.endMin - b.endMin);
-  const days = DATA.days.filter(day => meetings.some(m => m.day === day));
+  const days = DATA.days.filter(day => displayMeetings.some(m => m.day === day));
   const visibleDays = days.length ? days : DATA.days.slice(0, 5);
 
   let html = `<thead><tr><th>Bloque</th>${visibleDays.map(d => `<th>${d}</th>`).join("")}</tr></thead><tbody>`;
@@ -568,7 +725,7 @@ function renderSchedule(meetings) {
   usedSlots.forEach(slot => {
     html += `<tr><td class="time">${slot.time}</td>`;
     visibleDays.forEach(day => {
-      const cellMeetings = meetings.filter(m => m.day === day && m.startMin === slot.startMin && m.endMin === slot.endMin);
+      const cellMeetings = displayMeetings.filter(m => m.day === day && m.startMin === slot.startMin && m.endMin === slot.endMin);
       html += `<td>${cellMeetings.map(renderMeetingCard).join("")}</td>`;
     });
     html += `</tr>`;
@@ -599,6 +756,18 @@ function eventTypeClass(eventName) {
 }
 
 function renderMeetingCard(m) {
+  if (m.isBlocked) {
+    return `
+      <div class="class-card blocked-card">
+        <div class="class-card-top">
+          <b>Horario bloqueado</b>
+          <span class="event-tag tag-blocked">BLOQUEADO</span>
+        </div>
+        <span>${m.label || "Ocupado"}</span>
+      </div>
+    `;
+  }
+
   const prof = m.professor ? `<span class="class-prof">${m.professor}</span>` : "";
   const label = eventTypeLabel(m.eventName);
   const tagClass = eventTypeClass(m.eventName);
