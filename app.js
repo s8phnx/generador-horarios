@@ -58,16 +58,12 @@ function init() {
   els.courseCount.textContent = `${DATA.meta.courseCount} ramos`;
   els.optionCount.textContent = `${DATA.meta.optionCount} secciones/paquetes`;
 
+  // Cada ramo se muestra una sola vez en las sugerencias.
+  // La búsqueda sigue ignorando tildes, mayúsculas y el orden de las palabras
+  // gracias a normalize() y extractCode().
   const datalistValues = new Set();
   DATA.courses.forEach(course => {
     addCourseListOption(`${course.code} — ${course.name}`, datalistValues);
-
-    // Alias sin tildes para que el navegador también sugiera ramos al escribir
-    // "calculo", "algebra", "fisica", etc.
-    const nameWithoutAccents = removeAccents(course.name);
-    if (nameWithoutAccents !== course.name) {
-      addCourseListOption(`${course.code} — ${nameWithoutAccents}`, datalistValues);
-    }
   });
 
   populateBlockInputs();
@@ -161,6 +157,8 @@ function removeAccents(str) {
 function normalize(str) {
   return removeAccents(str)
     .toUpperCase()
+    .replace(/[^A-Z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
