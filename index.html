@@ -12,13 +12,14 @@
 
   <header class="hero">
     <div>
-      <p class="eyebrow">ING Civil Industrial</p>
+      <p class="eyebrow">Ingenierías · Plan común + Industrial</p>
       <h1>Generador de horarios</h1>
-      <p class="subtitle">Elige tus ramos, filtra secciones, prioriza profes y guarda tus horarios favoritos.</p>
+      <p class="subtitle">Elige tus ramos, agrega Formación Académica, prioriza profes y guarda tus horarios favoritos.</p>
     </div>
 
     <div class="meta-card">
-      <span id="courseCount">— ramos</span>
+      <span id="courseCount">— ramos de ingeniería</span>
+      <span id="formationCount">— cursos de formación</span>
       <span id="optionCount">— secciones</span>
     </div>
   </header>
@@ -42,6 +43,61 @@
 
       <div id="selectedCourses" class="selected-list empty">
         <p>Aún no agregas ramos.</p>
+      </div>
+
+      <div class="formation-builder">
+        <div class="section-head compact-head">
+          <div>
+            <h3>Formación Académica</h3>
+            <p class="hint">Puedes agregar exactamente un curso deportivo o no deportivo al horario.</p>
+          </div>
+        </div>
+
+        <label>
+          ¿Quieres agregar un curso de Formación Académica?
+          <select id="formationEnabled">
+            <option value="no">No</option>
+            <option value="yes">Sí</option>
+          </select>
+        </label>
+
+        <div id="formationOptions" class="formation-options" hidden>
+          <div class="grid two">
+            <label>
+              Tipo
+              <select id="formationType">
+                <option value="any">Cualquiera</option>
+                <option value="deportivo">Deportivo</option>
+                <option value="no-deportivo">No deportivo</option>
+              </select>
+            </label>
+
+            <label>
+              Modalidad
+              <select id="formationModality">
+                <option value="any">Cualquiera</option>
+                <option value="presencial">Presencial</option>
+                <option value="b-learning">B-learning</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Forma de selección
+            <select id="formationSelectionMode">
+              <option value="automatic">Elegir automáticamente el que mejor encaje</option>
+              <option value="specific">Elegir un curso específico</option>
+            </select>
+          </label>
+
+          <label id="formationCourseWrap" hidden>
+            Curso específico
+            <input id="formationCourseSearch" list="formationCourseList" placeholder="Escribe código o nombre" autocomplete="off" />
+            <datalist id="formationCourseList"></datalist>
+          </label>
+
+          <p id="formationSummary" class="hint"></p>
+        </div>
       </div>
     </section>
 
@@ -173,7 +229,12 @@
     </section>
   </main>
 
-
+  <footer>
+    <p>
+      Datos de Ingeniería y Formación Académica cargados desde <code>data.js</code> y <code>ramos.json</code>.
+      Si usas carpeta <code>data/</code>, cambia el script de datos a <code>./data/data.js</code>.
+    </p>
+  </footer>
 
   <script src="./data.js"></script>
   <script src="./app.js"></script>

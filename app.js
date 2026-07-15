@@ -12,11 +12,21 @@ const state = {
 
 const els = {
   courseCount: document.getElementById("courseCount"),
+  formationCount: document.getElementById("formationCount"),
   optionCount: document.getElementById("optionCount"),
   courseSearch: document.getElementById("courseSearch"),
   courseList: document.getElementById("courseList"),
   addCourseBtn: document.getElementById("addCourseBtn"),
   selectedCourses: document.getElementById("selectedCourses"),
+  formationEnabled: document.getElementById("formationEnabled"),
+  formationOptions: document.getElementById("formationOptions"),
+  formationType: document.getElementById("formationType"),
+  formationModality: document.getElementById("formationModality"),
+  formationSelectionMode: document.getElementById("formationSelectionMode"),
+  formationCourseWrap: document.getElementById("formationCourseWrap"),
+  formationCourseSearch: document.getElementById("formationCourseSearch"),
+  formationCourseList: document.getElementById("formationCourseList"),
+  formationSummary: document.getElementById("formationSummary"),
   preference: document.getElementById("preference"),
   freeDay: document.getElementById("freeDay"),
   preferredProfessors: document.getElementById("preferredProfessors"),
@@ -46,6 +56,8 @@ if (!DATA || !Array.isArray(DATA.courses)) {
   throw new Error("No se cargó COURSE_DATA. Revisa que data.js esté antes de app.js en index.html.");
 }
 
+const NORMAL_COURSES = DATA.courses.filter(course => !course.isFormationAcademic);
+const FORMATION_COURSES = DATA.courses.filter(course => course.isFormationAcademic);
 const coursesByCode = new Map(DATA.courses.map(c => [c.code, c]));
 const allOptionsById = new Map();
 DATA.courses.forEach(course => {
@@ -55,17 +67,20 @@ DATA.courses.forEach(course => {
 });
 
 function init() {
-  els.courseCount.textContent = `${DATA.meta.courseCount} ramos`;
+  els.courseCount.textContent = `${DATA.meta.normalCourseCount ?? NORMAL_COURSES.length} ramos de ingeniería`;
+  els.formationCount.textContent = `${DATA.meta.formationCourseCount ?? FORMATION_COURSES.length} cursos de formación`;
   els.optionCount.textContent = `${DATA.meta.optionCount} secciones/paquetes`;
 
   // Cada ramo se muestra una sola vez en las sugerencias.
   // La búsqueda sigue ignorando tildes, mayúsculas y el orden de las palabras
   // gracias a normalize() y extractCode().
   const datalistValues = new Set();
-  DATA.courses.forEach(course => {
+  NORMAL_COURSES.forEach(course => {
     addCourseListOption(`${course.code} — ${course.name}`, datalistValues);
   });
 
+  populateFormationCourseList();
+  updateFormationUI();
   populateBlockInputs();
   bindEvents();
   renderSelected();
@@ -76,6 +91,19 @@ function init() {
 
 function bindEvents() {
   els.addCourseBtn.addEventListener("click", addCourseFromInput);
+
+  [els.formationEnabled, els.formationType, els.formationModality, els.formationSelectionMode].forEach(control => {
+    control.addEventListener("change", () => {
+      populateFormationCourseList();
+      updateFormationUI();
+      resetResultsAfterConstraintChange("Formación Académica actualizada. Vuelve a generar horarios.");
+    });
+  });
+
+  els.formationCourseSearch.addEventListener("input", () => {
+    updateFormationSummary();
+    resetResultsAfterConstraintChange("Curso de Formación Académica actualizado. Vuelve a generar horarios.");
+  });
 
   els.courseSearch.addEventListener("keydown", e => {
     if (e.key === "Enter") addCourseFromInput();
@@ -88,6 +116,13 @@ function bindEvents() {
     state.results = [];
     state.current = 0;
     els.courseSearch.value = "";
+    els.formationEnabled.value = "no";
+    els.formationType.value = "any";
+    els.formationModality.value = "any";
+    els.formationSelectionMode.value = "automatic";
+    els.formationCourseSearch.value = "";
+    populateFormationCourseList();
+    updateFormationUI();
     renderSelected();
     renderEmptySchedule();
     setStatus("Selecciona al menos un ramo.");
@@ -140,14 +175,6 @@ function resetResultsAfterConstraintChange(message = "Vuelve a generar horarios 
   setStatus(message);
 }
 
-function addCourseListOption(value, seen) {
-  if (seen.has(value)) return;
-  seen.add(value);
-  const opt = document.createElement("option");
-  opt.value = value;
-  els.courseList.appendChild(opt);
-}
-
 function removeAccents(str) {
   return String(str || "")
     .normalize("NFD")
@@ -171,7 +198,7 @@ function extractCode(input) {
 
   const words = text.split(/\s+/).filter(Boolean);
 
-  const found = DATA.courses.find(c => {
+  const found = NORMAL_COURSES.find(c => {
     const haystack = normalize(`${c.code} ${c.name}`);
     // Coincidencia normal: "calculo diferencial" encuentra "Cálculo Diferencial".
     if (haystack.includes(text)) return true;
@@ -240,12 +267,11 @@ function renderSelected() {
         .map(e => `${e.name}: ${e.rawSchedule}`)
         .join(" · ");
       const professors = option.professors.length ? option.professors.join(", ") : "Profesor no informado";
-      const vac = option.vacancies === null || option.vacancies === undefined ? "—" : option.vacancies;
       const row = document.createElement("label");
       row.className = "option-row";
       row.innerHTML = `
         <input type="checkbox" ${selectedOptionIds.has(option.id) ? "checked" : ""} data-code="${course.code}" data-option="${option.id}">
-        <span><strong>${option.section}</strong> · Vacantes: ${vac}<small>${professors}</small><small>${events || "Sin horario informado"}</small></span>
+        <span><strong>${option.section}</strong><small>${professors}</small><small>${events || "Sin horario informado"}</small></span>
       `;
 
       row.querySelector("input").addEventListener("change", (e) => {
@@ -262,6 +288,101 @@ function renderSelected() {
 
     els.selectedCourses.appendChild(card);
   }
+}
+
+function formationFilters() {
+  return {
+    enabled: els.formationEnabled.value === "yes",
+    type: els.formationType.value,
+    modality: els.formationModality.value,
+    mode: els.formationSelectionMode.value,
+  };
+}
+
+function optionMatchesFormationFilters(course, option, filters = formationFilters()) {
+  const typeOk = filters.type === "any" || course.formationType === filters.type;
+  const modalityOk = filters.modality === "any" || option.modality === filters.modality;
+  return typeOk && modalityOk;
+}
+
+function eligibleFormationCourses(filters = formationFilters()) {
+  return FORMATION_COURSES.filter(course =>
+    course.options.some(option => optionMatchesFormationFilters(course, option, filters))
+  );
+}
+
+function populateFormationCourseList() {
+  if (!els.formationCourseList) return;
+  const current = els.formationCourseSearch.value;
+  els.formationCourseList.innerHTML = "";
+  const seen = new Set();
+  eligibleFormationCourses().forEach(course => {
+    addCourseListOption(`${course.code} — ${course.name}`, seen, els.formationCourseList);
+  });
+  els.formationCourseSearch.value = current;
+  updateFormationSummary();
+}
+
+function addCourseListOption(value, seen, target = els.courseList) {
+  if (seen.has(value)) return;
+  seen.add(value);
+  const opt = document.createElement("option");
+  opt.value = value;
+  target.appendChild(opt);
+}
+
+function extractFormationCode(input) {
+  const text = normalize(input);
+  if (!text) return null;
+  const direct = text.split(" ")[0];
+  const candidates = eligibleFormationCourses();
+  if (candidates.some(course => course.code === direct)) return direct;
+  const words = text.split(/\s+/).filter(Boolean);
+  const found = candidates.find(course => {
+    const haystack = normalize(`${course.code} ${course.name}`);
+    return haystack.includes(text) || words.every(word => haystack.includes(word));
+  });
+  return found ? found.code : null;
+}
+
+function formationCandidateItems(filters = formationFilters()) {
+  const courses = eligibleFormationCourses(filters);
+  const selectedCode = filters.mode === "specific" ? extractFormationCode(els.formationCourseSearch.value) : null;
+  const chosenCourses = selectedCode ? courses.filter(course => course.code === selectedCode) : courses;
+  const items = [];
+  chosenCourses.forEach(course => {
+    course.options
+      .filter(option => optionMatchesFormationFilters(course, option, filters))
+      .forEach(option => items.push({ course, option, meetings: getMeetings({ course, option }) }));
+  });
+  return { items, selectedCode };
+}
+
+function updateFormationUI() {
+  const filters = formationFilters();
+  els.formationOptions.hidden = !filters.enabled;
+  els.formationCourseWrap.hidden = !filters.enabled || filters.mode !== "specific";
+  updateFormationSummary();
+}
+
+function updateFormationSummary() {
+  if (!els.formationSummary) return;
+  const filters = formationFilters();
+  if (!filters.enabled) {
+    els.formationSummary.textContent = "No se agregará Formación Académica.";
+    return;
+  }
+  const { items, selectedCode } = formationCandidateItems(filters);
+  if (filters.mode === "specific" && !selectedCode) {
+    els.formationSummary.textContent = "Escribe un curso específico válido para aplicar los filtros.";
+    return;
+  }
+  const courseCount = new Set(items.map(item => item.course.code)).size;
+  const typeText = filters.type === "deportivo" ? "deportivos" : filters.type === "no-deportivo" ? "no deportivos" : "deportivos y no deportivos";
+  const modalityText = filters.modality === "b-learning" ? "B-learning" : filters.modality === "presencial" ? "presenciales" : "presenciales o B-learning";
+  els.formationSummary.textContent = filters.mode === "automatic"
+    ? `${courseCount} cursos ${typeText} y ${items.length} secciones ${modalityText} disponibles para buscar el mejor encaje.`
+    : `${courseCount ? "Curso listo" : "Sin coincidencias"}: ${items.length} secciones compatibles con los filtros.`;
 }
 
 function setStatus(text, isError = false) {
@@ -501,8 +622,10 @@ function professorStats(combo, rules) {
 }
 
 function generateSchedules() {
-  if (!state.selected.size) {
-    setStatus("Selecciona al menos un ramo.", true);
+  const formation = formationFilters();
+
+  if (!state.selected.size && !formation.enabled) {
+    setStatus("Selecciona al menos un ramo o activa Formación Académica.", true);
     return;
   }
 
@@ -513,18 +636,57 @@ function generateSchedules() {
     return;
   }
 
+  const formationCandidates = formation.enabled ? formationCandidateItems(formation) : { items: [], selectedCode: null };
+  if (formation.enabled && formation.mode === "specific" && !formationCandidates.selectedCode) {
+    setStatus("Elige un curso específico de Formación Académica válido.", true);
+    return;
+  }
+  if (formation.enabled && !formationCandidates.items.length) {
+    setStatus("No hay cursos de Formación Académica que cumplan esos filtros.", true);
+    return;
+  }
+
   const maxResults = 2500;
   const maxExplored = 180000;
   let explored = 0;
   const results = [];
   const rules = getProfessorRules();
   const blockedMeetings = getBlockedMeetings();
+  const pref = els.preference.value;
+  const freeDay = els.freeDay.value;
+
+  function finishCombo(combo, meetings) {
+    if (!formation.enabled) {
+      results.push(scoreCombo(combo, meetings, rules));
+      return;
+    }
+
+    if (formation.mode === "specific") {
+      formationCandidates.items.forEach(item => {
+        if (results.length >= maxResults) return;
+        if (!hasConflict(meetings, item.meetings) && !hasConflict(blockedMeetings, item.meetings)) {
+          results.push(scoreCombo(combo.concat(item), meetings.concat(item.meetings), rules));
+        }
+      });
+      return;
+    }
+
+    // En modo automático se agrega solo la opción de Formación Académica
+    // que mejor calza con cada combinación base.
+    let best = null;
+    formationCandidates.items.forEach(item => {
+      if (hasConflict(meetings, item.meetings) || hasConflict(blockedMeetings, item.meetings)) return;
+      const candidate = scoreCombo(combo.concat(item), meetings.concat(item.meetings), rules);
+      if (!best || compareResults(candidate, best, pref, freeDay) < 0) best = candidate;
+    });
+    if (best) results.push(best);
+  }
 
   function backtrack(idx, combo, meetings) {
     if (explored > maxExplored || results.length >= maxResults) return;
 
     if (idx === groups.length) {
-      results.push(scoreCombo(combo, meetings, rules));
+      finishCombo(combo, meetings);
       return;
     }
 
@@ -538,35 +700,35 @@ function generateSchedules() {
   }
 
   backtrack(0, [], []);
-
-  const pref = els.preference.value;
-  const freeDay = els.freeDay.value;
   results.sort((a, b) => compareResults(a, b, pref, freeDay));
 
   state.results = results;
   state.current = 0;
 
   if (!results.length) {
-    setStatus("No encontré combinaciones sin topes con esas secciones.", true);
-    els.summary.textContent = "Prueba activando más secciones o quitando un ramo.";
+    setStatus("No encontré combinaciones sin topes con esas condiciones.", true);
+    els.summary.textContent = formation.enabled
+      ? "Prueba cambiando el tipo/modalidad de Formación Académica o activando más secciones."
+      : "Prueba activando más secciones o quitando un ramo.";
     renderEmptySchedule("Sin combinaciones posibles.");
     return;
   }
 
   const limited = explored > maxExplored || results.length >= maxResults;
+  const formationText = formation.enabled ? " Cada alternativa incluye un curso de Formación Académica." : "";
 
   if (rules.preferred.length || rules.avoided.length) {
     const best = results[0];
     setStatus(
-      limited
+      (limited
         ? `Encontré ${results.length} horarios antes del límite. El primero tiene ${best.professorStats.preferredMatches} preferidos y ${best.professorStats.avoidedMatches} evitados.`
-        : `Encontré ${results.length} horarios posibles. El primero tiene ${best.professorStats.preferredMatches} preferidos y ${best.professorStats.avoidedMatches} evitados.`
+        : `Encontré ${results.length} horarios posibles. El primero tiene ${best.professorStats.preferredMatches} preferidos y ${best.professorStats.avoidedMatches} evitados.`) + formationText
     );
   } else {
     setStatus(
-      limited
+      (limited
         ? `Encontré ${results.length} horarios antes del límite de búsqueda. Puedes filtrar secciones para más precisión.`
-        : `Encontré ${results.length} horarios posibles.`
+        : `Encontré ${results.length} horarios posibles.`) + formationText
     );
   }
 
@@ -718,8 +880,11 @@ function renderCurrentResult() {
 
   result.combo.forEach(item => {
     const chip = document.createElement("div");
-    chip.className = "combo-chip";
-    chip.innerHTML = `<strong>${item.course.code}</strong> ${item.option.section}`;
+    chip.className = `combo-chip${item.course.isFormationAcademic ? " formation-chip" : ""}`;
+    const formationLabel = item.course.isFormationAcademic
+      ? ` · ${item.course.formationType === "deportivo" ? "Deportivo" : "No deportivo"} · ${item.option.modality === "b-learning" ? "B-learning" : "Presencial"}`
+      : "";
+    chip.innerHTML = `<strong>${item.course.code}</strong> ${item.option.section}${formationLabel}`;
     els.comboList.appendChild(chip);
   });
 
@@ -765,6 +930,7 @@ function renderSchedule(meetings) {
 
 function eventTypeLabel(eventName) {
   const text = normalize(eventName);
+  if (text.includes("B LEARNING") || text.includes("BLEARNING")) return "B-LEARNING";
   if (text.includes("AYUDANTIA")) return "AYUDANTÍA";
   if (text.includes("LABORATORIO")) return "LAB";
   if (text.includes("TALLER")) return "TALLER";
@@ -775,6 +941,7 @@ function eventTypeLabel(eventName) {
 
 function eventTypeClass(eventName) {
   const label = normalize(eventTypeLabel(eventName));
+  if (label.includes("B LEARNING") || label.includes("BLEARNING")) return "tag-blearning";
   if (label.includes("AYUDANTIA")) return "tag-ayudantia";
   if (label.includes("LAB")) return "tag-lab";
   if (label.includes("TALLER")) return "tag-taller";
@@ -799,13 +966,17 @@ function renderMeetingCard(m) {
   const prof = m.professor ? `<span class="class-prof">${m.professor}</span>` : "";
   const label = eventTypeLabel(m.eventName);
   const tagClass = eventTypeClass(m.eventName);
+  const formationMeta = m.course.isFormationAcademic
+    ? `<span class="class-prof formation-meta">Formación ${m.course.formationType === "deportivo" ? "deportiva" : "no deportiva"} · ${m.option.modality === "b-learning" ? "B-learning" : "Presencial"}</span>`
+    : "";
   return `
-    <div class="class-card">
+    <div class="class-card${m.course.isFormationAcademic ? " formation-class-card" : ""}">
       <div class="class-card-top">
         <b>${m.course.code} · ${m.option.section}</b>
         <span class="event-tag ${tagClass}">${label}</span>
       </div>
       <span>${m.course.name}</span>
+      ${formationMeta}
       ${prof}
     </div>
   `;

@@ -313,3 +313,45 @@ button:disabled {
     align-items: flex-start;
   }
 }
+
+
+/* Formación Académica */
+.formation-builder {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  background: #f8fbff;
+}
+
+.formation-options {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.formation-options[hidden],
+#formationCourseWrap[hidden] {
+  display: none;
+}
+
+.formation-chip {
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+  color: #5b21b6;
+}
+
+.formation-class-card {
+  background: #f5f3ff;
+  border-left-color: #7c3aed;
+}
+
+.formation-meta {
+  color: #6d28d9 !important;
+  font-weight: 800;
+}
+
+.tag-blearning {
+  background: #ede9fe;
+  color: #6d28d9;
+}

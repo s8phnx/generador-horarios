@@ -1,16 +1,24 @@
 window.COURSE_DATA = {
   "meta": {
-    "sourceFile": "ING_CIVIL_INDUSTRIAL (1).xls + ING_CIVIL.xls",
+    "sourceFile": "ING_CIVIL_INDUSTRIAL (1).xls + ING_CIVIL.xls + FORMACION_GENERAL_CFG.xls + CFG_DEPORTIVOS.xls",
     "generatedFromRows": 1088,
-    "courseCount": 76,
-    "optionCount": 443,
-    "note": "Industrial actualizado + plan común de Ingeniería. Datos combinados para abarcar estudiantes de Ingeniería Civil.",
+    "courseCount": 221,
+    "optionCount": 612,
+    "note": "Ingeniería Civil (plan común + Industrial) y cursos de Formación Académica generales/deportivos, con modalidad presencial o B-learning.",
     "mergeSummary": {
       "addedCourses": 3,
       "addedOptions": 16,
       "mergedExistingCourses": 10,
       "duplicateOptionsSkipped": 118
-    }
+    },
+    "normalCourseCount": 76,
+    "formationCourseCount": 145,
+    "formationGeneralCount": 118,
+    "formationSportsCount": 27,
+    "formationBLearningCount": 37,
+    "normalOptionCount": 443,
+    "formationOptionCount": 169,
+    "formationRows": 214
   },
   "days": [
     "Lunes",
@@ -113,11 +121,25 @@ window.COURSE_DATA = {
       "endMin": 1125
     },
     {
+      "start": "17:25",
+      "end": "20:10",
+      "time": "17:25 - 20:10",
+      "startMin": 1045,
+      "endMin": 1210
+    },
+    {
       "start": "18:50",
       "end": "20:10",
       "time": "18:50 - 20:10",
       "startMin": 1130,
       "endMin": 1210
+    },
+    {
+      "start": "18:50",
+      "end": "21:35",
+      "time": "18:50 - 21:35",
+      "startMin": 1130,
+      "endMin": 1295
     },
     {
       "start": "20:15",
@@ -416,7 +438,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBF1001",
@@ -994,7 +1017,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBF1002",
@@ -2420,7 +2444,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBF1100",
@@ -5124,7 +5149,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBM1005",
@@ -5405,7 +5431,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBM1006",
@@ -5741,7 +5768,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBM1100",
@@ -6197,7 +6225,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBM1101",
@@ -6780,7 +6809,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBM1102",
@@ -8067,7 +8097,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBM1103",
@@ -9414,7 +9445,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CBQ1100",
@@ -9585,7 +9617,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CIG1002",
@@ -10763,7 +10796,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CIG1003",
@@ -13579,7 +13613,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CIG1014",
@@ -14835,7 +14870,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII1000",
@@ -15393,7 +15429,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII1001",
@@ -15566,7 +15603,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2002",
@@ -15794,7 +15832,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2003",
@@ -15912,7 +15951,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2004",
@@ -16085,7 +16125,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2100",
@@ -16863,7 +16904,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2101",
@@ -17091,7 +17133,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2102",
@@ -17319,7 +17362,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2103",
@@ -17492,7 +17536,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2250",
@@ -17830,7 +17875,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2253",
@@ -18003,7 +18049,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2254",
@@ -18176,7 +18223,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2401",
@@ -18349,7 +18397,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2402",
@@ -18632,7 +18681,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2403",
@@ -18750,7 +18800,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2501",
@@ -18978,7 +19029,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2504",
@@ -19151,7 +19203,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2750",
@@ -19489,7 +19542,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2751",
@@ -19662,7 +19716,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2755",
@@ -19945,7 +20000,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2756",
@@ -20116,7 +20172,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII2757",
@@ -20289,7 +20346,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3101",
@@ -20405,7 +20463,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3102",
@@ -20473,7 +20532,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3300",
@@ -20527,7 +20587,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3503",
@@ -20590,7 +20651,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3600",
@@ -20637,7 +20699,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3603",
@@ -20684,7 +20747,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3607",
@@ -20731,7 +20795,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3624",
@@ -20778,7 +20843,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3703",
@@ -20825,7 +20891,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3705",
@@ -20872,7 +20939,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3706",
@@ -20919,7 +20987,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3710",
@@ -20966,7 +21035,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3722",
@@ -21013,7 +21083,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3723",
@@ -21060,7 +21131,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3724",
@@ -21098,7 +21170,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3730",
@@ -21145,7 +21218,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3732",
@@ -21192,7 +21266,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3734",
@@ -21255,7 +21330,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3740",
@@ -21302,7 +21378,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3750",
@@ -21349,7 +21426,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3751",
@@ -21387,7 +21465,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3752",
@@ -21432,7 +21511,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CII3815",
@@ -21479,7 +21559,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CIT1100",
@@ -21817,7 +21898,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "CIT1110",
@@ -22218,7 +22300,8 @@ window.COURSE_DATA = {
           "source": "Plan común"
         }
       ],
-      "source": "Plan común"
+      "source": "Plan común",
+      "isFormationAcademic": false
     },
     {
       "code": "COC2001",
@@ -22519,7 +22602,8 @@ window.COURSE_DATA = {
           "source": "Plan común"
         }
       ],
-      "source": "Plan común"
+      "source": "Plan común",
+      "isFormationAcademic": false
     },
     {
       "code": "COC2006",
@@ -22674,7 +22758,8 @@ window.COURSE_DATA = {
           "source": "Plan común"
         }
       ],
-      "source": "Plan común"
+      "source": "Plan común",
+      "isFormationAcademic": false
     },
     {
       "code": "EII1200",
@@ -23177,7 +23262,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "FIC1100",
@@ -23224,7 +23310,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ICI3309",
@@ -23260,7 +23347,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ICI3333",
@@ -23541,7 +23629,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ICI3377",
@@ -23766,7 +23855,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ICI3388",
@@ -23957,7 +24047,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ICI5001",
@@ -23993,7 +24084,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ICI5002",
@@ -24029,7 +24121,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ICI5011",
@@ -24065,7 +24158,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ICI5022",
@@ -24101,7 +24195,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ICIMAG",
@@ -24137,7 +24232,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "ING9101",
@@ -24265,7 +24361,8 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
     },
     {
       "code": "PRI0001",
@@ -24387,7 +24484,8474 @@ window.COURSE_DATA = {
             }
           ]
         }
-      ]
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "CAV02222",
+      "name": "FINANZAS I",
+      "credits": 4,
+      "references": "",
+      "options": [
+        {
+          "id": "cav02222-cav02222-vc1-seccion-1",
+          "package": "CAV02222_VC1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes de Carrera",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "DÍAZ JUAN ESTEBAN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 20:15 - 21:35",
+              "professor": "DÍAZ JUAN ESTEBAN",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "20:15",
+                  "end": "21:35",
+                  "startMin": 1215,
+                  "endMin": 1295,
+                  "time": "20:15 - 21:35"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "20:15",
+                  "end": "21:35",
+                  "startMin": 1215,
+                  "endMin": 1295,
+                  "time": "20:15 - 21:35"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2014",
+      "name": "PROBLEMÁTICAS CONTEMPORÁNEAS DE LA SEXUA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2014-cfg2014-cb01-seccion-1",
+          "package": "CFG2014_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LOPEZ ANA PAOLA",
+            "MEDALLA TANIA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "LU 13:00 - 15:50",
+              "professor": "LOPEZ ANA PAOLA / MEDALLA TANIA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2027",
+      "name": "LA CIUDAD CÓMO ESPACIO INCLUSIVO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2027-cfg2027-fg01-seccion-1",
+          "package": "CFG2027_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FIGUEROA DANTE OMAR",
+            "GUTIERREZ VOLKER AMAURY"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG 01",
+              "rawSchedule": "LU 16:00 - 18:45",
+              "professor": "FIGUEROA DANTE OMAR / GUTIERREZ VOLKER AMAURY",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "16:00",
+                  "end": "18:45",
+                  "startMin": 960,
+                  "endMin": 1125,
+                  "time": "16:00 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2059",
+      "name": "POESIA INDIGENA LATINOAMERICANA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2059-cfg2059-fg01-seccion-1",
+          "package": "CFG2059_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "HUENUN JAIME LUIS",
+            "CATALÁN AILIN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA MI 10:00 - 11:20",
+              "professor": "HUENUN JAIME LUIS / CATALÁN AILIN",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2065",
+      "name": "NOVELA GRÁFICA: SOBRE LA CRISIS DEL SUJE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2065-cfg2065-fg01-seccion-1",
+          "package": "CFG2065_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "HINOJOSA HUGO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU 13:00 - 15:50",
+              "professor": "HINOJOSA HUGO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2066",
+      "name": "ORIGEN Y EVOLUCIÓN DE LA VIDA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2066-cfg2066-fg01-seccion-1",
+          "package": "CFG2066_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GALLARDO MAURICIO ORLANDO",
+            "PEREZ DANIELA ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU VI 18:50 - 20:10",
+              "professor": "GALLARDO MAURICIO ORLANDO / PEREZ DANIELA ANDREA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "18:50",
+                  "end": "20:10",
+                  "startMin": 1130,
+                  "endMin": 1210,
+                  "time": "18:50 - 20:10"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "18:50",
+                  "end": "20:10",
+                  "startMin": 1130,
+                  "endMin": 1210,
+                  "time": "18:50 - 20:10"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2086",
+      "name": "LA GUERRA FRIA ORIGEN Y FORMACION DEL MU",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2086-cfg2086-fg01-seccion-1",
+          "package": "CFG2086_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BUGUEÑO RODRIGO ALFONSO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU JU 14:30 - 15:50",
+              "professor": "BUGUEÑO RODRIGO ALFONSO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2098",
+      "name": "REVOLUCIONES DE LA HISTORIA CONTEMPORÁNE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2098-cfg2098-cb01-seccion-1",
+          "package": "CFG2098_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ÁNGEL LUNA",
+            "SCHNEUER MARIA JOSE"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "JU 14:30 - 17:20",
+              "professor": "ÁNGEL LUNA / SCHNEUER MARIA JOSE",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2117",
+      "name": "HISTORIA DE LAS IDEAS POLÍTICAS EN CHILE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2117-cfg2117-fg01-seccion-1",
+          "package": "CFG2117_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CASTILLO VASCO ROLANDO EDGARDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MI VI 14:30 - 15:50",
+              "professor": "CASTILLO VASCO ROLANDO EDGARDO",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2135",
+      "name": "B-LEARNING EE.UU: SU VISIÓN DE LA LIBERT",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2135-cfg2135-cb01-seccion-1",
+          "package": "CFG2135_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RODRIGUEZ ROSARIO CAROLINA",
+            "LARA ROMINA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "VI 13:00 - 15:50",
+              "professor": "RODRIGUEZ ROSARIO CAROLINA / LARA ROMINA",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2149",
+      "name": "LA ERA DE LAS VANGUARDIAS HISTÓRICAS:ART",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2149-cfg2149-cb01-seccion-1",
+          "package": "CFG2149_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FLORES CARLA",
+            "SANTIBAÑEZ MARA JIMENA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "FLORES CARLA / SANTIBAÑEZ MARA JIMENA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        },
+        {
+          "id": "cfg2149-cfg2149-cb02-seccion-2",
+          "package": "CFG2149_CB02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SANTIBAÑEZ MARA JIMENA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING 02",
+              "rawSchedule": "JU 18:50 - 21:35",
+              "professor": "SANTIBAÑEZ MARA JIMENA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "18:50",
+                  "end": "21:35",
+                  "startMin": 1130,
+                  "endMin": 1295,
+                  "time": "18:50 - 21:35"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2150",
+      "name": "SOCIEDAD Y MEDIOS DE COMUNICACIÓN",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2150-cfg2150-fg01-seccion-1",
+          "package": "CFG2150_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CORREA MARIA XIMENA",
+            "WOLFF ALAN ALEJANDRO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 13:00 - 14:20",
+              "professor": "CORREA MARIA XIMENA / WOLFF ALAN ALEJANDRO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2158",
+      "name": "TÓPICOS DE POLÍTICA LATINOAMERICANA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2158-cfg2158-fg01-seccion-1",
+          "package": "CFG2158_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "JORQUERA CONSTANZA FERNANDA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA AMERICAN UNIVERSITY SEC 01",
+              "rawSchedule": "LU MI 10:00 - 11:20",
+              "professor": "JORQUERA CONSTANZA FERNANDA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2166",
+      "name": "MÚSICA LATINOAMERICANA Y MOVIMIENTOS SOC",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2166-cfg2166-fg01-seccion-1",
+          "package": "CFG2166_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MARTINEZ FELIPE ANDRES"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA MI 17:25 - 18:45",
+              "professor": "MARTINEZ FELIPE ANDRES",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2177",
+      "name": "B-LEARNING IMÁGEN, FOTOGRAFÍA Y MEMORIA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2177-cfg2177-cb01-seccion-1",
+          "package": "CFG2177_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SALGADO SAMUEL EDUARDO",
+            "CALDERON GUILLERMO DANIEL"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "SALGADO SAMUEL EDUARDO / CALDERON GUILLERMO DANIEL",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2189",
+      "name": "DERECHOS DE LAS MINORÍAS E INTERCULTURAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2189-cfg2189-fg01-seccion-1",
+          "package": "CFG2189_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MILLACURA CLAUDIO VICENTE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 17:25 - 18:45",
+              "professor": "MILLACURA CLAUDIO VICENTE",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2200",
+      "name": "LAS ESCUELAS DE TEORÍA ECONÓMICA EN EL S",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2200-cfg2200-fg01-seccion-1",
+          "package": "CFG2200_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ABBOTT FELIPE ALBERTO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 13:00 - 14:20",
+              "professor": "ABBOTT FELIPE ALBERTO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2202",
+      "name": "DESIGUALDAD:DEFINICIÓN,MEDICIÓN Y CASOS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2202-cfg2202-cb01-seccion-1",
+          "package": "CFG2202_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "PUENTES GERMAN ADOLFO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 13:00 - 14:20",
+              "professor": "PUENTES GERMAN ADOLFO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2203",
+      "name": "EDUCACIÓN SUPERIOR EN CHILE: DESAFÍOS Y",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2203-cfg2203-fg01-seccion-1",
+          "package": "CFG2203_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MONTT PEDRO NOLASCO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG 01",
+              "rawSchedule": "LU JU 11:30 - 12:50",
+              "professor": "MONTT PEDRO NOLASCO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2208",
+      "name": "EL DOCUMENTAL EN AMÉRICA LATINA: UN RELA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2208-cfg2208-fg01-seccion-1",
+          "package": "CFG2208_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ROBLES GILBERTO ALFREDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MI 13:00 - 15:50",
+              "professor": "ROBLES GILBERTO ALFREDO",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2209",
+      "name": "CONSTRUCCIÓN SOCIAL DE LA ENFERMEDAD:CI",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2209-cfg2209-cb01-seccion-1",
+          "package": "CFG2209_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CESPEDES CATALINA",
+            "BARRERO LINA MARIA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "LU 14:30 - 17:20",
+              "professor": "CESPEDES CATALINA / BARRERO LINA MARIA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2222",
+      "name": "CIUDADES SUSTENTABLES:DESAFÍOS EN AMCA.",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2222-cfg2222-fg01-seccion-1",
+          "package": "CFG2222_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ARRIAGADA AGUSTIN TOMAS",
+            "SCHMIDT FRANCISCO JAVIER"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "ARRIAGADA AGUSTIN TOMAS / SCHMIDT FRANCISCO JAVIER",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "cfg2222-cfg2222-fg02-seccion-2",
+          "package": "CFG2222_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ARRIAGADA AGUSTIN TOMAS",
+            "SCHMIDT FRANCISCO JAVIER"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA AMERICAN UNIVERSITY SEC 02",
+              "rawSchedule": "MI 13:00 - 15:50",
+              "professor": "ARRIAGADA AGUSTIN TOMAS / SCHMIDT FRANCISCO JAVIER",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2224",
+      "name": "POBLACIÓN,DESARROLLO Y POLÍTICAS PÚBL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2224-cfg2224-cb01-seccion-1",
+          "package": "CFG2224_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SINGH DOMINIQUE",
+            "AGAR LORENZO RENE"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MI 13:00 - 15:50",
+              "professor": "SINGH DOMINIQUE / AGAR LORENZO RENE",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2238",
+      "name": "CIUDADANÍA Y GÉNERO EN CHILE:SIGLOS XX Y",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2238-cfg2238-fg01-seccion-1",
+          "package": "CFG2238_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GODOY CARMEN  GLORIA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 16:00 - 17:20",
+              "professor": "GODOY CARMEN  GLORIA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2239",
+      "name": "POESÍA LATINOAMERICANA CONTEMPORÁNEA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2239-cfg2239-cb01-seccion-1",
+          "package": "CFG2239_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "HERNÁNDEZ HÉCTOR"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING 01",
+              "rawSchedule": "MA 13:00 - 15:50",
+              "professor": "HERNÁNDEZ HÉCTOR",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2240",
+      "name": "MICROORGANISMOS: ORÍGENES Y PANDEMIAS AC",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2240-cfg2240-fg01-seccion-1",
+          "package": "CFG2240_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PEREZ DANIELA ANDREA",
+            "NAVARRO MYRIAM ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA 16:00 - 17:20; VI 17:25 - 18:45",
+              "professor": "PEREZ DANIELA ANDREA / NAVARRO MYRIAM ANDREA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2244",
+      "name": "CIUDADANÍA , POBREZA E INNOVACIÓN SOCIAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2244-cfg2244-cb01-seccion-1",
+          "package": "CFG2244_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GUERRA OSCAR   PATRICIO"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "JU 16:00 - 18:45",
+              "professor": "GUERRA OSCAR   PATRICIO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "16:00",
+                  "end": "18:45",
+                  "startMin": 960,
+                  "endMin": 1125,
+                  "time": "16:00 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2253",
+      "name": "CREYENTES, AGNÓSTICOS Y ATEOS EN LA ERA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2253-cfg2253-fg01-seccion-1",
+          "package": "CFG2253_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "OTERO EDISON HERMES"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 11:30 - 12:50",
+              "professor": "OTERO EDISON HERMES",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2273",
+      "name": "ASTRONOMÍA MODERNA, UNA PERSPECTIVA CÓSM",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2273-cfg2273-fg02-seccion-2",
+          "package": "CFG2273_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MAZZUCCHELLI CHIARA",
+            "KOLUPURI SAIMURALI"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG02 (PRESENCIAL)",
+              "rawSchedule": "MA JU 13:00 - 14:20",
+              "professor": "MAZZUCCHELLI CHIARA / KOLUPURI SAIMURALI",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2278",
+      "name": "MOVIMIENTOS SOCIALES EN LA HISTORIA RECI",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2278-cfg2278-fg01-seccion-1",
+          "package": "CFG2278_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GODOY EDUARDO ANDRES"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA AMERICAN UNIVERSITY SEC 01",
+              "rawSchedule": "LU MI 11:30 - 12:50",
+              "professor": "GODOY EDUARDO ANDRES",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "cfg2278-cfg2278-fg02-seccion-2",
+          "package": "CFG2278_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GODOY EDUARDO ANDRES"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG02",
+              "rawSchedule": "LU MI 10:00 - 11:20",
+              "professor": "GODOY EDUARDO ANDRES",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2280",
+      "name": "ARTE Y PSICOANÁLISIS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2280-cfg2280-fg01-seccion-1",
+          "package": "CFG2280_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GUAJARDO BEATRIZ IGNACIA",
+            "PEREZ CARLOS"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU 14:30 - 17:20",
+              "professor": "GUAJARDO BEATRIZ IGNACIA / PEREZ CARLOS",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2294",
+      "name": "B-LEARNIN CAMBIO CLI. Y ECO. POL. GLOBAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2294-cfg2294-cb01-seccion-1",
+          "package": "CFG2294_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "AEDO MARIA PAZ",
+            "RAMÍREZ CARLOS ALBERTO"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MA 16:00 - 18:45",
+              "professor": "AEDO MARIA PAZ / RAMÍREZ CARLOS ALBERTO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "16:00",
+                  "end": "18:45",
+                  "startMin": 960,
+                  "endMin": 1125,
+                  "time": "16:00 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2295",
+      "name": "B-LEARNING RELACIONES DE PODER Y GÉNERO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2295-cfg2295-cb01-seccion-1",
+          "package": "CFG2295_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SCHONGUT NICOLAS"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MA 08:30 - 11:20",
+              "professor": "SCHONGUT NICOLAS",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2296",
+      "name": "B-LEARNING GLOB., INFO. Y SOC. ACTUAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2296-cfg2296-cb01-seccion-1",
+          "package": "CFG2296_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ROMERO ELENA PILAR",
+            "HERNÁNDEZ CRISTÓBAL IGNACIO"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "SA 10:00 - 12:50",
+              "professor": "ROMERO ELENA PILAR / HERNÁNDEZ CRISTÓBAL IGNACIO",
+              "meetings": [
+                {
+                  "day": "Sábado",
+                  "dayCode": "SA",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2312",
+      "name": "RAZONAMIENTO Y PENSAMIENTO CRÍTICO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2312-cfg2312-fg01-seccion-1",
+          "package": "CFG2312_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "REYES MIGUEL MARCELO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "REYES MIGUEL MARCELO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2318",
+      "name": "RELACIONES DE GÉNERO Y VIOLENCIA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2318-cfg2318-fg01-seccion-1",
+          "package": "CFG2318_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PEÑA PATRICIA EUGENIA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 13:00 - 14:20",
+              "professor": "PEÑA PATRICIA EUGENIA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2322",
+      "name": "B-LEARNING MEDIOAMBIENTE Y CIUDADANÍA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2322-cfg2322-cb01-seccion-1",
+          "package": "CFG2322_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VALDERRAMA LORENA BEATRIZ",
+            "MEIER  STEFAN ALEXANDER"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "VI 17:25 - 20:10",
+              "professor": "VALDERRAMA LORENA BEATRIZ / MEIER  STEFAN ALEXANDER",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "17:25",
+                  "end": "20:10",
+                  "startMin": 1045,
+                  "endMin": 1210,
+                  "time": "17:25 - 20:10"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2323",
+      "name": "B-LEARNING BIOÉTICA Y SOCIEDAD ACTUAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2323-cfg2323-cb01-seccion-1",
+          "package": "CFG2323_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CORREA ANDRES ALEJANDRO"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "LU 18:50 - 21:35",
+              "professor": "CORREA ANDRES ALEJANDRO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "18:50",
+                  "end": "21:35",
+                  "startMin": 1130,
+                  "endMin": 1295,
+                  "time": "18:50 - 21:35"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        },
+        {
+          "id": "cfg2323-cfg2323-cb02-seccion-2",
+          "package": "CFG2323_CB02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "CORREA ANDRES ALEJANDRO"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG02",
+              "rawSchedule": "VI 13:00 - 15:50",
+              "professor": "CORREA ANDRES ALEJANDRO",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2324",
+      "name": "B-LEARNING CINE LATINOAMERICANO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2324-cfg2324-cb01-seccion-1",
+          "package": "CFG2324_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LIEMPI MARCELA ANTONIETA",
+            "VERGARA XIMENA ANDREA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "LIEMPI MARCELA ANTONIETA / VERGARA XIMENA ANDREA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2327",
+      "name": "EL INMIGRANTE SUEÑO Y CONFLICTOS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2327-cfg2327-fg01-seccion-1",
+          "package": "CFG2327_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VIAL XIMENA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 13:00 - 14:20",
+              "professor": "VIAL XIMENA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2331",
+      "name": "LAS SUSTANCIAS PSICOACTIVAS (DROGAS)",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2331-cfg2331-cb01-seccion-1",
+          "package": "CFG2331_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "PEÑA PATRICIA EUGENIA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 14:30 - 15:50",
+              "professor": "PEÑA PATRICIA EUGENIA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2335",
+      "name": "PSICOANÁLISIS Y CRIMINOLOGÍA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2335-cfg2335-cb01-seccion-1",
+          "package": "CFG2335_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ALVEAR KATHERINE"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MI JU 17:25 - 18:45",
+              "professor": "ALVEAR KATHERINE",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2339",
+      "name": "ESCRITURA ACADÉMICA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2339-cfg2339-fg01-seccion-1",
+          "package": "CFG2339_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BAEZA KAREN",
+            "PUGA JUANA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MI 13:00 - 15:50",
+              "professor": "BAEZA KAREN / PUGA JUANA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2341",
+      "name": "PSICOLOGÍA, CINE Y NEUROCIENCIA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2341-cfg2341-fg01-seccion-1",
+          "package": "CFG2341_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LAVIN CLAUDIO SEBASTIAN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "LAVIN CLAUDIO SEBASTIAN",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2343",
+      "name": "FOTOGRAFÍA Y MEMORIA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2343-cfg2343-cb01-seccion-1",
+          "package": "CFG2343_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CIFUENTES MARIA ANGELA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING 01",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "CIFUENTES MARIA ANGELA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2347",
+      "name": "ACCIÓN, INTENCIÓN Y SUS EFECTOS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2347-cfg2347-fg01-seccion-1",
+          "package": "CFG2347_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ORMEÑO JUAN ANTONIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA MI 16:00 - 17:20",
+              "professor": "ORMEÑO JUAN ANTONIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2352",
+      "name": "MUJER Y PENSAMIENTO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2352-cfg2352-fg01-seccion-1",
+          "package": "CFG2352_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SANHUEZA MARIA SOLEDAD"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 13:00 - 14:20",
+              "professor": "SANHUEZA MARIA SOLEDAD",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2353",
+      "name": "B-LEARNING MIGRACIONES Y DIVERSIDAD CULT",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2353-cfg2353-cb01-seccion-1",
+          "package": "CFG2353_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "AGAR LORENZO RENE",
+            "SÁEZ DANIELA BELÉN"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "LU 13:00 - 15:50",
+              "professor": "AGAR LORENZO RENE / SÁEZ DANIELA BELÉN",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2355",
+      "name": "B-LEARNING ARTE Y MEMORIA EN AMÉRICA LAT",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2355-cfg2355-cb01-seccion-1",
+          "package": "CFG2355_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LOPEZ ANA PAOLA",
+            "GALLARDO MILENA SUSANA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "LU 16:00 - 18:45",
+              "professor": "LOPEZ ANA PAOLA / GALLARDO MILENA SUSANA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "16:00",
+                  "end": "18:45",
+                  "startMin": 960,
+                  "endMin": 1125,
+                  "time": "16:00 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2358",
+      "name": "ESCRITORAS NORTEAMERICANAS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2358-cfg2358-cb01-seccion-1",
+          "package": "CFG2358_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ABALO BERNARDITA MARIA MILAGROS",
+            "GALINDO JAVIER"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "ABALO BERNARDITA MARIA MILAGROS / GALINDO JAVIER",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2365",
+      "name": "PROBLEMAS ÉTICOS-JURÍDICOS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2365-cfg2365-fg01-seccion-1",
+          "package": "CFG2365_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "TAPIA PATRICIO LORENZO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 14:30 - 15:50",
+              "professor": "TAPIA PATRICIO LORENZO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2368",
+      "name": "FEMINISMO DIVERSOS Y DISIDENCIAS SEXUALE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2368-cfg2368-fg01-seccion-1",
+          "package": "CFG2368_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ARÁNGUIZ SAPPHO ALEXA",
+            "DURAND MARIA TERESA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "VI 13:00 - 15:50",
+              "professor": "ARÁNGUIZ SAPPHO ALEXA / DURAND MARIA TERESA",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2374",
+      "name": "MOVIMIENTOS DE DDHH EN EL CONO SUR",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2374-cfg2374-fg01-seccion-1",
+          "package": "CFG2374_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GALLARDO MILENA SUSANA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA MI 14:30 - 15:50",
+              "professor": "GALLARDO MILENA SUSANA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2383",
+      "name": "CIENCIA Y SOCIEDAD",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2383-cfg2383-cb01-seccion-1",
+          "package": "CFG2383_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BUSTA CRISTIAN ANDRÉS"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MI VI 08:30 - 09:50",
+              "professor": "BUSTA CRISTIAN ANDRÉS",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2385",
+      "name": "¿QUÉ SE CUENTA EN LATINOAMÉRICA HOY?",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2385-cfg2385-fg01-seccion-1",
+          "package": "CFG2385_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RAMÍREZ CAROLINA",
+            "MÜLLER BRENDA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MI VI 11:30 - 12:50",
+              "professor": "RAMÍREZ CAROLINA / MÜLLER BRENDA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2387",
+      "name": "ASTRONOMIA GENERAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2387-cfg2387-cb01-seccion-1",
+          "package": "CFG2387_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ZURLO ALICE"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "JU 13:00 - 15:50",
+              "professor": "ZURLO ALICE",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2390",
+      "name": "NEUROCIENCIA Y LA ERA DIGITAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2390-cfg2390-cb01-seccion-1",
+          "package": "CFG2390_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "MALDONADO PIEDAD ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU 14:30 - 17:20",
+              "professor": "MALDONADO PIEDAD ANDREA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2397",
+      "name": "MEMORIA EN AMÉRICA LATINA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2397-cfg2397-fg01-seccion-1",
+          "package": "CFG2397_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GALLARDO MILENA SUSANA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 17:25 - 18:45",
+              "professor": "GALLARDO MILENA SUSANA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG2398",
+      "name": "USA: A HISTORY OF IMMIGRANTS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg2398-cfg2398-fg01-seccion-1",
+          "package": "CFG2398_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "NAVARRO VALERIA SONIA EVA"
+          ],
+          "events": [
+            {
+              "name": "VACANTES FG01 100% EN INGLÉS",
+              "rawSchedule": "MA MI 13:00 - 14:20",
+              "professor": "NAVARRO VALERIA SONIA EVA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5005",
+      "name": "SALUD PÚBLICA Y POLÍTICAS PÚBLICAS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5005-cfg5005-fg01-seccion-1",
+          "package": "CFG5005_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MARTINEZ PAULINA ALEJANDRA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "LU JU 08:30 - 09:50",
+              "professor": "MARTINEZ PAULINA ALEJANDRA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5006",
+      "name": "B-LEARNING HIS. DEL DOCUMENTAL CONTEM.",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5006-cfg5006-cb01-seccion-1",
+          "package": "CFG5006_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LIENDO DANIELA ANDREA"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MI 18:50 - 21:35",
+              "professor": "LIENDO DANIELA ANDREA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "18:50",
+                  "end": "21:35",
+                  "startMin": 1130,
+                  "endMin": 1295,
+                  "time": "18:50 - 21:35"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5012",
+      "name": "DOING BUSINESS IN LATIN AMERICA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5012-cfg5012-fg01-seccion-1",
+          "package": "CFG5012_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "RAMIREZ GUILLERMO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01 100% EN INGLÉS",
+              "rawSchedule": "VI 08:30 - 11:20",
+              "professor": "RAMIREZ GUILLERMO",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5013",
+      "name": "INDIGENOUS POPULATION IN CHILE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5013-cfg5013-fg01-seccion-1",
+          "package": "CFG5013_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ROSSI ALEJANDRO",
+            "LEYTON GUILLERMO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01 COIL",
+              "rawSchedule": "JU 10:00 - 12:50",
+              "professor": "ROSSI ALEJANDRO / LEYTON GUILLERMO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5014",
+      "name": "ENVIRONMENT AND SUSTAINABLE DEVELOPMENT",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5014-cfg5014-fg01-seccion-1",
+          "package": "CFG5014_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LEYTON GUILLERMO",
+            "GONZALEZ CLAUDIA ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01 100% EN INGLÉS",
+              "rawSchedule": "JU 13:00 - 14:20; MA 17:25 - 18:45",
+              "professor": "LEYTON GUILLERMO / GONZALEZ CLAUDIA ANDREA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5018",
+      "name": "ZOOMING IN AND OUT: SCALING THE UNIVERSE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5018-cfg5018-fg01-seccion-1",
+          "package": "CFG5018_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ORDENES YASNA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01 EN INGLÉS",
+              "rawSchedule": "MA JU 13:00 - 14:20",
+              "professor": "ORDENES YASNA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5021",
+      "name": "EXPLORING THE SOLAR SYSTEM AND BEYOND",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5021-cfg5021-cb01-seccion-1",
+          "package": "CFG5021_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "YANG BIN"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01 EN INGLÉS",
+              "rawSchedule": "VI 14:30 - 17:20",
+              "professor": "YANG BIN",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5023",
+      "name": "PATRIMONIO EN TENSIÓN",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5023-cfg5023-fg01-seccion-1",
+          "package": "CFG5023_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LIEMPI MARCELA ANTONIETA",
+            "VERGARA XIMENA ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA 10:00 - 12:50",
+              "professor": "LIEMPI MARCELA ANTONIETA / VERGARA XIMENA ANDREA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5024",
+      "name": "ESCRITURA ARTIFICIAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5024-cfg5024-fg01-seccion-1",
+          "package": "CFG5024_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ROSSI ALEJANDRO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "JU 16:00 - 18:45",
+              "professor": "ROSSI ALEJANDRO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "16:00",
+                  "end": "18:45",
+                  "startMin": 960,
+                  "endMin": 1125,
+                  "time": "16:00 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5026",
+      "name": "CÁTEDRA ABIERTA LITERATURA HISPANO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5026-cfg5026-fg01-seccion-1",
+          "package": "CFG5026_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "AGUILAR MARCELA ALEJANDRA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA ROBERTO BOLAÑO",
+              "rawSchedule": "MA JU 11:30 - 12:50",
+              "professor": "AGUILAR MARCELA ALEJANDRA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5028",
+      "name": "TERRITORIO Y CONVIVENCIA SOCIAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5028-cfg5028-fg01-seccion-1",
+          "package": "CFG5028_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "TAGLE ISABEL MARGARITA"
+          ],
+          "events": [
+            {
+              "name": "CURSO DE APRENDIZAJE + CIUDADANÍA",
+              "rawSchedule": "LU 10:00 - 12:50",
+              "professor": "TAGLE ISABEL MARGARITA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5034",
+      "name": "ASTRONOMÍA Y LITERATURA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5034-cfg5034-fg01-seccion-1",
+          "package": "CFG5034_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LABBE ERIKA FABIOLA",
+            "DEL RÍO ALEJANDRA JULIA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 16:00 - 17:20",
+              "professor": "LABBE ERIKA FABIOLA / DEL RÍO ALEJANDRA JULIA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5036",
+      "name": "LA BIOGRAFÍA:INVENCIÓN DE SÍ MISMO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5036-cfg5036-fg01-seccion-1",
+          "package": "CFG5036_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MENA MILLARAY ANTONIA",
+            "BOITANO ANGELA ROSSANA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "JU 10:00 - 12:50",
+              "professor": "MENA MILLARAY ANTONIA / BOITANO ANGELA ROSSANA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5038",
+      "name": "FASCISMO Y LITERATURA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5038-cfg5038-fg01-seccion-1",
+          "package": "CFG5038_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LOPRESTI ROMINA",
+            "MARTINEZ ALEJANDRO ARTURO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "JU 10:00 - 12:50",
+              "professor": "LOPRESTI ROMINA / MARTINEZ ALEJANDRO ARTURO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5039",
+      "name": "CULTURA Y VIOLENCIA EN AMÉRICA LATINA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5039-cfg5039-fg01-seccion-1",
+          "package": "CFG5039_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BOHER MANUEL",
+            "FERNANDEZ PATRICIO HERMAN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "JU 11:30 - 14:20",
+              "professor": "BOHER MANUEL / FERNANDEZ PATRICIO HERMAN",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5041",
+      "name": "PERSPECTIVA FILOSÓFICAS SOBRE LA MUERTE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5041-cfg5041-fg01-seccion-1",
+          "package": "CFG5041_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GUAJARDO BEATRIZ IGNACIA",
+            "VECINO MARIA CELESTE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 17:25 - 18:45",
+              "professor": "GUAJARDO BEATRIZ IGNACIA / VECINO MARIA CELESTE",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5042",
+      "name": "CULTURA, PODER Y CAMBIO SOCIAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5042-cfg5042-fg01-seccion-1",
+          "package": "CFG5042_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BRICEÑO PABLO AGUSTIN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "VI 14:30 - 17:20",
+              "professor": "BRICEÑO PABLO AGUSTIN",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5049",
+      "name": "BIODIVERSIDAD, M. AMBIENTE Y CIUDADANÍA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5049-cfg5049-fg01-seccion-1",
+          "package": "CFG5049_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ZURITA CARLOS NICOLÁS FELIPE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MI 18:50 - 21:35",
+              "professor": "ZURITA CARLOS NICOLÁS FELIPE",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "18:50",
+                  "end": "21:35",
+                  "startMin": 1130,
+                  "endMin": 1295,
+                  "time": "18:50 - 21:35"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5052",
+      "name": "RACIALISMO: DISCURSOS Y REPRESENTACIONES",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5052-cfg5052-fg01-seccion-1",
+          "package": "CFG5052_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ARRE MONTSERRAT NICOLE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA MI 08:30 - 09:50",
+              "professor": "ARRE MONTSERRAT NICOLE",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5053",
+      "name": "DEPORTE, GLOBALIZACIÓN Y PODER",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5053-cfg5053-fg01-seccion-1",
+          "package": "CFG5053_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VILCHES DIEGO ANTONIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU VI 08:30 - 09:50",
+              "professor": "VILCHES DIEGO ANTONIO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5061",
+      "name": "LA DEMOCRATIZACIÓN DEL ESPACIO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5061-cfg5061-cb01-seccion-1",
+          "package": "CFG5061_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MARDONES MARCELO MAURICIO",
+            "VILA WALDO CLAUDIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING 01",
+              "rawSchedule": "MA JU 18:50 - 20:10",
+              "professor": "MARDONES MARCELO MAURICIO / VILA WALDO CLAUDIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "18:50",
+                  "end": "20:10",
+                  "startMin": 1130,
+                  "endMin": 1210,
+                  "time": "18:50 - 20:10"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "18:50",
+                  "end": "20:10",
+                  "startMin": 1130,
+                  "endMin": 1210,
+                  "time": "18:50 - 20:10"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5062",
+      "name": "ACTIVISMO Y REDES SOCIALES",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5062-cfg5062-fg01-seccion-1",
+          "package": "CFG5062_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ALVARADO MATIAS FELIPE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA VI 14:30 - 15:50",
+              "professor": "ALVARADO MATIAS FELIPE",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5063",
+      "name": "IMAGINARIOS Y NARRATIVAS CULTURALES",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5063-cfg5063-fg01-seccion-1",
+          "package": "CFG5063_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RAMIREZ WILMAR ANDRES"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 18:50 - 20:10",
+              "professor": "RAMIREZ WILMAR ANDRES",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "18:50",
+                  "end": "20:10",
+                  "startMin": 1130,
+                  "endMin": 1210,
+                  "time": "18:50 - 20:10"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "18:50",
+                  "end": "20:10",
+                  "startMin": 1130,
+                  "endMin": 1210,
+                  "time": "18:50 - 20:10"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5065",
+      "name": "CRIMINALIDAD Y SOCIEDAD EN LATINOAMERICA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5065-cfg5065-fg01-seccion-1",
+          "package": "CFG5065_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PALACIOS CRISTIAN ENRIQUE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 16:00 - 17:20",
+              "professor": "PALACIOS CRISTIAN ENRIQUE",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5066",
+      "name": "SUSTENTABILIDAD ¿EN QUÉ ESTAMOS?",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5066-cfg5066-fg01-seccion-1",
+          "package": "CFG5066_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "DEL RÍO JULIO JOSE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU 14:30 - 17:20",
+              "professor": "DEL RÍO JULIO JOSE",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5067",
+      "name": "LA ORGANIZACIÓN DEL CAOS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5067-cfg5067-cb01-seccion-1",
+          "package": "CFG5067_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CIEZA LUCAS ALEJO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING 01",
+              "rawSchedule": "JU 13:00 - 15:50",
+              "professor": "CIEZA LUCAS ALEJO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5070",
+      "name": "CLIMATE FUTURES: SCIENCE, TECHNOLOGY",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5070-cfg5070-fg01-seccion-1",
+          "package": "CFG5070_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LEYTON GUILLERMO",
+            "TALLONI NICOLÁS ERNESTO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01 100% EN INGLÉS",
+              "rawSchedule": "MA 10:00 - 12:50",
+              "professor": "LEYTON GUILLERMO / TALLONI NICOLÁS ERNESTO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5072",
+      "name": "PARTICIPACION CIUDADANA, POBREZA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5072-cfg5072-fg01-seccion-1",
+          "package": "CFG5072_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GUERRA OSCAR   PATRICIO",
+            "GEDIES MARIANA ANAIS"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA APRENDIZAJE Y CIUDADANÍA",
+              "rawSchedule": "LU MI 17:25 - 18:45",
+              "professor": "GUERRA OSCAR   PATRICIO / GEDIES MARIANA ANAIS",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5073",
+      "name": "HISTORIA Y POLÍTICAS DE LOS CUERPOS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5073-cfg5073-fg01-seccion-1",
+          "package": "CFG5073_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BARRIENTOS CLAUDIO JAVIER"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 08:30 - 09:50",
+              "professor": "BARRIENTOS CLAUDIO JAVIER",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5074",
+      "name": "DESINFORMACIÓN Y FAKE NEWS EN ERA DE IA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5074-cfg5074-fg01-seccion-1",
+          "package": "CFG5074_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "GARCIA FERNANDO MARTIN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MI VI 16:00 - 17:20",
+              "professor": "GARCIA FERNANDO MARTIN",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5085",
+      "name": "COMO CONSTRUIR UN CEREBRO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5085-cfg5085-cb01-seccion-1",
+          "package": "CFG5085_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MONTIEL JUAN FIDEL"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING 01",
+              "rawSchedule": "MA 13:00 - 15:50",
+              "professor": "MONTIEL JUAN FIDEL",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5086",
+      "name": "LITERATURA INFANTO JUVENIL Y DDHH",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5086-cfg5086-cb01-seccion-1",
+          "package": "CFG5086_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VESELY CAROLA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING 01",
+              "rawSchedule": "JU 13:00 - 15:50",
+              "professor": "VESELY CAROLA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5087",
+      "name": "CREENCIAS, PODER Y POLÍTICA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5087-cfg5087-cb01-seccion-1",
+          "package": "CFG5087_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ESTEVA MÓNICA EUGENIA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING FG01",
+              "rawSchedule": "MI 13:00 - 15:50",
+              "professor": "ESTEVA MÓNICA EUGENIA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5088",
+      "name": "DESIGUALDAD Y CRIMEN ORGANIZADO EN A.L",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5088-cfg5088-cb01-seccion-1",
+          "package": "CFG5088_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ACEVEDO SEBASTIAN ADOLFO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING FG01",
+              "rawSchedule": "MA 18:50 - 21:35",
+              "professor": "ACEVEDO SEBASTIAN ADOLFO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "18:50",
+                  "end": "21:35",
+                  "startMin": 1130,
+                  "endMin": 1295,
+                  "time": "18:50 - 21:35"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5089",
+      "name": "LA NUEVA GEOGRAFÍA DEL PODER MUNDIAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5089-cfg5089-cb01-seccion-1",
+          "package": "CFG5089_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "DE MATHEUS LUIS FERNANDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING",
+              "rawSchedule": "MA JU 14:30 - 15:50",
+              "professor": "DE MATHEUS LUIS FERNANDO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5090",
+      "name": "VIAJES, INTERCAMBIOS Y RELATOS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5090-cfg5090-cb01-seccion-1",
+          "package": "CFG5090_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BARRERO LINA MARIA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING FG01",
+              "rawSchedule": "VI 13:00 - 15:50",
+              "professor": "BARRERO LINA MARIA",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5091",
+      "name": "DEMOCRACIA EN TIEMPOS DE CAMBIO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5091-cfg5091-fg01-seccion-1",
+          "package": "CFG5091_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "RODRIGUEZ ROSARIO CAROLINA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA B-LEARNING FG01",
+              "rawSchedule": "LU 13:00 - 15:50",
+              "professor": "RODRIGUEZ ROSARIO CAROLINA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "15:50",
+                  "startMin": 780,
+                  "endMin": 950,
+                  "time": "13:00 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5096",
+      "name": "GLOBAL FEMINISM: ROOTS AND CURRENTS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5096-cfg5096-fg01-seccion-1",
+          "package": "CFG5096_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VIAL XIMENA"
+          ],
+          "events": [
+            {
+              "name": "VACANTE FG01 EN INGLÉS",
+              "rawSchedule": "MA JU 14:30 - 15:50",
+              "professor": "VIAL XIMENA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5097",
+      "name": "EL ROL DE ASIA PACÍFICO EN LA ERA ACTUAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5097-cfg5097-fg01-seccion-1",
+          "package": "CFG5097_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "JORQUERA CONSTANZA FERNANDA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MI JU 14:30 - 15:50",
+              "professor": "JORQUERA CONSTANZA FERNANDA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5098",
+      "name": "TEORÍAS CONSPIRATIVAS Y MITOLOGÍAS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5098-cfg5098-fg01-seccion-1",
+          "package": "CFG5098_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "TANGORRA MANUEL"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 14:30 - 15:50",
+              "professor": "TANGORRA MANUEL",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5099",
+      "name": "LENGUAJE, REGLAS E INSTITUCIONES SOCIALE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5099-cfg5099-fg01-seccion-1",
+          "package": "CFG5099_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "IUSPA CARLA JESSICA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 13:00 - 14:20",
+              "professor": "IUSPA CARLA JESSICA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5100",
+      "name": "EL MAPA NO ES TERRITORIO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5100-cfg5100-fg01-seccion-1",
+          "package": "CFG5100_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RIOS MACARENA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 08:30 - 09:50",
+              "professor": "RIOS MACARENA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5101",
+      "name": "EL ADN EN LA ARQUITECTURA DE LA VIDA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5101-cfg5101-fg01-seccion-1",
+          "package": "CFG5101_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BUSTAMANTE MARIA LEONOR"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MA JU 17:25 - 18:45",
+              "professor": "BUSTAMANTE MARIA LEONOR",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5102",
+      "name": "FLASH FICTION LAB",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5102-cfg5102-fg01-seccion-1",
+          "package": "CFG5102_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GONZALEZ MARIA JOSE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01 EN INGLÉS",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "GONZALEZ MARIA JOSE",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5103",
+      "name": "JUICIO ANTES DECISIONES ALGORÍTMICAS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5103-cfg5103-fg01-seccion-1",
+          "package": "CFG5103_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "PEÑA ELIANA CARMEN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 08:30 - 09:50",
+              "professor": "PEÑA ELIANA CARMEN",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5104",
+      "name": "LA CRISIS DE AUTORIDAD CONTEMPORÁNEAS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5104-cfg5104-fg01-seccion-1",
+          "package": "CFG5104_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ALONSO ANDRÉS"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MI VI 08:30 - 09:50",
+              "professor": "ALONSO ANDRÉS",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5105",
+      "name": "PERFORMANCES, ARTES VIVAS Y ARCHIVO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5105-cfg5105-fg01-seccion-1",
+          "package": "CFG5105_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RICHARDS ARIEL FLORENCIA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "JU 14:30 - 17:20",
+              "professor": "RICHARDS ARIEL FLORENCIA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5106",
+      "name": "CUERPOS, SEXO Y METÁFORAS BIOLÓGICAS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5106-cfg5106-fg01-seccion-1",
+          "package": "CFG5106_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "DIAZ JORGE ESTEBAN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "VI 16:00 - 18:45",
+              "professor": "DIAZ JORGE ESTEBAN",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "16:00",
+                  "end": "18:45",
+                  "startMin": 960,
+                  "endMin": 1125,
+                  "time": "16:00 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5107",
+      "name": "TRUE CRIME Y CULTURA CONTEMPÓRANEA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5107-cfg5107-fg01-seccion-1",
+          "package": "CFG5107_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "ILABACA PAULA ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 13:00 - 14:20",
+              "professor": "ILABACA PAULA ANDREA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5108",
+      "name": "FRONTERAS MOVEDIZAS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5108-cfg5108-fg01-seccion-1",
+          "package": "CFG5108_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "ESTEFANE ANDRÉS"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "ESTEFANE ANDRÉS",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5109",
+      "name": "UN MUNDO MATERIAL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5109-cfg5109-fg01-seccion-1",
+          "package": "CFG5109_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "URRUTIA CAMILA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU MI 08:30 - 09:50",
+              "professor": "URRUTIA CAMILA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5110",
+      "name": "PATRIMONIO Y FUTURO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5110-cfg5110-fg01-seccion-1",
+          "package": "CFG5110_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PONCE DE LEÓN MACARENA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA FG01",
+              "rawSchedule": "LU 14:30 - 17:20",
+              "professor": "PONCE DE LEÓN MACARENA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5111",
+      "name": "HUMANIDADES AMBIENTALES",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5111-cfg5111-cb01-seccion-1",
+          "package": "CFG5111_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PLAZA CAMILA BELÉN"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "VI 18:50 - 21:35",
+              "professor": "PLAZA CAMILA BELÉN",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "18:50",
+                  "end": "21:35",
+                  "startMin": 1130,
+                  "endMin": 1295,
+                  "time": "18:50 - 21:35"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5112",
+      "name": "HUMANIDADES DIGITALES E IA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5112-cfg5112-cb01-seccion-1",
+          "package": "CFG5112_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SALGADO SAMUEL EDUARDO",
+            "SUAZO ANTONIO"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MI 16:00 - 18:45",
+              "professor": "SALGADO SAMUEL EDUARDO / SUAZO ANTONIO",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "16:00",
+                  "end": "18:45",
+                  "startMin": 960,
+                  "endMin": 1125,
+                  "time": "16:00 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "CFG5113",
+      "name": "ALGORITMO, PODER Y SOCIEDAD IA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "cfg5113-cfg5113-cb01-seccion-1",
+          "package": "CFG5113_CB01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "RIQUELME ALBERTO IGNACIO"
+          ],
+          "events": [
+            {
+              "name": "B-LEARNING FG01",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "RIQUELME ALBERTO IGNACIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "b-learning"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "b-learning"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "DER06214",
+      "name": "ECONOMÍA Y DERECHO (FI)",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "der06214-der06214-fg1-seccion-1",
+          "package": "DER06214_FG1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BRICEÑO CARLOS HIGINIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 17:25 - 18:45",
+              "professor": "BRICEÑO CARLOS HIGINIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "der06214-der06214-vc1-seccion-1",
+          "package": "DER06214_VC1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes de Carrera",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BRICEÑO CARLOS HIGINIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 17:25 - 18:45",
+              "professor": "BRICEÑO CARLOS HIGINIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            },
+            {
+              "name": "AYUDANTÍA OPCIONAL 01",
+              "rawSchedule": "",
+              "professor": "",
+              "meetings": []
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "FGD9005",
+      "name": "CAPOEIRA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9005-fgd9005-fg01-seccion-1",
+          "package": "FGD9005_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PIRANGI ORMANDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 17:25 - 18:45",
+              "professor": "PIRANGI ORMANDO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9007",
+      "name": "KARATE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9007-fgd9007-fg01-seccion-1",
+          "package": "FGD9007_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SOFFIA MIGUEL ANGEL"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 14:30 - 15:50",
+              "professor": "SOFFIA MIGUEL ANGEL",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9009",
+      "name": "TAE KWON DO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9009-fgd9009-fg01-seccion-1",
+          "package": "FGD9009_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "REYES ERNESTO CRISTIAN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU MI 14:30 - 15:50",
+              "professor": "REYES ERNESTO CRISTIAN",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9009-fgd9009-fg02-seccion-2",
+          "package": "FGD9009_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "REYES ERNESTO CRISTIAN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "LU MI 16:00 - 17:20",
+              "professor": "REYES ERNESTO CRISTIAN",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9011",
+      "name": "TENIS DE MESA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9011-fgd9011-fg01-seccion-1",
+          "package": "FGD9011_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MENDOZA FRANCISCO JAVIER"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU VI 10:00 - 11:20",
+              "professor": "MENDOZA FRANCISCO JAVIER",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9012",
+      "name": "AERÓBICA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9012-fgd9012-fg01-seccion-1",
+          "package": "FGD9012_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ACEITUNO MONICA SOLEDAD"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA VI 17:25 - 18:45",
+              "professor": "ACEITUNO MONICA SOLEDAD",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "17:25",
+                  "end": "18:45",
+                  "startMin": 1045,
+                  "endMin": 1125,
+                  "time": "17:25 - 18:45"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9012-fgd9012-fg02-seccion-2",
+          "package": "FGD9012_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ACEITUNO MONICA SOLEDAD"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "SA 10:00 - 11:20",
+              "professor": "ACEITUNO MONICA SOLEDAD",
+              "meetings": [
+                {
+                  "day": "Sábado",
+                  "dayCode": "SA",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9013",
+      "name": "BASQUETBOL MASCULINO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9013-fgd9013-fg01-seccion-1",
+          "package": "FGD9013_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MOSQUEIRA MARCELO ARMANDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU MI 20:15 - 21:35",
+              "professor": "MOSQUEIRA MARCELO ARMANDO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "20:15",
+                  "end": "21:35",
+                  "startMin": 1215,
+                  "endMin": 1295,
+                  "time": "20:15 - 21:35"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "20:15",
+                  "end": "21:35",
+                  "startMin": 1215,
+                  "endMin": 1295,
+                  "time": "20:15 - 21:35"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9024",
+      "name": "BASQUETBOL DAMAS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9024-fgd9024-fg01-seccion-1",
+          "package": "FGD9024_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MOSQUEIRA MARCELO ARMANDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU MI 18:50 - 20:10",
+              "professor": "MOSQUEIRA MARCELO ARMANDO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "18:50",
+                  "end": "20:10",
+                  "startMin": 1130,
+                  "endMin": 1210,
+                  "time": "18:50 - 20:10"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "18:50",
+                  "end": "20:10",
+                  "startMin": 1130,
+                  "endMin": 1210,
+                  "time": "18:50 - 20:10"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9027",
+      "name": "PILATES",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9027-fgd9027-fg01-seccion-1",
+          "package": "FGD9027_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PÉREZ MACARENA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 11:30 - 12:50",
+              "professor": "PÉREZ MACARENA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9027-fgd9027-fg02-seccion-2",
+          "package": "FGD9027_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PÉREZ MACARENA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "MA JU 13:00 - 14:20",
+              "professor": "PÉREZ MACARENA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9027-fgd9027-fg03-seccion-3",
+          "package": "FGD9027_FG03",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PÉREZ MACARENA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 03",
+              "rawSchedule": "MA JU 14:30 - 15:50",
+              "professor": "PÉREZ MACARENA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9028",
+      "name": "ACONDICIONAMIENTO FÍSICO I",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9028-fgd9028-fg01-seccion-1",
+          "package": "FGD9028_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GONZALEZ CARLOS EDUARDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA VI 08:30 - 09:50",
+              "professor": "GONZALEZ CARLOS EDUARDO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9028-fgd9028-fg02-seccion-2",
+          "package": "FGD9028_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "SOTO MAX BRUNO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "LU MI 10:00 - 11:20",
+              "professor": "SOTO MAX BRUNO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9028-fgd9028-fg03-seccion-3",
+          "package": "FGD9028_FG03",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "HERRERA FELIPE MARTINIANO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 03",
+              "rawSchedule": "MA VI 08:30 - 09:50",
+              "professor": "HERRERA FELIPE MARTINIANO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9029",
+      "name": "AJEDRÉZ",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9029-fgd9029-fg01-seccion-1",
+          "package": "FGD9029_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CUEVAS WALTER JOEL"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU MI 10:00 - 11:20",
+              "professor": "CUEVAS WALTER JOEL",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9031",
+      "name": "CARDIOBOX",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9031-fgd9031-fg01-seccion-1",
+          "package": "FGD9031_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MOURGUES CLAUDIA ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 16:00 - 17:20",
+              "professor": "MOURGUES CLAUDIA ANDREA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9033",
+      "name": "YOGA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9033-fgd9033-fg01-seccion-1",
+          "package": "FGD9033_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CONCA ANDREA FRANCISCA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU MI 10:00 - 11:20",
+              "professor": "CONCA ANDREA FRANCISCA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9033-fgd9033-fg02-seccion-2",
+          "package": "FGD9033_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CONCA ANDREA FRANCISCA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "LU MI 11:30 - 12:50",
+              "professor": "CONCA ANDREA FRANCISCA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9033-fgd9033-fg03-seccion-3",
+          "package": "FGD9033_FG03",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CONCA ANDREA FRANCISCA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 03",
+              "rawSchedule": "LU MI 13:00 - 14:20",
+              "professor": "CONCA ANDREA FRANCISCA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9035",
+      "name": "DANCE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9035-fgd9035-fg01-seccion-1",
+          "package": "FGD9035_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ARANCIBIA CAROLINA ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU MI 16:00 - 17:20",
+              "professor": "ARANCIBIA CAROLINA ANDREA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9036",
+      "name": "ACTIVIDAD FÍSICA Y TRABAJO EN EQUIPOS I",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9036-fgd9036-fg01-seccion-1",
+          "package": "FGD9036_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GONZALEZ CARLOS EDUARDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU JU 08:30 - 09:50",
+              "professor": "GONZALEZ CARLOS EDUARDO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9042",
+      "name": "BIODANZA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9042-fgd9042-fg01-seccion-1",
+          "package": "FGD9042_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 08:30 - 09:50",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9048",
+      "name": "ACONDICIONAMIENTO FÍSICO Y SALUD",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9048-fgd9048-fg01-seccion-1",
+          "package": "FGD9048_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MORAGA HECTOR RAMON"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "SA 10:00 - 11:20",
+              "professor": "MORAGA HECTOR RAMON",
+              "meetings": [
+                {
+                  "day": "Sábado",
+                  "dayCode": "SA",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9048-fgd9048-fg02-seccion-2",
+          "package": "FGD9048_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MORAGA HECTOR RAMON"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "SA 11:30 - 12:50",
+              "professor": "MORAGA HECTOR RAMON",
+              "meetings": [
+                {
+                  "day": "Sábado",
+                  "dayCode": "SA",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9048-fgd9048-fg03-seccion-3",
+          "package": "FGD9048_FG03",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "CARRASCO MARIO ARTURO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 03",
+              "rawSchedule": "MA JU 10:00 - 11:20",
+              "professor": "CARRASCO MARIO ARTURO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9049",
+      "name": "FUTSAL MASCULINO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9049-fgd9049-fg01-seccion-1",
+          "package": "FGD9049_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "HERRERA FELIPE MARTINIANO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU MI 08:30 - 09:50",
+              "professor": "HERRERA FELIPE MARTINIANO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9049-fgd9049-fg02-seccion-2",
+          "package": "FGD9049_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SOTO MAX BRUNO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "MA JU 10:00 - 11:20",
+              "professor": "SOTO MAX BRUNO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9049-fgd9049-fg03-seccion-3",
+          "package": "FGD9049_FG03",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SOTO MAX BRUNO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 03",
+              "rawSchedule": "MA JU 11:30 - 12:50",
+              "professor": "SOTO MAX BRUNO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9056",
+      "name": "PREPARACIÓN FÍSICA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9056-fgd9056-fg01-seccion-1",
+          "package": "FGD9056_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PIRANGI ORMANDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 16:00 - 17:20",
+              "professor": "PIRANGI ORMANDO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9057",
+      "name": "FITTBALL Y GIMNASIA CON IMPLEMENTOS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9057-fgd9057-fg01-seccion-1",
+          "package": "FGD9057_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ACEITUNO MONICA SOLEDAD"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "SA 11:30 - 12:50",
+              "professor": "ACEITUNO MONICA SOLEDAD",
+              "meetings": [
+                {
+                  "day": "Sábado",
+                  "dayCode": "SA",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9062",
+      "name": "ENTRENAMIENTO EN CIRCUITO (HUECHURABA)",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9062-fgd9062-fg01-seccion-1",
+          "package": "FGD9062_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "SOTO MAX BRUNO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU MI 11:30 - 12:50",
+              "professor": "SOTO MAX BRUNO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9066",
+      "name": "ACONDICIONAMIENTO FÍSICO HORARIO FLEXIBL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9066-fgd9066-fg01-seccion-1",
+          "package": "FGD9066_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GRANDON CESAR IGNACIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "",
+              "professor": "GRANDON CESAR IGNACIO",
+              "meetings": []
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9067",
+      "name": "CURSO DEPORTIVO ZUMBA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9067-fgd9067-vc01-seccion-1",
+          "package": "FGD9067_VC01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LAGOS JENIFER ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 11:30 - 12:50",
+              "professor": "LAGOS JENIFER ANDREA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9067-fgd9067-vc02-seccion-2",
+          "package": "FGD9067_VC02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LAGOS JENIFER ANDREA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "MA JU 13:00 - 14:20",
+              "professor": "LAGOS JENIFER ANDREA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9068",
+      "name": "CURSO DEPORTIVO TAI-CHI",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9068-fgd9068-vc01-seccion-1",
+          "package": "FGD9068_VC01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "POBLETE JORGE IGNACIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 10:00 - 11:20",
+              "professor": "POBLETE JORGE IGNACIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9068-fgd9068-vc02-seccion-2",
+          "package": "FGD9068_VC02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "POBLETE JORGE IGNACIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "MA JU 11:30 - 12:50",
+              "professor": "POBLETE JORGE IGNACIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9069",
+      "name": "MEDITACIÓN EN MOVIMIENTO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9069-fgd9069-fg01-seccion-1",
+          "package": "FGD9069_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MAHIAS MARIELA FABIOLA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU MI 11:30 - 12:50",
+              "professor": "MAHIAS MARIELA FABIOLA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "fgd9069-fgd9069-fg02-seccion-2",
+          "package": "FGD9069_FG02",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MAHIAS MARIELA FABIOLA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 02",
+              "rawSchedule": "LU MI 13:00 - 14:20",
+              "professor": "MAHIAS MARIELA FABIOLA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "13:00",
+                  "end": "14:20",
+                  "startMin": 780,
+                  "endMin": 860,
+                  "time": "13:00 - 14:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9070",
+      "name": "FUTBOLITO MIXTO",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9070-fgd9070-fg01-seccion-1",
+          "package": "FGD9070_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "HERRERA FELIPE MARTINIANO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 11:30 - 12:50",
+              "professor": "HERRERA FELIPE MARTINIANO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9071",
+      "name": "NUTRICIÓN Y VIDA SALUDABLE",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9071-fgd9071-fg01-seccion-1",
+          "package": "FGD9071_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FUENZALIDA CASSANDRA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "JU 08:30 - 09:50",
+              "professor": "FUENZALIDA CASSANDRA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "FGD9072",
+      "name": "VÓLEYBOL",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "fgd9072-fgd9072-fg01-seccion-1",
+          "package": "FGD9072_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MEZA VICENTE IGNACIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "MA JU 14:30 - 15:50",
+              "professor": "MEZA VICENTE IGNACIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                },
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "CFG_DEPORTIVOS.xls"
+    },
+    {
+      "code": "ICG4111",
+      "name": "FUNDAMENTOS DE ADMINISTRACIÓN",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "icg4111-icg4111-ba01-seccion-1",
+          "package": "ICG4111_BA01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes de Bachillerato",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "PAVEZ CAROLINA ALEJANDRA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU 16:00 - 17:20; MI 16:00 - 17:20",
+              "professor": "PAVEZ CAROLINA ALEJANDRA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            },
+            {
+              "name": "AYUDANTÍA OBLIGATORIA 01",
+              "rawSchedule": "VI 11:30 - 12:50",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "icg4111-icg4111-fg01-seccion-1",
+          "package": "ICG4111_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "PAVEZ CAROLINA ALEJANDRA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU 16:00 - 17:20; MI 16:00 - 17:20",
+              "professor": "PAVEZ CAROLINA ALEJANDRA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            },
+            {
+              "name": "AYUDANTÍA OBLIGATORIA 01",
+              "rawSchedule": "VI 11:30 - 12:50",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "icg4111-icg4111-vc01-seccion-1",
+          "package": "ICG4111_VC01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes de Carrera",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "PAVEZ CAROLINA ALEJANDRA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU 16:00 - 17:20; MI 16:00 - 17:20",
+              "professor": "PAVEZ CAROLINA ALEJANDRA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                },
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "16:00",
+                  "end": "17:20",
+                  "startMin": 960,
+                  "endMin": 1040,
+                  "time": "16:00 - 17:20"
+                }
+              ]
+            },
+            {
+              "name": "AYUDANTÍA OBLIGATORIA 01",
+              "rawSchedule": "VI 11:30 - 12:50",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "11:30",
+                  "end": "12:50",
+                  "startMin": 690,
+                  "endMin": 770,
+                  "time": "11:30 - 12:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "ICG4114",
+      "name": "PRINCIPIOS DE ECONOMÍA",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "icg4114-icg4114-ba01-seccion-1",
+          "package": "ICG4114_BA01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes de Bachillerato",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "DE ROSAS PABLO FERNANDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "JU 10:00 - 11:20; LU 14:30 - 15:50",
+              "professor": "DE ROSAS PABLO FERNANDO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            },
+            {
+              "name": "AYUDANTÍA OBLIGATORIA",
+              "rawSchedule": "MI 08:30 - 09:50",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "icg4114-icg4114-ca01-seccion-1",
+          "package": "ICG4114_CA01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes de Carrera",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "DE ROSAS PABLO FERNANDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "JU 10:00 - 11:20; LU 14:30 - 15:50",
+              "professor": "DE ROSAS PABLO FERNANDO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            },
+            {
+              "name": "AYUDANTÍA OBLIGATORIA",
+              "rawSchedule": "MI 08:30 - 09:50",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        },
+        {
+          "id": "icg4114-icg4114-fg01-seccion-1",
+          "package": "ICG4114_FG01",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes FG",
+          "campus": "S-HUECHURABA",
+          "vacancies": null,
+          "professors": [
+            "DE ROSAS PABLO FERNANDO"
+          ],
+          "events": [
+            {
+              "name": "AYUDANTÍA OBLIGATORIA",
+              "rawSchedule": "MI 08:30 - 09:50",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "09:50",
+                  "startMin": 510,
+                  "endMin": 590,
+                  "time": "08:30 - 09:50"
+                }
+              ]
+            },
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "JU 10:00 - 11:20; LU 14:30 - 15:50",
+              "professor": "DE ROSAS PABLO FERNANDO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "11:20",
+                  "startMin": 600,
+                  "endMin": 680,
+                  "time": "10:00 - 11:20"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "15:50",
+                  "startMin": 870,
+                  "endMin": 950,
+                  "time": "14:30 - 15:50"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+    },
+    {
+      "code": "SOC09225",
+      "name": "DISEÑO Y EVALUACIÓN DE PROYECTOS",
+      "credits": 5,
+      "references": "",
+      "options": [
+        {
+          "id": "soc09225-soc0925-vc1-seccion-1",
+          "package": "SOC0925_VC1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "Vacantes de Carrera",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RIVAS ALEJANDRA SOFÍA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA 01",
+              "rawSchedule": "LU 14:30 - 17:20",
+              "professor": "RIVAS ALEJANDRA SOFÍA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ],
+          "formationType": "no-deportivo",
+          "modality": "presencial"
+        }
+      ],
+      "isFormationAcademic": true,
+      "formationType": "no-deportivo",
+      "modalities": [
+        "presencial"
+      ],
+      "sourceFile": "FORMACION_GENERAL_CFG.xls"
     }
   ]
 };
