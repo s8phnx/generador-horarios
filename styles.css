@@ -355,3 +355,70 @@ button:disabled {
   background: #ede9fe;
   color: #6d28d9;
 }
+
+
+/* Ayudantías obligatorias y opcionales */
+.attendance-info {
+  margin: 12px 0 14px;
+  border: 1px solid #bae6fd;
+  border-radius: 14px;
+  padding: 11px 12px;
+  background: #f0f9ff;
+  color: #0c4a6e;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.attendance-info strong {
+  color: #075985;
+}
+
+.tag-ayudantia-obligatoria {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.tag-ayudantia-opcional {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.tag-ayudantia-sin-especificar {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.optional-class-card {
+  background: #f0fdf4;
+  border-left-color: #22c55e;
+  border-style: dashed;
+}
+
+.unspecified-class-card {
+  background: #fffbeb;
+  border-left-color: #f59e0b;
+}
+
+.attendance-note {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.optional-note {
+  color: #166534;
+}
+
+.mandatory-note {
+  color: #991b1b;
+}
+
+.unspecified-note {
+  color: #92400e;
+}
+
+.score-optional {
+  background: #f0fdf4;
+}

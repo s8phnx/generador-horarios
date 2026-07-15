@@ -189,6 +189,31 @@ function normalize(str) {
     .trim();
 }
 
+function eventAttendanceKind(eventName) {
+  const text = normalize(eventName);
+
+  if (!text.includes("AYUDANTIA")) return "required";
+  if (text.includes("OPCIONAL")) return "optional";
+  if (text.includes("OBLIGATORIA")) return "mandatory";
+
+  // Si el archivo solo dice "Ayudantía" y no aclara si es opcional,
+  // se considera obligatoria por seguridad para no mostrar falsos horarios compatibles.
+  return "unspecified";
+}
+
+function eventScheduleDescription(event) {
+  const kind = eventAttendanceKind(event.name);
+  const suffix = kind === "optional"
+    ? " · opcional, no genera tope"
+    : kind === "mandatory"
+      ? " · obligatoria"
+      : kind === "unspecified"
+        ? " · sin especificar, se considera obligatoria"
+        : "";
+
+  return `${event.name}${suffix}: ${event.rawSchedule}`;
+}
+
 function extractCode(input) {
   const text = normalize(input);
   if (!text) return null;
@@ -264,7 +289,7 @@ function renderSelected() {
     course.options.forEach(option => {
       const events = option.events
         .filter(e => e.rawSchedule)
-        .map(e => `${e.name}: ${e.rawSchedule}`)
+        .map(eventScheduleDescription)
         .join(" · ");
       const professors = option.professors.length ? option.professors.join(", ") : "Profesor no informado";
       const row = document.createElement("label");
@@ -517,11 +542,15 @@ function getMeetings(item) {
   const meetings = [];
 
   item.option.events.forEach(event => {
+    const attendanceKind = eventAttendanceKind(event.name);
+
     event.meetings.forEach(m => {
       meetings.push({
         ...m,
         eventName: event.name,
         professor: event.professor,
+        attendanceKind,
+        isOptional: attendanceKind === "optional",
         course: item.course,
         option: item.option,
       });
@@ -538,6 +567,9 @@ function overlaps(a, b) {
 function hasConflict(existingMeetings, newMeetings) {
   for (const a of existingMeetings) {
     for (const b of newMeetings) {
+      // Las ayudantías opcionales se muestran en el horario, pero no bloquean
+      // la inscripción de una cátedra, laboratorio u otro ramo en el mismo bloque.
+      if (a.isOptional || b.isOptional) continue;
       if (overlaps(a, b)) return true;
     }
   }
@@ -736,7 +768,9 @@ function generateSchedules() {
 }
 
 function scoreCombo(combo, meetings, rules = getProfessorRules()) {
-  const byDay = groupMeetingsByDay(meetings);
+  const requiredMeetings = meetings.filter(meeting => !meeting.isOptional);
+  const optionalMeetings = meetings.filter(meeting => meeting.isOptional);
+  const byDay = groupMeetingsByDay(requiredMeetings);
   let windowMinutes = 0;
   let totalSpan = 0;
   let earliestStart = Infinity;
@@ -761,6 +795,8 @@ function scoreCombo(combo, meetings, rules = getProfessorRules()) {
   return {
     combo,
     meetings,
+    requiredMeetings,
+    optionalMeetingCount: optionalMeetings.length,
     windowMinutes,
     totalSpan,
     earliestStart: earliestStart === Infinity ? 0 : earliestStart,
@@ -818,8 +854,8 @@ function compareResults(a, b, pref, freeDay) {
     // Si ambos tienen día libre, prioriza el que tenga menos días con clases.
     if (a.daysWithClass !== b.daysWithClass) return a.daysWithClass - b.daysWithClass;
   } else if (freeDay) {
-    const aPenalty = a.meetings.some(m => m.day === freeDay) ? 1 : 0;
-    const bPenalty = b.meetings.some(m => m.day === freeDay) ? 1 : 0;
+    const aPenalty = a.requiredMeetings.some(m => m.day === freeDay) ? 1 : 0;
+    const bPenalty = b.requiredMeetings.some(m => m.day === freeDay) ? 1 : 0;
     if (aPenalty !== bPenalty) return aPenalty - bPenalty;
   }
 
@@ -873,6 +909,7 @@ function renderCurrentResult() {
     <div class="score"><b>${fmtMin(result.latestEnd)}</b><span>última salida</span></div>
     <div class="score"><b>${result.daysWithClass}</b><span>días con clases</span></div>
     <div class="score"><b>${result.freeDays.length ? result.freeDays.join(", ") : "—"}</b><span>días libres</span></div>
+    <div class="score ${result.optionalMeetingCount ? "score-optional" : ""}"><b>${result.optionalMeetingCount}</b><span>bloques de ayudantía opcional</span></div>
     ${professorCard}
   `;
 
@@ -931,7 +968,9 @@ function renderSchedule(meetings) {
 function eventTypeLabel(eventName) {
   const text = normalize(eventName);
   if (text.includes("B LEARNING") || text.includes("BLEARNING")) return "B-LEARNING";
-  if (text.includes("AYUDANTIA")) return "AYUDANTÍA";
+  if (text.includes("AYUDANTIA") && text.includes("OPCIONAL")) return "AYUDANTÍA OPCIONAL";
+  if (text.includes("AYUDANTIA") && text.includes("OBLIGATORIA")) return "AYUDANTÍA OBLIGATORIA";
+  if (text.includes("AYUDANTIA")) return "AYUDANTÍA · SIN ESPECIFICAR";
   if (text.includes("LABORATORIO")) return "LAB";
   if (text.includes("TALLER")) return "TALLER";
   if (text.includes("PRACTICA")) return "PRÁCTICA";
@@ -940,9 +979,12 @@ function eventTypeLabel(eventName) {
 }
 
 function eventTypeClass(eventName) {
+  const kind = eventAttendanceKind(eventName);
   const label = normalize(eventTypeLabel(eventName));
   if (label.includes("B LEARNING") || label.includes("BLEARNING")) return "tag-blearning";
-  if (label.includes("AYUDANTIA")) return "tag-ayudantia";
+  if (kind === "optional") return "tag-ayudantia-opcional";
+  if (kind === "mandatory") return "tag-ayudantia-obligatoria";
+  if (kind === "unspecified") return "tag-ayudantia-sin-especificar";
   if (label.includes("LAB")) return "tag-lab";
   if (label.includes("TALLER")) return "tag-taller";
   if (label.includes("PRACTICA")) return "tag-practica";
@@ -966,17 +1008,26 @@ function renderMeetingCard(m) {
   const prof = m.professor ? `<span class="class-prof">${m.professor}</span>` : "";
   const label = eventTypeLabel(m.eventName);
   const tagClass = eventTypeClass(m.eventName);
+  const attendanceKind = m.attendanceKind || eventAttendanceKind(m.eventName);
+  const attendanceNote = attendanceKind === "optional"
+    ? `<span class="attendance-note optional-note">No genera tope: puedes inscribir otro ramo en este bloque.</span>`
+    : attendanceKind === "mandatory"
+      ? `<span class="attendance-note mandatory-note">Asistencia obligatoria: sí genera tope.</span>`
+      : attendanceKind === "unspecified"
+        ? `<span class="attendance-note unspecified-note">El archivo no indica si es opcional; se considera obligatoria por seguridad.</span>`
+        : "";
   const formationMeta = m.course.isFormationAcademic
     ? `<span class="class-prof formation-meta">Formación ${m.course.formationType === "deportivo" ? "deportiva" : "no deportiva"} · ${m.option.modality === "b-learning" ? "B-learning" : "Presencial"}</span>`
     : "";
   return `
-    <div class="class-card${m.course.isFormationAcademic ? " formation-class-card" : ""}">
+    <div class="class-card${m.course.isFormationAcademic ? " formation-class-card" : ""}${attendanceKind === "optional" ? " optional-class-card" : ""}${attendanceKind === "unspecified" ? " unspecified-class-card" : ""}">
       <div class="class-card-top">
         <b>${m.course.code} · ${m.option.section}</b>
         <span class="event-tag ${tagClass}">${label}</span>
       </div>
       <span>${m.course.name}</span>
       ${formationMeta}
+      ${attendanceNote}
       ${prof}
     </div>
   `;
