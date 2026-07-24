@@ -1,9 +1,24 @@
 const DATA = window.COURSE_DATA;
+
+if (!DATA || !Array.isArray(DATA.courses)) {
+  throw new Error("No se cargó COURSE_DATA. Revisa que data.js esté antes de app.js en index.html.");
+}
+
 const FAVORITES_KEY = "generador-ramos:favoritos:v1";
 const BLOCKED_SLOTS_KEY = "generador-ramos:bloqueos:v1";
+const CAREER_KEY = "generador-ramos:carrera:v1";
+
+const CAREERS = Array.isArray(DATA.meta?.careers) && DATA.meta.careers.length
+  ? DATA.meta.careers
+  : [{ id: "engineering", name: "Ingeniería Civil", shortName: "Ingeniería" }];
+
+const DEFAULT_CAREER = CAREERS.some(career => career.id === localStorage.getItem(CAREER_KEY))
+  ? localStorage.getItem(CAREER_KEY)
+  : CAREERS[0].id;
 
 const state = {
-  selected: new Map(), // code -> Set(option ids)
+  activeCareer: DEFAULT_CAREER,
+  selected: new Map(), // courseRef -> Set(option ids)
   results: [],
   current: 0,
   favorites: loadFavorites(),
@@ -11,6 +26,9 @@ const state = {
 };
 
 const els = {
+  careerLabel: document.getElementById("careerLabel"),
+  careerSelect: document.getElementById("careerSelect"),
+  attendanceInfo: document.getElementById("attendanceInfo"),
   courseCount: document.getElementById("courseCount"),
   formationCount: document.getElementById("formationCount"),
   optionCount: document.getElementById("optionCount"),
@@ -49,16 +67,13 @@ const els = {
   favoritesList: document.getElementById("favoritesList"),
   scoreCards: document.getElementById("scoreCards"),
   comboList: document.getElementById("comboList"),
+  unscheduledNotice: document.getElementById("unscheduledNotice"),
   scheduleTable: document.getElementById("scheduleTable"),
 };
 
-if (!DATA || !Array.isArray(DATA.courses)) {
-  throw new Error("No se cargó COURSE_DATA. Revisa que data.js esté antes de app.js en index.html.");
-}
-
-const NORMAL_COURSES = DATA.courses.filter(course => !course.isFormationAcademic);
+const ALL_NORMAL_COURSES = DATA.courses.filter(course => !course.isFormationAcademic);
 const FORMATION_COURSES = DATA.courses.filter(course => course.isFormationAcademic);
-const coursesByCode = new Map(DATA.courses.map(c => [c.code, c]));
+const allCoursesByRef = new Map(DATA.courses.map(course => [courseRef(course), course]));
 const allOptionsById = new Map();
 DATA.courses.forEach(course => {
   course.options.forEach(option => {
@@ -66,19 +81,97 @@ DATA.courses.forEach(course => {
   });
 });
 
-function init() {
-  els.courseCount.textContent = `${DATA.meta.normalCourseCount ?? NORMAL_COURSES.length} ramos de ingeniería`;
-  els.formationCount.textContent = `${DATA.meta.formationCourseCount ?? FORMATION_COURSES.length} cursos de formación`;
-  els.optionCount.textContent = `${DATA.meta.optionCount} secciones/paquetes`;
+let NORMAL_COURSES = [];
+let coursesByCode = new Map();
+refreshCareerContext();
 
-  // Cada ramo se muestra una sola vez en las sugerencias.
-  // La búsqueda sigue ignorando tildes, mayúsculas y el orden de las palabras
-  // gracias a normalize() y extractCode().
+function courseRef(course) {
+  const career = course.career || (course.isFormationAcademic ? "formation" : "engineering");
+  return `${career}::${normalize(course.code)}::${normalize(course.name)}`;
+}
+
+function currentCareerMeta() {
+  return CAREERS.find(career => career.id === state.activeCareer) || CAREERS[0];
+}
+
+function refreshCareerContext() {
+  if (!CAREERS.some(career => career.id === state.activeCareer)) {
+    state.activeCareer = CAREERS[0].id;
+  }
+
+  NORMAL_COURSES = ALL_NORMAL_COURSES.filter(course =>
+    (course.career || "engineering") === state.activeCareer
+  );
+
+  coursesByCode = new Map();
+  NORMAL_COURSES.forEach(course => {
+    const key = normalize(course.code);
+    if (!coursesByCode.has(key)) coursesByCode.set(key, []);
+    coursesByCode.get(key).push(course);
+  });
+
+}
+
+function populateCareerSelect() {
+  els.careerSelect.innerHTML = "";
+  CAREERS.forEach(career => {
+    const option = document.createElement("option");
+    option.value = career.id;
+    option.textContent = career.period ? `${career.name} · ${career.period}` : career.name;
+    els.careerSelect.appendChild(option);
+  });
+  els.careerSelect.value = state.activeCareer;
+}
+
+function refreshCareerUI() {
+  const career = currentCareerMeta();
+  const normalOptionCount = NORMAL_COURSES.reduce((sum, course) => sum + course.options.length, 0);
+
+  els.careerLabel.textContent = career.period ? `${career.name} · ${career.period}` : career.name;
+  els.courseCount.textContent = `${NORMAL_COURSES.length} ramos de ${career.shortName || career.name}`;
+  els.formationCount.textContent = `${DATA.meta.formationCourseCount ?? FORMATION_COURSES.length} cursos de formación`;
+  els.optionCount.textContent = `${normalOptionCount} secciones de ${career.shortName || career.name}`;
+
+  els.courseSearch.placeholder = state.activeCareer === "design"
+    ? "Ej: DIS09122 o Cultura del Diseño"
+    : "Ej: CBE2000 o Probabilidades";
+
+  els.courseList.innerHTML = "";
   const datalistValues = new Set();
   NORMAL_COURSES.forEach(course => {
     addCourseListOption(`${course.code} — ${course.name}`, datalistValues);
   });
 
+  if (els.attendanceInfo) {
+    els.attendanceInfo.hidden = state.activeCareer === "design";
+  }
+
+}
+
+function switchCareer(careerId, { announce = true } = {}) {
+  if (!CAREERS.some(career => career.id === careerId)) return;
+
+  state.activeCareer = careerId;
+  localStorage.setItem(CAREER_KEY, careerId);
+  state.selected.clear();
+  state.results = [];
+  state.current = 0;
+  els.courseSearch.value = "";
+
+  refreshCareerContext();
+  refreshCareerUI();
+  renderSelected();
+  renderEmptySchedule(`Carrera cambiada a ${currentCareerMeta().name}. Agrega tus ramos y vuelve a generar.`);
+  renderFavorites();
+
+  if (announce) {
+    setStatus(`Carrera cambiada a ${currentCareerMeta().name}.`);
+  }
+}
+
+function init() {
+  populateCareerSelect();
+  refreshCareerUI();
   populateFormationCourseList();
   updateFormationUI();
   populateBlockInputs();
@@ -90,6 +183,10 @@ function init() {
 }
 
 function bindEvents() {
+  els.careerSelect.addEventListener("change", event => {
+    switchCareer(event.target.value);
+  });
+
   els.addCourseBtn.addEventListener("click", addCourseFromInput);
 
   [els.formationEnabled, els.formationType, els.formationModality, els.formationSelectionMode].forEach(control => {
@@ -153,6 +250,7 @@ function bindEvents() {
     setStatus("Favoritos borrados.");
   });
 
+
   els.addBlockBtn.addEventListener("click", addBlockedSlot);
 
   els.blockReason.addEventListener("keydown", e => {
@@ -214,36 +312,62 @@ function eventScheduleDescription(event) {
   return `${event.name}${suffix}: ${event.rawSchedule}`;
 }
 
-function extractCode(input) {
-  const text = normalize(input);
-  if (!text) return null;
+function courseSearchText(course) {
+  const aliases = Array.isArray(course.aliases) ? course.aliases.join(" ") : "";
+  return normalize(`${course.code} ${course.name} ${aliases}`);
+}
 
-  const direct = text.split(" ")[0];
-  if (coursesByCode.has(direct)) return direct;
+function matchingCourses(input) {
+  const text = normalize(input);
+  if (!text) return [];
+
+  const exact = NORMAL_COURSES.filter(course =>
+    normalize(`${course.code} ${course.name}`) === text ||
+    (course.aliases || []).some(alias => normalize(alias) === text)
+  );
+  if (exact.length) return exact;
 
   const words = text.split(/\s+/).filter(Boolean);
+  const directCode = words[0];
+  const codeMatches = coursesByCode.get(directCode) || [];
 
-  const found = NORMAL_COURSES.find(c => {
-    const haystack = normalize(`${c.code} ${c.name}`);
-    // Coincidencia normal: "calculo diferencial" encuentra "Cálculo Diferencial".
+  if (words.length === 1 && codeMatches.length) {
+    return codeMatches;
+  }
+
+  return NORMAL_COURSES.filter(course => {
+    const haystack = courseSearchText(course);
     if (haystack.includes(text)) return true;
-    // Coincidencia por palabras: "diferencial calculo" también sirve.
     return words.every(word => haystack.includes(word));
   });
+}
 
-  return found ? found.code : null;
+function courseMetaText(course) {
+  const parts = [];
+  if (course.credits !== null && course.credits !== undefined && course.credits !== "" && Number.isFinite(Number(course.credits))) {
+    parts.push(`${course.credits} créditos`);
+  }
+  if (course.category) parts.push(course.category);
+  parts.push(`${course.options.length} secciones`);
+  return parts.join(" · ");
 }
 
 function addCourseFromInput() {
-  const code = extractCode(els.courseSearch.value);
+  const matches = matchingCourses(els.courseSearch.value);
 
-  if (!code) {
-    setStatus("No encontré ese ramo. Prueba con código o nombre exacto.", true);
+  if (!matches.length) {
+    setStatus("No encontré ese ramo en la carrera seleccionada. Prueba con código o nombre.", true);
     return;
   }
 
-  const course = coursesByCode.get(code);
-  state.selected.set(code, new Set(course.options.map(o => o.id)));
+  if (matches.length > 1) {
+    setStatus("Encontré más de un curso. Escribe también parte del nombre para elegir el correcto.", true);
+    return;
+  }
+
+  const course = matches[0];
+  const ref = courseRef(course);
+  state.selected.set(ref, new Set(course.options.map(option => option.id)));
   els.courseSearch.value = "";
   state.results = [];
   state.current = 0;
@@ -264,20 +388,25 @@ function renderSelected() {
 
   els.selectedCourses.className = "selected-list";
 
-  for (const [code, selectedOptionIds] of state.selected.entries()) {
-    const course = coursesByCode.get(code);
+  for (const [ref, selectedOptionIds] of state.selected.entries()) {
+    const course = allCoursesByRef.get(ref);
+    if (!course) continue;
+
     const card = document.createElement("article");
     card.className = "course-card";
+    const aliases = (course.aliases || []).length
+      ? `<small class="course-aliases">También se encuentra por: ${(course.aliases || []).join(" · ")}</small>`
+      : "";
     card.innerHTML = `
       <div class="course-card-head">
-        <h3 class="course-title">${course.code} · ${course.name}<br><span>${course.credits ?? "—"} créditos · ${course.options.length} secciones</span></h3>
-        <button class="ghost" data-remove="${course.code}">Quitar</button>
+        <h3 class="course-title">${course.code} · ${course.name}<br><span>${courseMetaText(course)}</span>${aliases}</h3>
+        <button class="ghost remove-course">Quitar</button>
       </div>
       <div class="option-list"></div>
     `;
 
-    card.querySelector("[data-remove]").addEventListener("click", () => {
-      state.selected.delete(code);
+    card.querySelector(".remove-course").addEventListener("click", () => {
+      state.selected.delete(ref);
       state.results = [];
       state.current = 0;
       renderSelected();
@@ -288,20 +417,21 @@ function renderSelected() {
 
     course.options.forEach(option => {
       const events = option.events
-        .filter(e => e.rawSchedule)
+        .filter(event => event.rawSchedule)
         .map(eventScheduleDescription)
         .join(" · ");
       const professors = option.professors.length ? option.professors.join(", ") : "Profesor no informado";
       const row = document.createElement("label");
       row.className = "option-row";
       row.innerHTML = `
-        <input type="checkbox" ${selectedOptionIds.has(option.id) ? "checked" : ""} data-code="${course.code}" data-option="${option.id}">
-        <span><strong>${option.section}</strong><small>${professors}</small><small>${events || "Sin horario informado"}</small></span>
+        <input type="checkbox" ${selectedOptionIds.has(option.id) ? "checked" : ""} data-option="${option.id}">
+        <span><strong>${option.section}</strong><small>${professors}</small><small>${events || "Sin horario fijo informado"}</small></span>
       `;
 
-      row.querySelector("input").addEventListener("change", (e) => {
-        const set = state.selected.get(course.code);
-        if (e.target.checked) set.add(option.id);
+      row.querySelector("input").addEventListener("change", event => {
+        const set = state.selected.get(ref);
+        if (!set) return;
+        if (event.target.checked) set.add(option.id);
         else set.delete(option.id);
         state.results = [];
         state.current = 0;
@@ -579,13 +709,15 @@ function hasConflict(existingMeetings, newMeetings) {
 function buildInputGroups() {
   const groups = [];
 
-  for (const [code, selectedIds] of state.selected.entries()) {
-    const course = coursesByCode.get(code);
+  for (const [ref, selectedIds] of state.selected.entries()) {
+    const course = allCoursesByRef.get(ref);
+    if (!course) continue;
+
     const options = course.options
-      .filter(o => selectedIds.has(o.id))
+      .filter(option => selectedIds.has(option.id))
       .map(option => ({ course, option, meetings: getMeetings({ course, option }) }));
 
-    if (!options.length) return { error: `No dejaste ninguna sección activa en ${code}.` };
+    if (!options.length) return { error: `No dejaste ninguna sección activa en ${course.code}.` };
     groups.push({ course, options });
   }
 
@@ -846,6 +978,7 @@ function compareResults(a, b, pref, freeDay) {
     }
   }
 
+
   if (freeDay === "__any__") {
     const aHasFreeDay = a.freeDays.length > 0 ? 0 : 1;
     const bHasFreeDay = b.freeDays.length > 0 ? 0 : 1;
@@ -903,10 +1036,11 @@ function renderCurrentResult() {
     ? `<div class="score ${result.professorStats.avoidedMatches ? "score-danger" : "score-ok"}"><b>${result.professorStats.preferredMatches}/${result.professorStats.avoidedMatches}</b><span>preferidos / evitados</span></div>`
     : "";
 
+
   els.scoreCards.innerHTML = `
     <div class="score"><b>${Math.round(result.windowMinutes / 10) * 10} min</b><span>ventanas aprox.</span></div>
-    <div class="score"><b>${fmtMin(result.earliestStart)}</b><span>primera clase</span></div>
-    <div class="score"><b>${fmtMin(result.latestEnd)}</b><span>última salida</span></div>
+    <div class="score"><b>${result.daysWithClass ? fmtMin(result.earliestStart) : "—"}</b><span>primera clase</span></div>
+    <div class="score"><b>${result.daysWithClass ? fmtMin(result.latestEnd) : "—"}</b><span>última salida</span></div>
     <div class="score"><b>${result.daysWithClass}</b><span>días con clases</span></div>
     <div class="score"><b>${result.freeDays.length ? result.freeDays.join(", ") : "—"}</b><span>días libres</span></div>
     <div class="score ${result.optionalMeetingCount ? "score-optional" : ""}"><b>${result.optionalMeetingCount}</b><span>bloques de ayudantía opcional</span></div>
@@ -925,6 +1059,30 @@ function renderCurrentResult() {
     els.comboList.appendChild(chip);
   });
 
+  const unscheduled = result.combo.flatMap(item =>
+    item.option.events
+      .filter(event => event.rawSchedule && !(event.meetings || []).length)
+      .map(event => ({
+        course: item.course,
+        option: item.option,
+        schedule: event.rawSchedule,
+      }))
+  );
+
+  if (els.unscheduledNotice) {
+    if (unscheduled.length) {
+      els.unscheduledNotice.hidden = false;
+      els.unscheduledNotice.innerHTML = `
+        <strong>Atención: hay cursos sin horario fijo.</strong>
+        <span>Estos cursos no generan topes automáticamente hasta que se confirme su bloque:</span>
+        <ul>${unscheduled.map(item => `<li><b>${item.course.code} · ${item.course.name}</b> (${item.option.section}): ${item.schedule}</li>`).join("")}</ul>
+      `;
+    } else {
+      els.unscheduledNotice.hidden = true;
+      els.unscheduledNotice.innerHTML = "";
+    }
+  }
+
   renderSchedule(result.meetings);
   updateFavoriteButton();
 }
@@ -938,6 +1096,10 @@ function renderEmptySchedule(message = "Genera un horario para verlo aquí.") {
   els.saveFavoriteBtn.textContent = "Guardar favorito";
   els.scoreCards.innerHTML = "";
   els.comboList.innerHTML = "";
+  if (els.unscheduledNotice) {
+    els.unscheduledNotice.hidden = true;
+    els.unscheduledNotice.innerHTML = "";
+  }
   els.scheduleTable.innerHTML = `<tr><td class="empty-msg">${message}</td></tr>`;
 }
 
@@ -949,6 +1111,11 @@ function renderSchedule(meetings) {
   const usedSlots = [...usedSlotsMap.values()].sort((a, b) => a.startMin - b.startMin || a.endMin - b.endMin);
   const days = DATA.days.filter(day => displayMeetings.some(m => m.day === day));
   const visibleDays = days.length ? days : DATA.days.slice(0, 5);
+
+  if (!usedSlots.length) {
+    els.scheduleTable.innerHTML = `<tr><td class="empty-msg">Este horario no tiene bloques fijos informados.</td></tr>`;
+    return;
+  }
 
   let html = `<thead><tr><th>Bloque</th>${visibleDays.map(d => `<th>${d}</th>`).join("")}</tr></thead><tbody>`;
 
@@ -974,6 +1141,8 @@ function eventTypeLabel(eventName) {
   if (text.includes("LABORATORIO")) return "LAB";
   if (text.includes("TALLER")) return "TALLER";
   if (text.includes("PRACTICA")) return "PRÁCTICA";
+  if (text.includes("SEMINARIO")) return "SEMINARIO";
+  if (text.includes("PROYECTO")) return "PROYECTO";
   if (text.includes("CATEDRA")) return "CÁTEDRA";
   return eventName || "CLASE";
 }
@@ -988,6 +1157,8 @@ function eventTypeClass(eventName) {
   if (label.includes("LAB")) return "tag-lab";
   if (label.includes("TALLER")) return "tag-taller";
   if (label.includes("PRACTICA")) return "tag-practica";
+  if (label.includes("SEMINARIO")) return "tag-seminario";
+  if (label.includes("PROYECTO")) return "tag-proyecto";
   if (label.includes("CATEDRA")) return "tag-catedra";
   return "";
 }
@@ -1005,7 +1176,10 @@ function renderMeetingCard(m) {
     `;
   }
 
-  const prof = m.professor ? `<span class="class-prof">${m.professor}</span>` : "";
+  const meetingProfessorNames = splitProfessorNames(m.professor);
+  const prof = meetingProfessorNames.length
+    ? `<span class="class-prof">${meetingProfessorNames.map(name => `<span class="professor-line">${name}</span>`).join("")}</span>`
+    : "";
   const label = eventTypeLabel(m.eventName);
   const tagClass = eventTypeClass(m.eventName);
   const attendanceKind = m.attendanceKind || eventAttendanceKind(m.eventName);
@@ -1031,6 +1205,27 @@ function renderMeetingCard(m) {
       ${prof}
     </div>
   `;
+}
+
+
+function normalizeProfessorName(name) {
+  return normalize(name)
+    .replace(/\b(PROFESOR|PROFESORA|DOCENTE)\b/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function isUsableProfessorName(name) {
+  const key = normalizeProfessorName(name);
+  if (!key) return false;
+  return !["POR DEFINIR", "SIN INFORMACION", "NO INFORMADO", "TBA", "N N"].includes(key);
+}
+
+function splitProfessorNames(value) {
+  return String(value || "")
+    .split(/\s*\/\s*|\s*;\s*|\s+[Y&]\s+/i)
+    .map(name => name.trim())
+    .filter(isUsableProfessorName);
 }
 
 function loadFavorites() {
@@ -1074,6 +1269,7 @@ function saveCurrentFavorite() {
   const favorite = {
     id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
     title: favoriteTitle(result),
+    careerId: state.activeCareer,
     createdAt: new Date().toISOString(),
     items: result.combo.map(item => ({
       code: item.course.code,
@@ -1123,6 +1319,17 @@ function showFavorite(favId) {
   if (!fav) return;
 
   try {
+    const favoriteCareer = fav.careerId || "engineering";
+    if (favoriteCareer !== state.activeCareer && CAREERS.some(career => career.id === favoriteCareer)) {
+      state.activeCareer = favoriteCareer;
+      localStorage.setItem(CAREER_KEY, favoriteCareer);
+      els.careerSelect.value = favoriteCareer;
+      state.selected.clear();
+      refreshCareerContext();
+      refreshCareerUI();
+      renderSelected();
+    }
+
     const result = rebuildFavoriteResult(fav);
     state.results = [result];
     state.current = 0;
@@ -1160,10 +1367,12 @@ function renderFavorites() {
       .map(course => `<span>${course.code} ${course.section.replace("Sección ", "S")}</span>`)
       .join("");
 
+    const career = CAREERS.find(record => record.id === (fav.careerId || "engineering"));
+
     item.innerHTML = `
       <div class="favorite-head">
-        <h3>Favorito ${index + 1}</h3>
-        <small>${fav.metrics.daysWithClass} días · libre: ${(fav.metrics.freeDays || []).join(", ") || "—"} · salida ${fmtMin(fav.metrics.latestEnd)}</small>
+        <h3>Favorito ${index + 1} <span class="favorite-career">${career?.shortName || career?.name || "Ingeniería"}</span></h3>
+        <small>${fav.metrics.daysWithClass} días · libre: ${(fav.metrics.freeDays || []).join(", ") || "—"} · salida ${fav.metrics.daysWithClass ? fmtMin(fav.metrics.latestEnd) : "por confirmar"}</small>
       </div>
       <div class="favorite-chips">${chips}</div>
       <div class="favorite-actions">

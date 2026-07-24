@@ -422,3 +422,77 @@ button:disabled {
 .score-optional {
   background: #f0fdf4;
 }
+
+.professor-line {
+  display: block;
+  margin-top: 3px;
+}
+
+
+/* Selector multi-carrera y datos de Diseño */
+.career-selector {
+  margin-bottom: 14px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #f8fafc;
+}
+
+.career-selector small,
+.course-aliases {
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.course-aliases {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.unscheduled-notice {
+  margin: 12px 0 14px;
+  padding: 13px 14px;
+  border: 1px solid #f5c76f;
+  border-radius: 14px;
+  background: #fffbeb;
+  color: #854d0e;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.unscheduled-notice strong,
+.unscheduled-notice span {
+  display: block;
+}
+
+.unscheduled-notice ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+}
+
+.unscheduled-notice li + li {
+  margin-top: 5px;
+}
+
+.tag-seminario {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.tag-proyecto {
+  background: #ffe4e6;
+  color: #be123c;
+}
+
+.favorite-career {
+  display: inline-flex;
+  margin-left: 5px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 10px;
+  vertical-align: middle;
+}

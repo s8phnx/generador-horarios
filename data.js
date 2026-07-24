@@ -1,24 +1,47 @@
 window.COURSE_DATA = {
   "meta": {
-    "sourceFile": "ING_CIVIL_INDUSTRIAL (1).xls + ING_CIVIL.xls + FORMACION_GENERAL_CFG.xls + CFG_DEPORTIVOS.xls",
+    "sourceFile": "ING_CIVIL_INDUSTRIAL (1).xls + ING_CIVIL.xls + FORMACION_GENERAL_CFG.xls + CFG_DEPORTIVOS.xls + Oferta Académica Actualizada 2-2026.xlsx (Diseño)",
     "generatedFromRows": 1088,
-    "courseCount": 221,
-    "optionCount": 612,
-    "note": "Ingeniería Civil (plan común + Industrial) y cursos de Formación Académica generales/deportivos, con modalidad presencial o B-learning.",
+    "courseCount": 270,
+    "optionCount": 717,
+    "note": "Generador multi-carrera: Ingeniería Civil, Diseño y cursos de Formación Académica.",
     "mergeSummary": {
       "addedCourses": 3,
       "addedOptions": 16,
       "mergedExistingCourses": 10,
       "duplicateOptionsSkipped": 118
     },
-    "normalCourseCount": 76,
+    "normalCourseCount": 125,
     "formationCourseCount": 145,
     "formationGeneralCount": 118,
     "formationSportsCount": 27,
     "formationBLearningCount": 37,
-    "normalOptionCount": 443,
+    "normalOptionCount": 548,
     "formationOptionCount": 169,
-    "formationRows": 214
+    "formationRows": 214,
+    "designCourseCount": 49,
+    "designOptionCount": 105,
+    "engineeringCourseCount": 76,
+    "engineeringOptionCount": 443,
+    "careers": [
+      {
+        "id": "engineering",
+        "name": "Ingeniería Civil",
+        "shortName": "Ingeniería",
+        "courseCount": 76,
+        "optionCount": 443
+      },
+      {
+        "id": "design",
+        "name": "Diseño",
+        "shortName": "Diseño",
+        "courseCount": 49,
+        "optionCount": 105,
+        "period": "2-2026"
+      }
+    ],
+    "designSource": "Oferta Académica Actualizada 2-2026.xlsx",
+    "designUnscheduledOptionCount": 7
   },
   "days": [
     "Lunes",
@@ -44,6 +67,13 @@ window.COURSE_DATA = {
       "endMin": 680
     },
     {
+      "start": "08:30",
+      "end": "12:50",
+      "time": "08:30 - 12:50",
+      "startMin": 510,
+      "endMin": 770
+    },
+    {
       "start": "10:00",
       "end": "11:20",
       "time": "10:00 - 11:20",
@@ -56,6 +86,13 @@ window.COURSE_DATA = {
       "time": "10:00 - 12:50",
       "startMin": 600,
       "endMin": 770
+    },
+    {
+      "start": "10:00",
+      "end": "18:45",
+      "time": "10:00 - 18:45",
+      "startMin": 600,
+      "endMin": 1125
     },
     {
       "start": "11:30",
@@ -98,6 +135,13 @@ window.COURSE_DATA = {
       "time": "14:30 - 17:20",
       "startMin": 870,
       "endMin": 1040
+    },
+    {
+      "start": "14:30",
+      "end": "18:45",
+      "time": "14:30 - 18:45",
+      "startMin": 870,
+      "endMin": 1125
     },
     {
       "start": "16:00",
@@ -439,7 +483,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBF1001",
@@ -1018,7 +1064,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBF1002",
@@ -2445,7 +2493,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBF1100",
@@ -5150,7 +5200,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBM1005",
@@ -5432,7 +5484,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBM1006",
@@ -5769,7 +5823,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBM1100",
@@ -6226,7 +6282,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBM1101",
@@ -6810,7 +6868,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBM1102",
@@ -8098,7 +8158,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBM1103",
@@ -9446,7 +9508,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CBQ1100",
@@ -9618,7 +9682,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CIG1002",
@@ -10797,7 +10863,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CIG1003",
@@ -13614,7 +13682,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CIG1014",
@@ -14871,7 +14941,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII1000",
@@ -15430,7 +15502,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII1001",
@@ -15604,7 +15678,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2002",
@@ -15833,7 +15909,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2003",
@@ -15952,7 +16030,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2004",
@@ -16126,7 +16206,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2100",
@@ -16905,7 +16987,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2101",
@@ -17134,7 +17218,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2102",
@@ -17363,7 +17449,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2103",
@@ -17537,7 +17625,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2250",
@@ -17876,7 +17966,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2253",
@@ -18050,7 +18142,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2254",
@@ -18224,7 +18318,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2401",
@@ -18398,7 +18494,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2402",
@@ -18682,7 +18780,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2403",
@@ -18801,7 +18901,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2501",
@@ -19030,7 +19132,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2504",
@@ -19204,7 +19308,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2750",
@@ -19543,7 +19649,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2751",
@@ -19717,7 +19825,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2755",
@@ -20001,7 +20111,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2756",
@@ -20173,7 +20285,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII2757",
@@ -20347,7 +20461,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3101",
@@ -20464,7 +20580,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3102",
@@ -20533,7 +20651,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3300",
@@ -20588,7 +20708,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3503",
@@ -20652,7 +20774,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3600",
@@ -20700,7 +20824,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3603",
@@ -20748,7 +20874,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3607",
@@ -20796,7 +20924,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3624",
@@ -20844,7 +20974,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3703",
@@ -20892,7 +21024,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3705",
@@ -20940,7 +21074,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3706",
@@ -20988,7 +21124,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3710",
@@ -21036,7 +21174,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3722",
@@ -21084,7 +21224,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3723",
@@ -21132,7 +21274,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3724",
@@ -21171,7 +21315,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3730",
@@ -21219,7 +21365,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3732",
@@ -21267,7 +21415,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3734",
@@ -21331,7 +21481,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3740",
@@ -21379,7 +21531,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3750",
@@ -21427,7 +21581,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3751",
@@ -21466,7 +21622,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3752",
@@ -21512,7 +21670,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CII3815",
@@ -21560,7 +21720,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CIT1100",
@@ -21899,7 +22061,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CIT1110",
@@ -22301,7 +22465,9 @@ window.COURSE_DATA = {
         }
       ],
       "source": "Plan común",
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "COC2001",
@@ -22603,7 +22769,9 @@ window.COURSE_DATA = {
         }
       ],
       "source": "Plan común",
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "COC2006",
@@ -22759,7 +22927,9 @@ window.COURSE_DATA = {
         }
       ],
       "source": "Plan común",
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "EII1200",
@@ -23263,7 +23433,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "FIC1100",
@@ -23311,7 +23483,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ICI3309",
@@ -23348,7 +23522,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ICI3333",
@@ -23630,7 +23806,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ICI3377",
@@ -23856,7 +24034,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ICI3388",
@@ -24048,7 +24228,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ICI5001",
@@ -24085,7 +24267,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ICI5002",
@@ -24122,7 +24306,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ICI5011",
@@ -24159,7 +24345,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ICI5022",
@@ -24196,7 +24384,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ICIMAG",
@@ -24233,7 +24423,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "ING9101",
@@ -24362,7 +24554,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "PRI0001",
@@ -24485,7 +24679,9 @@ window.COURSE_DATA = {
           ]
         }
       ],
-      "isFormationAcademic": false
+      "isFormationAcademic": false,
+      "career": "engineering",
+      "aliases": []
     },
     {
       "code": "CAV02222",
@@ -24540,7 +24736,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2014",
@@ -24587,7 +24785,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2027",
@@ -24634,7 +24834,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2059",
@@ -24690,7 +24892,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2065",
@@ -24736,7 +24940,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2066",
@@ -24792,7 +24998,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2086",
@@ -24847,7 +25055,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2098",
@@ -24894,7 +25104,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2117",
@@ -24949,7 +25161,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2135",
@@ -24996,7 +25210,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2149",
@@ -25075,7 +25291,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2150",
@@ -25131,7 +25349,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2158",
@@ -25186,7 +25406,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2166",
@@ -25241,7 +25463,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2177",
@@ -25288,7 +25512,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2189",
@@ -25343,7 +25569,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2200",
@@ -25398,7 +25626,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2202",
@@ -25453,7 +25683,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2203",
@@ -25508,7 +25740,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2208",
@@ -25554,7 +25788,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2209",
@@ -25601,7 +25837,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2222",
@@ -25681,7 +25919,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2224",
@@ -25728,7 +25968,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2238",
@@ -25783,7 +26025,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2239",
@@ -25829,7 +26073,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2240",
@@ -25885,7 +26131,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2244",
@@ -25931,7 +26179,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2253",
@@ -25986,7 +26236,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2273",
@@ -26042,7 +26294,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2278",
@@ -26138,7 +26392,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2280",
@@ -26185,7 +26441,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2294",
@@ -26232,7 +26490,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2295",
@@ -26278,7 +26538,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2296",
@@ -26325,7 +26587,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2312",
@@ -26371,7 +26635,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2318",
@@ -26426,7 +26692,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2322",
@@ -26473,7 +26741,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2323",
@@ -26551,7 +26821,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2324",
@@ -26598,7 +26870,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2327",
@@ -26653,7 +26927,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2331",
@@ -26708,7 +26984,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2335",
@@ -26763,7 +27041,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2339",
@@ -26810,7 +27090,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2341",
@@ -26856,7 +27138,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2343",
@@ -26902,7 +27186,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2347",
@@ -26957,7 +27243,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2352",
@@ -27012,7 +27300,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2353",
@@ -27059,7 +27349,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2355",
@@ -27106,7 +27398,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2358",
@@ -27153,7 +27447,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2365",
@@ -27208,7 +27504,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2368",
@@ -27255,7 +27553,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2374",
@@ -27310,7 +27610,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2383",
@@ -27365,7 +27667,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2385",
@@ -27421,7 +27725,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2387",
@@ -27467,7 +27773,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2390",
@@ -27513,7 +27821,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2397",
@@ -27568,7 +27878,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG2398",
@@ -27623,7 +27935,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5005",
@@ -27678,7 +27992,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5006",
@@ -27724,7 +28040,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5012",
@@ -27770,7 +28088,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5013",
@@ -27817,7 +28137,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5014",
@@ -27873,7 +28195,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5018",
@@ -27928,7 +28252,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5021",
@@ -27974,7 +28300,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5023",
@@ -28021,7 +28349,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5024",
@@ -28067,7 +28397,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5026",
@@ -28122,7 +28454,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5028",
@@ -28168,7 +28502,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5034",
@@ -28224,7 +28560,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5036",
@@ -28271,7 +28609,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5038",
@@ -28318,7 +28658,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5039",
@@ -28365,7 +28707,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5041",
@@ -28421,7 +28765,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5042",
@@ -28467,7 +28813,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5049",
@@ -28513,7 +28861,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5052",
@@ -28568,7 +28918,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5053",
@@ -28623,7 +28975,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5061",
@@ -28679,7 +29033,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5062",
@@ -28734,7 +29090,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5063",
@@ -28789,7 +29147,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5065",
@@ -28844,7 +29204,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5066",
@@ -28890,7 +29252,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5067",
@@ -28936,7 +29300,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5070",
@@ -28983,7 +29349,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5072",
@@ -29039,7 +29407,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5073",
@@ -29094,7 +29464,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5074",
@@ -29149,7 +29521,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5085",
@@ -29195,7 +29569,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5086",
@@ -29241,7 +29617,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5087",
@@ -29287,7 +29665,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5088",
@@ -29333,7 +29713,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5089",
@@ -29388,7 +29770,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5090",
@@ -29434,7 +29818,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5091",
@@ -29480,7 +29866,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5096",
@@ -29535,7 +29923,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5097",
@@ -29590,7 +29980,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5098",
@@ -29645,7 +30037,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5099",
@@ -29700,7 +30094,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5100",
@@ -29755,7 +30151,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5101",
@@ -29810,7 +30208,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5102",
@@ -29856,7 +30256,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5103",
@@ -29911,7 +30313,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5104",
@@ -29966,7 +30370,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5105",
@@ -30012,7 +30418,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5106",
@@ -30058,7 +30466,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5107",
@@ -30113,7 +30523,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5108",
@@ -30159,7 +30571,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5109",
@@ -30214,7 +30628,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5110",
@@ -30260,7 +30676,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5111",
@@ -30306,7 +30724,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5112",
@@ -30353,7 +30773,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "CFG5113",
@@ -30399,7 +30821,9 @@ window.COURSE_DATA = {
       "modalities": [
         "b-learning"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "DER06214",
@@ -30501,7 +30925,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9005",
@@ -30556,7 +30982,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9007",
@@ -30611,7 +31039,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9009",
@@ -30707,7 +31137,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9011",
@@ -30762,7 +31194,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9012",
@@ -30849,7 +31283,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9013",
@@ -30904,7 +31340,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9024",
@@ -30959,7 +31397,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9027",
@@ -31096,7 +31536,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9028",
@@ -31233,7 +31675,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9029",
@@ -31288,7 +31732,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9031",
@@ -31343,7 +31789,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9033",
@@ -31480,7 +31928,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9035",
@@ -31535,7 +31985,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9036",
@@ -31590,7 +32042,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9042",
@@ -31643,7 +32097,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9048",
@@ -31762,7 +32218,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9049",
@@ -31899,7 +32357,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9056",
@@ -31954,7 +32414,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9057",
@@ -32000,7 +32462,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9062",
@@ -32055,7 +32519,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9066",
@@ -32091,7 +32557,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9067",
@@ -32187,7 +32655,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9068",
@@ -32283,7 +32753,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9069",
@@ -32379,7 +32851,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9070",
@@ -32434,7 +32908,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9071",
@@ -32480,7 +32956,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "FGD9072",
@@ -32535,7 +33013,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "CFG_DEPORTIVOS.xls"
+      "sourceFile": "CFG_DEPORTIVOS.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "ICG4111",
@@ -32720,7 +33200,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "ICG4114",
@@ -32905,7 +33387,9 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
     },
     {
       "code": "SOC09225",
@@ -32951,7 +33435,4000 @@ window.COURSE_DATA = {
       "modalities": [
         "presencial"
       ],
-      "sourceFile": "FORMACION_GENERAL_CFG.xls"
+      "sourceFile": "FORMACION_GENERAL_CFG.xls",
+      "career": "formation",
+      "aliases": []
+    },
+    {
+      "code": "DIS09121",
+      "name": "TALLER II: EXPLORACIÓN CREATIVA",
+      "credits": null,
+      "references": "",
+      "aliases": [
+        "DIS8101 — TALLER DISEÑO INDUSTRIAL I",
+        "DIS8201 — TALLER DISEÑO GRÁFICO I",
+        "DIS8301 — LABORARORIO SISTEMA MODA I"
+      ],
+      "career": "design",
+      "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+      "options": [
+        {
+          "id": "design-dis09121-taller-ii-exploracion-creativa-seccion-1",
+          "package": "DIS09121_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "JUSTINIANO MARIA TRINIDAD",
+            "BAUS ALMENDRA IGNACIA"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 08:30 - 12:50",
+              "professor": "JUSTINIANO MARIA TRINIDAD",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            },
+            {
+              "name": "TALLER",
+              "rawSchedule": "LU 14:30 - 18:45",
+              "professor": "BAUS ALMENDRA IGNACIA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09121-taller-ii-exploracion-creativa-seccion-2",
+          "package": "DIS09121_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FIGUEROA JAVIERA",
+            "CORRALES PAULA"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "LU 14:30 - 18:45",
+              "professor": "FIGUEROA JAVIERA",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                }
+              ]
+            },
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 08:30 - 12:50",
+              "professor": "CORRALES PAULA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09121-taller-ii-exploracion-creativa-seccion-3",
+          "package": "DIS09121_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MARAMBIO BERNARDITA MARIA",
+            "GUTIÉRREZ BÁRBARA JOSELYN"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 08:30 - 12:50",
+              "professor": "MARAMBIO BERNARDITA MARIA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            },
+            {
+              "name": "TALLER",
+              "rawSchedule": "LU 14:30 - 18:45",
+              "professor": "GUTIÉRREZ BÁRBARA JOSELYN",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09121-taller-ii-exploracion-creativa-seccion-4",
+          "package": "DIS09121_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VEGA GUZMAN CATALINA",
+            "SEPULVEDA FELIPE ESTEBAN"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 08:30 - 12:50",
+              "professor": "VEGA GUZMAN CATALINA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            },
+            {
+              "name": "TALLER",
+              "rawSchedule": "LU 14:30 - 18:45",
+              "professor": "SEPULVEDA FELIPE ESTEBAN",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09121-taller-ii-exploracion-creativa-seccion-5",
+          "package": "DIS09121_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "REBOLLEDO BELEN",
+            "VIDAL FRANCISCA"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "LU 14:30 - 18:45",
+              "professor": "REBOLLEDO BELEN",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                }
+              ]
+            },
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 08:30 - 12:50",
+              "professor": "VIDAL FRANCISCA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09121-taller-ii-exploracion-creativa-seccion-6",
+          "package": "DIS09121_SECCION-6",
+          "section": "Sección 6",
+          "sectionNumber": 6,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LORETO MARTINEZ",
+            "ARTEAGA ALVARO IGNACIO"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "LU 14:30 - 18:45",
+              "professor": "LORETO MARTINEZ",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                }
+              ]
+            },
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 08:30 - 12:50",
+              "professor": "ARTEAGA ALVARO IGNACIO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS09122",
+      "name": "CULTURA DEL DISEÑO",
+      "credits": null,
+      "references": "",
+      "aliases": [
+        "DIS8006 — DISEÑO Y CONTEXTO CULTURAL II"
+      ],
+      "career": "design",
+      "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+      "options": [
+        {
+          "id": "design-dis09122-cultura-del-diseno-seccion-1",
+          "package": "DIS09122_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FAUNDEZ MARIA DE LA PAZ"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "FAUNDEZ MARIA DE LA PAZ",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09122-cultura-del-diseno-seccion-2",
+          "package": "DIS09122_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FREIRE SARA ANGELICA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "FREIRE SARA ANGELICA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09122-cultura-del-diseno-seccion-3",
+          "package": "DIS09122_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BUSTAMANTE JACOB"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 11:30 - 14:20",
+              "professor": "BUSTAMANTE JACOB",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09122-cultura-del-diseno-seccion-4",
+          "package": "DIS09122_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "DIAZ CRISTIAN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 11:30 - 14:20",
+              "professor": "DIAZ CRISTIAN",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09122-cultura-del-diseno-seccion-5",
+          "package": "DIS09122_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FREIRE SARA ANGELICA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "FREIRE SARA ANGELICA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09122-cultura-del-diseno-seccion-6",
+          "package": "DIS09122_SECCION-6",
+          "section": "Sección 6",
+          "sectionNumber": 6,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "NUÑEZ LESLIE MAURINE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "NUÑEZ LESLIE MAURINE",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS09123",
+      "name": "MEDIOS DE EXPRESIÓN",
+      "credits": null,
+      "references": "",
+      "aliases": [
+        "DIS8102 — MAQUETAS Y MATERIALES",
+        "DIS8103 — DIBUJO DIGITAL",
+        "DIS8202 — EXPRESIÓN GRÁFICA",
+        "DIS8205 — COMUNICACIÓN GRÁFICA I"
+      ],
+      "career": "design",
+      "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+      "options": [
+        {
+          "id": "design-dis09123-medios-de-expresion-seccion-1",
+          "package": "DIS09123_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GARCIA ANGELLO MARCELLO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 08:30 - 11:20",
+              "professor": "GARCIA ANGELLO MARCELLO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09123-medios-de-expresion-seccion-2",
+          "package": "DIS09123_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MENDOZA GUISELA EDITH"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 08:30 - 11:20",
+              "professor": "MENDOZA GUISELA EDITH",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09123-medios-de-expresion-seccion-3",
+          "package": "DIS09123_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MULLER BENJAMÍN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 11:30 - 14:20",
+              "professor": "MULLER BENJAMÍN",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09123-medios-de-expresion-seccion-4",
+          "package": "DIS09123_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FUENZALIDA ELENITA ADRIANA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 11:30 - 14:20",
+              "professor": "FUENZALIDA ELENITA ADRIANA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09123-medios-de-expresion-seccion-5",
+          "package": "DIS09123_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GARCIA ANGELLO MARCELLO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "GARCIA ANGELLO MARCELLO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09123-medios-de-expresion-seccion-6",
+          "package": "DIS09123_SECCION-6",
+          "section": "Sección 6",
+          "sectionNumber": 6,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "JAVIER CARRASCO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "JAVIER CARRASCO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS09124",
+      "name": "GEOMETRÍA APLICADA",
+      "credits": null,
+      "references": "",
+      "aliases": [
+        "DIS8007 — DIBUJO GEOMÉTRICO",
+        "DIS8106 — MODELADO 3D"
+      ],
+      "career": "design",
+      "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+      "options": [
+        {
+          "id": "design-dis09124-geometria-aplicada-seccion-1",
+          "package": "DIS09124_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ARAYA PATRICIO EUGENIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "ARAYA PATRICIO EUGENIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09124-geometria-aplicada-seccion-2",
+          "package": "DIS09124_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BUSTAMANTE ALEXANDER JOSHUA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "BUSTAMANTE ALEXANDER JOSHUA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09124-geometria-aplicada-seccion-3",
+          "package": "DIS09124_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VACKFLORES ROBERTO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "VACKFLORES ROBERTO",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09124-geometria-aplicada-seccion-4",
+          "package": "DIS09124_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "QUEVEDO JORGE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "QUEVEDO JORGE",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09124-geometria-aplicada-seccion-5",
+          "package": "DIS09124_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SEBASTIAN ROMERO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 14:30 - 17:20",
+              "professor": "SEBASTIAN ROMERO",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09124-geometria-aplicada-seccion-6",
+          "package": "DIS09124_SECCION-6",
+          "section": "Sección 6",
+          "sectionNumber": 6,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ARAYA PATRICIO EUGENIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 14:30 - 17:20",
+              "professor": "ARAYA PATRICIO EUGENIO",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS09125",
+      "name": "PROCESOS PRODUCTIVOS",
+      "credits": null,
+      "references": "",
+      "aliases": [
+        "DIS8105 — MÁQUINAS Y PROCESOS"
+      ],
+      "career": "design",
+      "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+      "options": [
+        {
+          "id": "design-dis09125-procesos-productivos-seccion-1",
+          "package": "DIS09125_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "NOVOA HECTOR ALEJANDRO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 14:30 - 17:20",
+              "professor": "NOVOA HECTOR ALEJANDRO",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09125-procesos-productivos-seccion-2",
+          "package": "DIS09125_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "STROBL MARIANNE VERONIKA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 14:30 - 17:20",
+              "professor": "STROBL MARIANNE VERONIKA",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09125-procesos-productivos-seccion-3",
+          "package": "DIS09125_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 14:30 - 17:20",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09125-procesos-productivos-seccion-4",
+          "package": "DIS09125_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "INOSTROZA BAYRON CAMILO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 10:00 - 12:50",
+              "professor": "INOSTROZA BAYRON CAMILO",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09125-procesos-productivos-seccion-5",
+          "package": "DIS09125_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 10:00 - 12:50",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09125-procesos-productivos-seccion-6",
+          "package": "DIS09125_SECCION-6",
+          "section": "Sección 6",
+          "sectionNumber": 6,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 10:00 - 12:50",
+              "professor": "",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS09221",
+      "name": "TALLER IV: PROBLEMA Y CONCEPTO",
+      "credits": null,
+      "references": "",
+      "aliases": [
+        "DIS8107 — TALLER DISEÑO INDUSTRIAL III",
+        "DIS8207 — TALLER DISEÑO GRÁFICO III",
+        "DIS8307 — LABORARORIO SISTEMA MODA III"
+      ],
+      "career": "design",
+      "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+      "options": [
+        {
+          "id": "design-dis09221-taller-iv-problema-y-concepto-seccion-1",
+          "package": "DIS09221_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "LOPEZ ANTONIETA SOLEDAD",
+            "ZÚÑIGA CAMILO"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 14:30 - 18:45; LU 08:30 - 12:50",
+              "professor": "LOPEZ ANTONIETA SOLEDAD / ZÚÑIGA CAMILO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09221-taller-iv-problema-y-concepto-seccion-2",
+          "package": "DIS09221_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SAGREDO NICOLAS ENRIQUE",
+            "NATALIA ROCÍO HURTADO VILCHES"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 14:30 - 18:45; LU 08:30 - 12:50",
+              "professor": "SAGREDO NICOLAS ENRIQUE / NATALIA ROCÍO HURTADO VILCHES",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09221-taller-iv-problema-y-concepto-seccion-3",
+          "package": "DIS09221_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SANZANA FELIPE FABRICIO",
+            "JULIE CARLES"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 14:30 - 18:45; LU 08:30 - 12:50",
+              "professor": "SANZANA FELIPE FABRICIO / JULIE CARLES",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09221-taller-iv-problema-y-concepto-seccion-4",
+          "package": "DIS09221_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CARDEMIL FELIPE ALBERTO",
+            "KUSANOVICH CAROLINA ANDREA"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 14:30 - 18:45; LU 08:30 - 12:50",
+              "professor": "CARDEMIL FELIPE ALBERTO / KUSANOVICH CAROLINA ANDREA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09221-taller-iv-problema-y-concepto-seccion-5",
+          "package": "DIS09221_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GILI JUAN MANUEL",
+            "ROMERO VERGARA SEBASTIAN"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 14:30 - 18:45; LU 08:30 - 12:50",
+              "professor": "GILI JUAN MANUEL / ROMERO VERGARA SEBASTIAN",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09221-taller-iv-problema-y-concepto-seccion-6",
+          "package": "DIS09221_SECCION-6",
+          "section": "Sección 6",
+          "sectionNumber": 6,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VILLARROEL KARLA GIULIANA",
+            "YÁÑEZ BEATRIZ PAULINA"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 14:30 - 18:45; LU 08:30 - 12:50",
+              "professor": "VILLARROEL KARLA GIULIANA / YÁÑEZ BEATRIZ PAULINA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09221-taller-iv-problema-y-concepto-seccion-7",
+          "package": "DIS09221_SECCION-7",
+          "section": "Sección 7",
+          "sectionNumber": 7,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CAROLINA PINO",
+            "ROA FELIPE"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "JU 14:30 - 18:45; LU 08:30 - 12:50",
+              "professor": "CAROLINA PINO / ROA FELIPE",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS09222",
+      "name": "DISCUSIONES CONTEMPORÁNEAS",
+      "credits": null,
+      "references": "",
+      "aliases": [
+        "DIS8009 — TEOTRÍA E INVESTIGACIÓN EN DISEÑO II"
+      ],
+      "career": "design",
+      "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+      "options": [
+        {
+          "id": "design-dis09222-discusiones-contemporaneas-seccion-1",
+          "package": "DIS09222_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ZERENE JOAQUIN ANDRES"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 08:30 - 11:20",
+              "professor": "ZERENE JOAQUIN ANDRES",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09222-discusiones-contemporaneas-seccion-2",
+          "package": "DIS09222_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MAULÉN DAVID FERNANDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 08:30 - 11:20",
+              "professor": "MAULÉN DAVID FERNANDO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09222-discusiones-contemporaneas-seccion-3",
+          "package": "DIS09222_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "COTORAS DUSAN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 11:30 - 14:20",
+              "professor": "COTORAS DUSAN",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09222-discusiones-contemporaneas-seccion-4",
+          "package": "DIS09222_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PERALTA HELGA VERUSCHKA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 11:30 - 14:20",
+              "professor": "PERALTA HELGA VERUSCHKA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09222-discusiones-contemporaneas-seccion-5",
+          "package": "DIS09222_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MAULÉN DAVID FERNANDO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "MAULÉN DAVID FERNANDO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09222-discusiones-contemporaneas-seccion-6",
+          "package": "DIS09222_SECCION-6",
+          "section": "Sección 6",
+          "sectionNumber": 6,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PERALTA HELGA VERUSCHKA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "PERALTA HELGA VERUSCHKA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS09223",
+      "name": "EXPERIMENTACIÓN AUDIOVISUAL",
+      "credits": null,
+      "references": "",
+      "aliases": [
+        "DIS8208 — COMUNICACIÓN GRÁFICA II"
+      ],
+      "career": "design",
+      "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+      "options": [
+        {
+          "id": "design-dis09223-experimentacion-audiovisual-seccion-1",
+          "package": "DIS09223_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MEDINA FELIPE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 08:30 - 11:20",
+              "professor": "MEDINA FELIPE",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09223-experimentacion-audiovisual-seccion-2",
+          "package": "DIS09223_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VEGA VALENTINA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 08:30 - 11:20",
+              "professor": "VEGA VALENTINA",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09223-experimentacion-audiovisual-seccion-3",
+          "package": "DIS09223_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ARTEAGA ALVARO IGNACIO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 11:30 - 14:20",
+              "professor": "ARTEAGA ALVARO IGNACIO",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09223-experimentacion-audiovisual-seccion-4",
+          "package": "DIS09223_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "POLI MUJICA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 11:30 - 14:20",
+              "professor": "POLI MUJICA",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09223-experimentacion-audiovisual-seccion-5",
+          "package": "DIS09223_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ALTAMIRANO ARIEL ANDRES"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 14:30 - 17:20",
+              "professor": "ALTAMIRANO ARIEL ANDRES",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09223-experimentacion-audiovisual-seccion-6",
+          "package": "DIS09223_SECCION-6",
+          "section": "Sección 6",
+          "sectionNumber": 6,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PAULA VALENZUELA GALLEGUILLOS"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "VI 14:30 - 17:20",
+              "professor": "PAULA VALENZUELA GALLEGUILLOS",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS09224",
+      "name": "DISEÑO BASADO EN DATOS",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+      "options": [
+        {
+          "id": "design-dis09224-diseno-basado-en-datos-seccion-1",
+          "package": "DIS09224_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SERGIO MORA DIAZ"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "SERGIO MORA DIAZ",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09224-diseno-basado-en-datos-seccion-2",
+          "package": "DIS09224_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "PABLO BANDA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "PABLO BANDA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09224-diseno-basado-en-datos-seccion-3",
+          "package": "DIS09224_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MAGDALENA CLARO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 11:30 - 14:20",
+              "professor": "MAGDALENA CLARO",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09224-diseno-basado-en-datos-seccion-4",
+          "package": "DIS09224_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "EDUARDO VALENZUELA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 11:30 - 14:20",
+              "professor": "EDUARDO VALENZUELA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09224-diseno-basado-en-datos-seccion-5",
+          "package": "DIS09224_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CHRISTIAN OYARZUN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "CHRISTIAN OYARZUN",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis09224-diseno-basado-en-datos-seccion-6",
+          "package": "DIS09224_SECCION-6",
+          "section": "Sección 6",
+          "sectionNumber": 6,
+          "category": "CURSOS PLAN COMÚN (1er y 2do año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "EMILIO TRONCOSO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "EMILIO TRONCOSO",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8011",
+      "name": "BRANDING Y MERCADOTECNIA",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+      "options": [
+        {
+          "id": "design-dis8011-branding-y-mercadotecnia-seccion-2",
+          "package": "DIS8011_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RODRIGUEZ RENE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "RODRIGUEZ RENE",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8011-branding-y-mercadotecnia-seccion-1",
+          "package": "DIS8011_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RODRIGUEZ RENE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "JU 08:30 - 11:20",
+              "professor": "RODRIGUEZ RENE",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8011-branding-y-mercadotecnia-seccion-3",
+          "package": "DIS8011_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RODRIGUEZ RENE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 11:30 - 14:20",
+              "professor": "RODRIGUEZ RENE",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8013",
+      "name": "EMPRENDIMIENTO",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+      "options": [
+        {
+          "id": "design-dis8013-emprendimiento-seccion-1",
+          "package": "DIS8013_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MUÑOZ CARLOS ANDRES"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 08:30 - 11:20",
+              "professor": "MUÑOZ CARLOS ANDRES",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8013-emprendimiento-seccion-2",
+          "package": "DIS8013_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GONZALEZ AGUSTINA PAZ"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 11:30 - 14:20",
+              "professor": "GONZALEZ AGUSTINA PAZ",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8013-emprendimiento-seccion-3",
+          "package": "DIS8013_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FERNANDEZ ANDRES JOSE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "FERNANDEZ ANDRES JOSE",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8014",
+      "name": "PRÁCTICA PROFESIONAL",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+      "options": [
+        {
+          "id": "design-dis8014-practica-profesional-seccion-1",
+          "package": "DIS8014_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GUTIÉRREZ BÁRBARA JOSELYN"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "SA 08:30 - 11:20",
+              "professor": "GUTIÉRREZ BÁRBARA JOSELYN",
+              "meetings": [
+                {
+                  "day": "Sábado",
+                  "dayCode": "SA",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8014-practica-profesional-seccion-2",
+          "package": "DIS8014_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "CURSOS DE GESTIÓN Y PRÁCTICA",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GUTIÉRREZ BÁRBARA JOSELYN"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "SA 11:30 - 14:20",
+              "professor": "GUTIÉRREZ BÁRBARA JOSELYN",
+              "meetings": [
+                {
+                  "day": "Sábado",
+                  "dayCode": "SA",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "FAD1017",
+      "name": "TALLER LATITUD SUR",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-fad1017-taller-latitud-sur-seccion-1",
+          "package": "FAD1017_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "JOAQUÍN GONZÁLEZ"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "Día por confirmar 14:30 - 18:45",
+              "professor": "JOAQUÍN GONZÁLEZ",
+              "meetings": []
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8621",
+      "name": "TALLER LOCAL: EXPLORACIÓN MATERIAL",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8621-taller-local-exploracion-material-seccion-1",
+          "package": "DIS8621_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "JOAQUÍN BÉJARES",
+            "RODRIGUEZ SEBASTIAN"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA VI 08:30 - 12:50",
+              "professor": "JOAQUÍN BÉJARES / RODRIGUEZ SEBASTIAN",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8623",
+      "name": "TALLER EDITORIAL: LIBRO ILUSTRADO",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8623-taller-editorial-libro-ilustrado-seccion-1",
+          "package": "DIS8623_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "KING JENNIFER ANNE",
+            "DEL CASTILLO BELEN"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA 14:30 - 18:45; VI 08:30 - 12:50",
+              "professor": "KING JENNIFER ANNE / DEL CASTILLO BELEN",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8625",
+      "name": "TALLER DE EXPLORACIÓN Y CULTURA VISUAL",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8625-taller-de-exploracion-y-cultura-visual-seccion-1",
+          "package": "DIS8625_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ALTAMIRANO ARIEL ANDRES",
+            "CORDOVA MANUEL ALEJANDRO"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA VI 08:30 - 12:50",
+              "professor": "ALTAMIRANO ARIEL ANDRES / CORDOVA MANUEL ALEJANDRO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8627",
+      "name": "TALLER DE MODA SOSTENIBLE",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8627-taller-de-moda-sostenible-seccion-1",
+          "package": "DIS8627_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RUIZ ALEJANDRA CONTESSINA",
+            "SILVA, FRANCISCO"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA VI 08:30 - 12:50",
+              "professor": "RUIZ ALEJANDRA CONTESSINA / SILVA, FRANCISCO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8631",
+      "name": "TALLER DE SUPERFICIES TEXTILES",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8631-taller-de-superficies-textiles-seccion-1",
+          "package": "DIS8631_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "IBARRA, MARIA EUGENIA",
+            "ROMERO, MARU PAULINA"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA VI 08:30 - 12:50",
+              "professor": "IBARRA, MARIA EUGENIA / ROMERO, MARU PAULINA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8640",
+      "name": "TALLER INVITADO: Materia Situada",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8640-taller-invitado-materia-situada-seccion-1",
+          "package": "DIS8640_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "HEIDI JALKH",
+            "VALENTINA ALIAGA"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA 14:30 - 18:45; VI 08:30 - 12:50",
+              "professor": "HEIDI JALKH / VALENTINA ALIAGA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8641",
+      "name": "DISEÑO DE EXPOSICIONES Y PROCESOS CUR.",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8641-diseno-de-exposiciones-y-procesos-cur-seccion-1",
+          "package": "DIS8641_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FAUNDEZ MARIA DE LA PAZ",
+            "GONZÁLEZ ARIBEL ALEJANDRA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 14:30 - 18:45; VI 08:30 - 12:50",
+              "professor": "FAUNDEZ MARIA DE LA PAZ / GONZÁLEZ ARIBEL ALEJANDRA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8642",
+      "name": "TALLER DE PROCESOS Y FABRICACIÓN",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8642-taller-de-procesos-y-fabricacion-seccion-1",
+          "package": "DIS8642_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "STEPHENS VICENTE",
+            "TALEP MARGARITA"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA 14:30 - 18:45; VI 08:30 - 12:50",
+              "professor": "STEPHENS VICENTE / TALEP MARGARITA",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8645",
+      "name": "TALLER DE DIS. DE MAQ. COMPUTACIONALES",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8645-taller-de-dis-de-maq-computacionales-seccion-1",
+          "package": "DIS8645_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MONTOYA AARON",
+            "SERRANO MATÍAS IGNACIO"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA VI 08:30 - 12:50",
+              "professor": "MONTOYA AARON / SERRANO MATÍAS IGNACIO",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8646",
+      "name": "TALLER DE VISUALIZACION INTERACTIVA",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8646-taller-de-visualizacion-interactiva-seccion-1",
+          "package": "DIS8646_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MONTECINOS GUILLERMO",
+            "MORA SERGIO GABRIEL"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA 14:30 - 18:45; VI 08:30 - 12:50",
+              "professor": "MONTECINOS GUILLERMO / MORA SERGIO GABRIEL",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8651",
+      "name": "TALLER INVITADO 2: Taller de Señalización Urbana",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES 3ER Y 4TO AÑO",
+      "options": [
+        {
+          "id": "design-dis8651-taller-invitado-2-taller-de-senalizacion-urbana-seccion-1",
+          "package": "DIS8651_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES 3ER Y 4TO AÑO",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "RIOSECO JUAN PABLO",
+            "TETZNER DOMINIQUE PAULETTE"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA VI 8:30 - 12:50",
+              "professor": "RIOSECO JUAN PABLO / TETZNER DOMINIQUE PAULETTE",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                },
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "08:30",
+                  "end": "12:50",
+                  "startMin": 510,
+                  "endMin": 770,
+                  "time": "08:30 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "ART9167",
+      "name": "TALLER DE EXPOSICIONES INTERDISCIPLINAR (5 cupos para Diseño)",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-art9167-taller-de-exposiciones-interdisciplinar-5-cupos-para-diseno-seccion-1",
+          "package": "ART9167_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "Leonor Castañeda"
+          ],
+          "events": [
+            {
+              "name": "TALLER",
+              "rawSchedule": "MA 14:30 a 18:45",
+              "professor": "Leonor Castañeda",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9003",
+      "name": "SERIGRAFÍA Y TÉCNICAS MIXTAS",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9003-serigrafia-y-tecnicas-mixtas-seccion-1",
+          "package": "DIS9003_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ALBORNOZ PATRICIO ANDRES"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "JU 10:00 - 12:50",
+              "professor": "ALBORNOZ PATRICIO ANDRES",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9082",
+      "name": "EDICIÓN Y DISEÑO TEXTUAL",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9082-edicion-y-diseno-textual-seccion-1",
+          "package": "DIS9082_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "JENNY ABUD"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "LU 8:30 - 11:20",
+              "professor": "JENNY ABUD",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "08:30",
+                  "end": "11:20",
+                  "startMin": 510,
+                  "endMin": 680,
+                  "time": "08:30 - 11:20"
+                }
+              ]
+            },
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "LU 11:30 - 14:20",
+              "professor": "JENNY ABUD",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9027",
+      "name": "DISEÑO DE IDENTIDAD VISUAL Y MARCAS",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9027-diseno-de-identidad-visual-y-marcas-seccion-1",
+          "package": "DIS9027_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CORDOVA MANUEL ALEJANDRO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "LU 14:30 - 17:20",
+              "professor": "CORDOVA MANUEL ALEJANDRO",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9085",
+      "name": "DISEÑO DE INTERFACES WEB",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9085-diseno-de-interfaces-web-seccion-1",
+          "package": "DIS9085_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "NATASSJA BARBIERI"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "LU 14:30 - 17:20",
+              "professor": "NATASSJA BARBIERI",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9028",
+      "name": "EXPERIMENTACIÓN Y PRODUCCIÓN BIOMATERIAL",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9028-experimentacion-y-produccion-biomaterial-seccion-1",
+          "package": "DIS9028_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "TALEP MARGARITA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "TALEP MARGARITA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9083",
+      "name": "COMPOSICIÓN TIPOGRÁFICA",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9083-composicion-tipografica-seccion-1",
+          "package": "DIS9083_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MENDOZA GUISELA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 14:30 - 17:20",
+              "professor": "MENDOZA GUISELA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9084",
+      "name": "EXPERIMENTACIONES TEXTILES AVANZADAS",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9084-experimentaciones-textiles-avanzadas-seccion-1",
+          "package": "DIS9084_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "VIDAL FRANCISCA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MI 11:30 - 14:20",
+              "professor": "VIDAL FRANCISCA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "11:30",
+                  "end": "14:20",
+                  "startMin": 690,
+                  "endMin": 860,
+                  "time": "11:30 - 14:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9076",
+      "name": "CERAMICA : EXPRESION Y FUNCIONALIDAD",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9076-ceramica-expresion-y-funcionalidad-seccion-1",
+          "package": "DIS9076_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CORDOVA RODRIGO ALBERTO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "JU 10:00 - 12:50",
+              "professor": "CORDOVA RODRIGO ALBERTO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9077",
+      "name": "RETAIL Y VISUAL MERCHANDISING",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9077-retail-y-visual-merchandising-seccion-1",
+          "package": "DIS9077_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SEPÚLVEDA FELIPE ESTEBAN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "JU 14:30 - 17:20",
+              "professor": "SEPÚLVEDA FELIPE ESTEBAN",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9088",
+      "name": "DISEÑO COLABORATIVO EN LATINOAMERICA",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9088-diseno-colaborativo-en-latinoamerica-seccion-1",
+          "package": "DIS9088_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "DAVID MAULEN"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "LU 14:30 - 17:20",
+              "professor": "DAVID MAULEN",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9087",
+      "name": "DISPOSITIVOS PERIFERICOS Y PLATAFORMAS PARA LA INTERACCION",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9087-dispositivos-perifericos-y-plataformas-para-la-interaccion-seccion-1",
+          "package": "DIS9087_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ROA FELIPE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "JU 10:00 - 12:50",
+              "professor": "ROA FELIPE",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS9078",
+      "name": "PATRONES: TRANSFORMACION Y EXP.",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis9078-patrones-transformacion-y-exp-seccion-1",
+          "package": "DIS9078_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "FARFÁN NICOLE TAMARA"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "JU 14:30 - 17:20",
+              "professor": "FARFÁN NICOLE TAMARA",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "FAD9100",
+      "name": "PRÁCTICA ELECTIVA: Mapeo Tipográfico Laboratorio OTF",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-fad9100-practica-electiva-mapeo-tipografico-laboratorio-otf-por-definir",
+          "package": "FAD9100_POR-DEFINIR",
+          "section": "Por definir",
+          "sectionNumber": null,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GUISELA MENDOZA"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "A convenir con profesora",
+              "professor": "GUISELA MENDOZA",
+              "meetings": []
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "FAD9100",
+      "name": "PRÁCTICA ELECTIVA: Centro Editorial FaAAD UDP",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-fad9100-practica-electiva-centro-editorial-faaad-udp-por-definir",
+          "package": "FAD9100_POR-DEFINIR",
+          "section": "Por definir",
+          "sectionNumber": null,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ANTONIETA LÓPEZ"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "A convenir con profesora",
+              "professor": "ANTONIETA LÓPEZ",
+              "meetings": []
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "FAD9100",
+      "name": "PRÁCTICA ELECTIVA: LID-UDP Laboratorio Interdisciplinario de Interacción Digital",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-fad9100-practica-electiva-lid-udp-laboratorio-interdisciplinario-de-interaccion-digital-por-definir",
+          "package": "FAD9100_POR-DEFINIR",
+          "section": "Por definir",
+          "sectionNumber": null,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "JOAQUÍN GONZÁLEZ y A. MONTOYA"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "A convenir con profesores",
+              "professor": "JOAQUÍN GONZÁLEZ y A. MONTOYA",
+              "meetings": []
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "FAD9100",
+      "name": "PRÁCTICA ELECTIVA: Laboratorio 360",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-fad9100-practica-electiva-laboratorio-360-por-definir",
+          "package": "FAD9100_POR-DEFINIR",
+          "section": "Por definir",
+          "sectionNumber": null,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ANGELLO GARCIA"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "A convenir con profesor",
+              "professor": "ANGELLO GARCIA",
+              "meetings": []
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "FAD9100",
+      "name": "PRÁCTICA ELECTIVA: Laboratorio de Experimentación Material - Diseño de propuesta gráfica y espacial",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-fad9100-practica-electiva-laboratorio-de-experimentacion-material-diseno-de-propuesta-grafica-y-espacial-por-definir",
+          "package": "FAD9100_POR-DEFINIR",
+          "section": "Por definir",
+          "sectionNumber": null,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "SEBASTIÁN RODRÍGUEZ"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "A convenir con profesor",
+              "professor": "SEBASTIÁN RODRÍGUEZ",
+              "meetings": []
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "PRI0001",
+      "name": "PRÁCTICA ELECTIVA: Agencia Piso 1",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE PROFUNDIZACIÓN",
+      "options": [
+        {
+          "id": "design-pri0001-practica-electiva-agencia-piso-1-seccion-x",
+          "package": "PRI0001_SECCION-X",
+          "section": "Sección X",
+          "sectionNumber": null,
+          "category": "CURSOS DE PROFUNDIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "CLAUDIO CARVAJAL"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "A convenir con profesor",
+              "professor": "CLAUDIO CARVAJAL",
+              "meetings": []
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8951",
+      "name": "PENSAMIENTO VISUAL",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE ESPECIALIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis8951-pensamiento-visual-seccion-1",
+          "package": "DIS8951_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE ESPECIALIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "JUAN PABLO BRAVO"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "JU 10:00 - 12:50",
+              "professor": "JUAN PABLO BRAVO",
+              "meetings": [
+                {
+                  "day": "Jueves",
+                  "dayCode": "JU",
+                  "start": "10:00",
+                  "end": "12:50",
+                  "startMin": 600,
+                  "endMin": 770,
+                  "time": "10:00 - 12:50"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8949",
+      "name": "DISEÑO DE SERVICIOS",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "CURSOS DE ESPECIALIZACIÓN",
+      "options": [
+        {
+          "id": "design-dis8949-diseno-de-servicios-seccion-1",
+          "package": "DIS8949_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "CURSOS DE ESPECIALIZACIÓN",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "TETZNER DOMINIQUE PAULETTE"
+          ],
+          "events": [
+            {
+              "name": "CÁTEDRA",
+              "rawSchedule": "MA 14:30 - 17:20",
+              "professor": "TETZNER DOMINIQUE PAULETTE",
+              "meetings": [
+                {
+                  "day": "Martes",
+                  "dayCode": "MA",
+                  "start": "14:30",
+                  "end": "17:20",
+                  "startMin": 870,
+                  "endMin": 1040,
+                  "time": "14:30 - 17:20"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8VIAT1_2",
+      "name": "SEMINARIO DE TITULO",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES TITULACIÓN (5to año)",
+      "options": [
+        {
+          "id": "design-dis8viat1-2-seminario-de-titulo-seccion-1",
+          "package": "DIS8VIAT1_2_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES TITULACIÓN (5to año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BRIONES FILIPA",
+            "MORALES JORGE IVAN"
+          ],
+          "events": [
+            {
+              "name": "SEMINARIO",
+              "rawSchedule": "MI 10:00 - 18:45",
+              "professor": "BRIONES FILIPA / MORALES JORGE IVAN",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "18:45",
+                  "startMin": 600,
+                  "endMin": 1125,
+                  "time": "10:00 - 18:45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8viat1-2-seminario-de-titulo-seccion-2",
+          "package": "DIS8VIAT1_2_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "TALLERES TITULACIÓN (5to año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "MUÑOZ MARYCARMEN",
+            "DALBOSCO LUCA"
+          ],
+          "events": [
+            {
+              "name": "SEMINARIO",
+              "rawSchedule": "MI 10:00 - 18:45",
+              "professor": "MUÑOZ MARYCARMEN / DALBOSCO LUCA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "18:45",
+                  "startMin": 600,
+                  "endMin": 1125,
+                  "time": "10:00 - 18:45"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8VIAT2_2",
+      "name": "PROYECTO DE TITULO",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES TITULACIÓN (5to año)",
+      "options": [
+        {
+          "id": "design-dis8viat2-2-proyecto-de-titulo-seccion-1",
+          "package": "DIS8VIAT2_2_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES TITULACIÓN (5to año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "NOVOA HECTOR ALEJANDRO",
+            "ERRÁZURIZ ELISA"
+          ],
+          "events": [
+            {
+              "name": "PROYECTO",
+              "rawSchedule": "MI 10:00 - 18:45",
+              "professor": "NOVOA HECTOR ALEJANDRO / ERRÁZURIZ ELISA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "18:45",
+                  "startMin": 600,
+                  "endMin": 1125,
+                  "time": "10:00 - 18:45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8viat2-2-proyecto-de-titulo-seccion-2",
+          "package": "DIS8VIAT2_2_SECCION-2",
+          "section": "Sección 2",
+          "sectionNumber": 2,
+          "category": "TALLERES TITULACIÓN (5to año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "AGUAYO ANTONIETA DEL CARMEN",
+            "GAJARDO GUADALUPE BLANCA"
+          ],
+          "events": [
+            {
+              "name": "PROYECTO",
+              "rawSchedule": "MI 10:00 - 18:45",
+              "professor": "AGUAYO ANTONIETA DEL CARMEN / GAJARDO GUADALUPE BLANCA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "18:45",
+                  "startMin": 600,
+                  "endMin": 1125,
+                  "time": "10:00 - 18:45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8viat2-2-proyecto-de-titulo-seccion-3",
+          "package": "DIS8VIAT2_2_SECCION-3",
+          "section": "Sección 3",
+          "sectionNumber": 3,
+          "category": "TALLERES TITULACIÓN (5to año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GONZALEZ CRISTIAN ANDRES",
+            "PIZARRO VALENTINA"
+          ],
+          "events": [
+            {
+              "name": "PROYECTO",
+              "rawSchedule": "MI 10:00 - 18:45",
+              "professor": "GONZALEZ CRISTIAN ANDRES / PIZARRO VALENTINA",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "18:45",
+                  "startMin": 600,
+                  "endMin": 1125,
+                  "time": "10:00 - 18:45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8viat2-2-proyecto-de-titulo-seccion-4",
+          "package": "DIS8VIAT2_2_SECCION-4",
+          "section": "Sección 4",
+          "sectionNumber": 4,
+          "category": "TALLERES TITULACIÓN (5to año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "ROMÁN DANIELA FERNANDA",
+            "ABUD JENNY BEATRIZ"
+          ],
+          "events": [
+            {
+              "name": "PROYECTO",
+              "rawSchedule": "MI 10:00 - 18:45",
+              "professor": "ROMÁN DANIELA FERNANDA / ABUD JENNY BEATRIZ",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "18:45",
+                  "startMin": 600,
+                  "endMin": 1125,
+                  "time": "10:00 - 18:45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "design-dis8viat2-2-proyecto-de-titulo-seccion-5",
+          "package": "DIS8VIAT2_2_SECCION-5",
+          "section": "Sección 5",
+          "sectionNumber": 5,
+          "category": "TALLERES TITULACIÓN (5to año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "GALLARDO MANUEL SIMON JESUS",
+            "MAJLUF SERGIO ANDRÉS"
+          ],
+          "events": [
+            {
+              "name": "PROYECTO",
+              "rawSchedule": "MI 10:00 - 18:45",
+              "professor": "GALLARDO MANUEL SIMON JESUS / MAJLUF SERGIO ANDRÉS",
+              "meetings": [
+                {
+                  "day": "Miércoles",
+                  "dayCode": "MI",
+                  "start": "10:00",
+                  "end": "18:45",
+                  "startMin": 600,
+                  "endMin": 1125,
+                  "time": "10:00 - 18:45"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8VIAP1_2",
+      "name": "TITULACIÓN VIA PRÁCTICA PROFESIONAL 1",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES TITULACIÓN (5to año)",
+      "options": [
+        {
+          "id": "design-dis8viap1-2-titulacion-via-practica-profesional-1-seccion-1",
+          "package": "DIS8VIAP1_2_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES TITULACIÓN (5to año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BEJARES JOAQUIN ANDRES"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "VI 14:30 - 18:45",
+              "professor": "BEJARES JOAQUIN ANDRES",
+              "meetings": [
+                {
+                  "day": "Viernes",
+                  "dayCode": "VI",
+                  "start": "14:30",
+                  "end": "18:45",
+                  "startMin": 870,
+                  "endMin": 1125,
+                  "time": "14:30 - 18:45"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
+    },
+    {
+      "code": "DIS8VIAP2_2",
+      "name": "TITULACIÓN VIA PRÁCTICA PROFESIONAL 2",
+      "credits": null,
+      "references": "",
+      "aliases": [],
+      "career": "design",
+      "category": "TALLERES TITULACIÓN (5to año)",
+      "options": [
+        {
+          "id": "design-dis8viap2-2-titulacion-via-practica-profesional-2-seccion-1",
+          "package": "DIS8VIAP2_2_SECCION-1",
+          "section": "Sección 1",
+          "sectionNumber": 1,
+          "category": "TALLERES TITULACIÓN (5to año)",
+          "campus": "S-SANTIAGO",
+          "vacancies": null,
+          "professors": [
+            "BEJARES JOAQUIN ANDRES"
+          ],
+          "events": [
+            {
+              "name": "PRÁCTICA",
+              "rawSchedule": "LU 10:00 - 18:45",
+              "professor": "BEJARES JOAQUIN ANDRES",
+              "meetings": [
+                {
+                  "day": "Lunes",
+                  "dayCode": "LU",
+                  "start": "10:00",
+                  "end": "18:45",
+                  "startMin": 600,
+                  "endMin": 1125,
+                  "time": "10:00 - 18:45"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isFormationAcademic": false
     }
   ]
 };

@@ -20,13 +20,14 @@
 
   <header class="hero">
     <div>
-      <p class="eyebrow">Ingenierías · Plan común + Industrial</p>
+      <p class="eyebrow">Multi-carrera · s8phnx</p>
       <h1>Generador de horarios</h1>
-      <p class="subtitle">Elige tus ramos, agrega Formación Académica, prioriza profes y guarda tus horarios favoritos.</p>
+      <p class="subtitle">Planifica Ingeniería Civil o Diseño con favoritos, bloqueos, Formación Académica y preferencias de profesores.</p>
     </div>
 
     <div class="meta-card">
-      <span id="courseCount">— ramos de ingeniería</span>
+      <span id="careerLabel">— carrera</span>
+      <span id="courseCount">— ramos</span>
       <span id="formationCount">— cursos de formación</span>
       <span id="optionCount">— secciones</span>
     </div>
@@ -34,7 +35,13 @@
 
   <main class="layout">
     <section class="panel controls">
-      <h2>1. Agrega ramos</h2>
+      <h2>1. Elige carrera y agrega ramos</h2>
+
+      <label class="career-selector">
+        Carrera
+        <select id="careerSelect"></select>
+        <small>Al cambiar de carrera se limpian los ramos seleccionados, pero se conservan tus favoritos y bloqueos.</small>
+      </label>
 
       <div class="add-row">
         <input
@@ -49,7 +56,10 @@
 
       <p class="hint">Tip: escribe código o nombre. Al agregar un ramo quedan activadas todas sus secciones.</p>
 
-    
+      <div id="attendanceInfo" class="attendance-info" role="note">
+        <strong>Ayudantías y topes:</strong>
+        las ayudantías obligatorias sí bloquean el horario. Las opcionales se muestran, pero permiten inscribir otro ramo en el mismo bloque. Si el Excel no especifica el tipo, se considera obligatoria por seguridad.
+      </div>
 
       <div id="selectedCourses" class="selected-list empty">
         <p>Aún no agregas ramos.</p>
@@ -154,8 +164,6 @@
         </label>
       </div>
 
-
-
       <div class="schedule-blocker">
         <div class="section-head compact-head">
           <div>
@@ -232,6 +240,7 @@
 
       <div id="scoreCards" class="score-cards"></div>
       <div id="comboList" class="combo-list"></div>
+      <div id="unscheduledNotice" class="unscheduled-notice" hidden></div>
 
       <div class="table-wrap">
         <table id="scheduleTable"></table>
@@ -241,8 +250,8 @@
 
   <footer>
     <p>
-      Datos de Ingeniería y Formación Académica cargados desde <code>data.js</code> y <code>ramos.json</code>.
-      Si usas carpeta <code>data/</code>, cambia el script de datos a <code>./data/data.js</code>.
+      Versión multi-carrera con Ingeniería Civil y Diseño 2-2026. Los favoritos y bloqueos se guardan únicamente en este navegador mediante <code>localStorage</code>.
+      Los datos se cargan desde <code>data.js</code> y <code>ramos.json</code>.
     </p>
   </footer>
 
